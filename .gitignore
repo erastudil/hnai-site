@@ -4,3 +4,11 @@ _*.json
 _*.py
 *.log
 .DS_Store
+
+# press kits / unpack junk (ship only flat web logos under brand/payments/)
+assets/brand/payments/*.zip
+assets/brand/payments/*-mediakit/
+assets/brand/payments/cashapp-logos/
+assets/brand/payments/*.html
+assets/brand/payments/try-*
+assets/brand/payments/__MACOSX/
