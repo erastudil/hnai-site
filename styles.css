@@ -360,6 +360,114 @@ a:hover { color: var(--violet); }
   margin-top: 1rem;
 }
 
+/* —— crew (founder + grok up top) —— */
+.crew-panel {
+  margin-top: 1.5rem;
+  width: 100%;
+  border: 1px solid var(--violet-soft);
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1rem 1.1rem 1.15rem;
+  text-align: left;
+}
+
+.crew-kicker {
+  color: var(--violet);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.crew-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .crew-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.crew-card {
+  border: 1px solid #2a2a2a;
+  padding: 0.85rem 0.9rem;
+  min-height: 8rem;
+}
+
+.crew-card.crew-grok {
+  border-color: var(--violet-soft);
+}
+
+.crew-name {
+  margin: 0 0 0.25rem;
+  color: var(--white);
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.crew-role {
+  margin: 0 0 0.45rem;
+  color: var(--violet);
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.crew-note {
+  margin: 0;
+  color: var(--grey);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.crew-disclaimer {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--grey-dim);
+  font-size: 0.75rem;
+}
+
+.crew-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.crew-brand:hover { opacity: 0.9; }
+
+.crew-grok-logo {
+  height: 44px;
+  width: auto;
+  max-width: min(220px, 100%);
+  display: block;
+}
+
+.crew-spacexai {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.crew-spacexai-mark {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.crew-spacexai-label {
+  color: var(--grey);
+  font-size: 0.75rem;
+}
+
+.credit-official img {
+  width: auto;
+  max-width: 48px;
+  height: 36px;
+  object-fit: contain;
+}
+
 /* —— sections —— */
 section {
   padding: 1.5rem 0 0.35rem;
