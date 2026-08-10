@@ -626,11 +626,13 @@ th {
 
 /* —— valor —— */
 .valor-banner {
-  width: 100%;
+  /* compact: just big enough for the title art */
+  width: min(100%, 520px);
+  max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto 0.85rem;
   border: var(--border);
-  margin: 0 0 0.8rem;
 }
 
 /* —— credits —— */
