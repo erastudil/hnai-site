@@ -323,12 +323,13 @@ a:hover { color: var(--violet); }
 }
 
 .hero-logo {
-  max-width: min(340px, 88vw);
+  /* double prior 720 display size */
+  max-width: min(1440px, 100%);
   width: 100%;
   height: auto;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.35rem;
   display: block;
-  filter: drop-shadow(0 0 20px var(--violet-glow));
+  filter: drop-shadow(0 0 32px var(--violet-glow));
 }
 
 .hero .tag,
@@ -505,8 +506,14 @@ th {
 }
 
 .nexus-hero img {
-  width: 96px;
-  height: 96px;
+  width: min(100%, 720px);
+  height: auto;
+  aspect-ratio: 5 / 2;
+  object-fit: contain;
+  border: 2px solid var(--violet);
+  background: #000;
+  display: block;
+  margin: 0 auto;
 }
 
 /* —— valor —— */
