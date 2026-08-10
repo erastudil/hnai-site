@@ -9,9 +9,12 @@
   --violet-glow: rgba(139, 92, 246, 0.18);
   --mono: "Cascadia Code", "Cascadia Mono", Consolas, "Courier New", ui-monospace, monospace;
   --border: 2px solid var(--violet);
-  /* readable column — not wall-to-wall, not skinny */
-  --measure: min(42rem, calc(100vw - 2rem));
-  --pad: 1.15rem;
+  /*
+   * 1920×1080 target: text ~70% of viewport, box slightly wider.
+   * 70vw @ 1920 ≈ 1344px · shell 72vw ≈ 1382px · light pad only.
+   */
+  --measure: min(72vw, 1400px);
+  --pad: 1.1rem 1.35rem;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -115,7 +118,7 @@ body {
   to { transform: rotate(-8deg) translateX(6%); }
 }
 
-/* —— shell: one centered column —— */
+/* —— shell: wide centered column (~72vw / 70% text after pad) —— */
 .shell,
 .shell-wide {
   position: relative;
@@ -124,6 +127,14 @@ body {
   max-width: var(--measure);
   margin: 0 auto;
   padding: 0 0 3.5rem;
+}
+
+/* phone: use almost full width */
+@media (max-width: 720px) {
+  :root {
+    --measure: calc(100vw - 1.25rem);
+    --pad: 0.9rem 0.85rem;
+  }
 }
 
 /* —— nav —— */
