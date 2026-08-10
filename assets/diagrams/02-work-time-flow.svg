@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <style>
+      .t { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; fill: #ffffff; }
+      .h { font-size: 22px; }
+      .s { font-size: 12px; fill: #808080; }
+      .b { font-size: 12px; }
+      .sm { font-size: 11px; fill: #b0b0b0; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="420" fill="#000000"/>
+  <rect x="2" y="2" width="1196" height="416" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="40" y="44" class="t h">work-time information flow</text>
+  <text x="40" y="68" class="t s">one request particle · declare → select → verify · no commander play-by-play</text>
+
+  <rect x="36" y="120" width="130" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="52" y="152" class="t b">1 ingress</text>
+  <text x="52" y="174" class="t sm">human · peer</text>
+  <text x="52" y="192" class="t sm">schedule tick</text>
+
+  <rect x="196" y="120" width="130" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="212" y="152" class="t b">2 declare</text>
+  <text x="212" y="174" class="t sm">end-state</text>
+  <text x="212" y="192" class="t sm">done-shape</text>
+
+  <rect x="356" y="120" width="130" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="372" y="152" class="t b">3 triage</text>
+  <text x="372" y="174" class="t sm">cheap rules</text>
+  <text x="372" y="192" class="t sm">before llm</text>
+
+  <rect x="516" y="120" width="130" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="532" y="152" class="t b">4 budget</text>
+  <text x="532" y="174" class="t sm">compute mem</text>
+  <text x="532" y="192" class="t sm">disk · bw</text>
+
+  <rect x="676" y="120" width="130" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="692" y="152" class="t b">5 select</text>
+  <text x="692" y="174" class="t sm">genome fit</text>
+  <text x="692" y="192" class="t sm">or mesh peer</text>
+
+  <rect x="836" y="120" width="130" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="852" y="152" class="t b">6 execute</text>
+  <text x="852" y="174" class="t sm">jit pull</text>
+  <text x="852" y="192" class="t sm">hop chain</text>
+
+  <rect x="996" y="120" width="160" height="88" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="1012" y="152" class="t b">7 verify · pin</text>
+  <text x="1012" y="174" class="t sm">mechanical</text>
+  <text x="1012" y="192" class="t sm">receipt · pool</text>
+
+  <line x1="166" y1="164" x2="192" y2="164" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="326" y1="164" x2="352" y2="164" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="486" y1="164" x2="512" y2="164" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="646" y1="164" x2="672" y2="164" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="806" y1="164" x2="832" y2="164" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="966" y1="164" x2="992" y2="164" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="36" y="250" width="360" height="120" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="56" y="282" class="t b">hard gates (never argued)</text>
+  <text x="56" y="308" class="t sm">tier · taint · halt · resource ceilings</text>
+  <text x="56" y="328" class="t sm">watchdog isolated from proposers</text>
+  <text x="56" y="348" class="t sm">agent proposes · service enforces</text>
+
+  <rect x="420" y="250" width="360" height="120" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="440" y="282" class="t b">minimize inference</text>
+  <text x="440" y="308" class="t sm">canon instructions + structured data</text>
+  <text x="440" y="328" class="t sm">yin fills gaps yang has not bridged</text>
+  <text x="440" y="348" class="t sm">mistakes → data · iteration → canon</text>
+
+  <rect x="804" y="250" width="352" height="120" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="824" y="282" class="t b">outputs</text>
+  <text x="824" y="308" class="t sm">deliver answer</text>
+  <text x="824" y="328" class="t sm">dag receipt edge</text>
+  <text x="824" y="348" class="t sm">optional gene-pool pin (cid)</text>
+</svg>

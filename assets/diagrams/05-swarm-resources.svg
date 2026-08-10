@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <style>
+      .t { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; fill: #ffffff; }
+      .h { font-size: 22px; }
+      .s { font-size: 12px; fill: #808080; }
+      .b { font-size: 14px; }
+      .sm { font-size: 12px; fill: #b0b0b0; }
+    </style>
+  </defs>
+  <rect width="1200" height="560" fill="#000000"/>
+  <rect x="2" y="2" width="1196" height="556" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="40" y="44" class="t h">swarm logistics (metaphor) · resource fitness (law)</text>
+  <text x="40" y="68" class="t s">bittorrent-shaped capacity movement · no monetary value · proof of balance</text>
+
+  <rect x="80" y="120" width="240" height="160" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="110" y="160" class="t b">node a</text>
+  <text x="110" y="188" class="t sm">seats · ledger</text>
+  <text x="110" y="210" class="t sm">gene pools pin</text>
+  <text x="110" y="232" class="t sm">gemma / lfm…</text>
+  <text x="110" y="254" class="t sm">docker host</text>
+
+  <rect x="480" y="120" width="240" height="160" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="510" y="160" class="t b">node b</text>
+  <text x="510" y="188" class="t sm">seats · ledger</text>
+  <text x="510" y="210" class="t sm">gene pools pin</text>
+  <text x="510" y="232" class="t sm">spare capacity</text>
+  <text x="510" y="254" class="t sm">mesh peer</text>
+
+  <rect x="880" y="120" width="240" height="160" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="910" y="160" class="t b">node c</text>
+  <text x="910" y="188" class="t sm">seats · ledger</text>
+  <text x="910" y="210" class="t sm">gene pools pin</text>
+  <text x="910" y="232" class="t sm">seed / answer</text>
+  <text x="910" y="254" class="t sm">dag receipts</text>
+
+  <line x1="320" y1="200" x2="480" y2="200" stroke="#8b5cf6" stroke-width="2"/>
+  <line x1="720" y1="200" x2="880" y2="200" stroke="#8b5cf6" stroke-width="2"/>
+  <line x1="200" y1="280" x2="1000" y2="280" stroke="#808080" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="480" y="300" class="t s">pieces · adverts · receipts</text>
+
+  <rect x="80" y="340" width="1040" height="160" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="110" y="378" class="t b">only four balances (not money)</text>
+  <rect x="110" y="400" width="220" height="64" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="130" y="428" class="t sm">compute</text>
+  <text x="130" y="448" class="t sm">infer · verify · jobs</text>
+  <rect x="360" y="400" width="220" height="64" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="380" y="428" class="t sm">memory</text>
+  <text x="380" y="448" class="t sm">context · sessions</text>
+  <rect x="610" y="400" width="220" height="64" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="630" y="428" class="t sm">disk</text>
+  <text x="630" y="448" class="t sm">pins · seeds · store</text>
+  <rect x="860" y="400" width="220" height="64" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="880" y="428" class="t sm">bandwidth</text>
+  <text x="880" y="448" class="t sm">serve · fetch</text>
+
+  <text x="80" y="530" class="t s">earn by useful work · debt deprioritizes leeches · goals by rate across many contributors</text>
+</svg>

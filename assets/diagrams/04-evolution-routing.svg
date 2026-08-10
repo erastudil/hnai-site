@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .t { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; fill: #ffffff; }
+      .h { font-size: 22px; }
+      .s { font-size: 12px; fill: #808080; }
+      .b { font-size: 14px; }
+      .sm { font-size: 12px; fill: #b0b0b0; }
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#000000"/>
+  <rect x="2" y="2" width="1196" height="696" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="40" y="44" class="t h">routing + population evolution</text>
+  <text x="40" y="68" class="t s">work time (left) · life time (right) · same gene pools couple them</text>
+
+  <rect x="40" y="100" width="520" height="540" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="64" y="136" class="t b">routing (work time)</text>
+
+  <rect x="80" y="160" width="440" height="48" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="100" y="190" class="t sm">hard rules — deny · tier · taint · halt</text>
+  <rect x="80" y="228" width="440" height="48" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="100" y="258" class="t sm">shape match — known task classes</text>
+  <rect x="80" y="296" width="440" height="48" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="100" y="326" class="t sm">fitness bid — resource balance · history</text>
+  <rect x="80" y="364" width="440" height="48" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="100" y="394" class="t sm">soft judgment — novel shapes only · fails closed</text>
+  <rect x="80" y="432" width="440" height="48" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="100" y="462" class="t sm">beacon → interceptors → workers (hop chain)</text>
+  <rect x="80" y="500" width="440" height="48" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="100" y="530" class="t sm">mesh advert (optional) — peer capacity</text>
+  <text x="80" y="590" class="t s">selection, not puppet commands</text>
+
+  <rect x="600" y="100" width="560" height="540" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="624" y="136" class="t b">evolution (life time)</text>
+  <rect x="640" y="160" width="480" height="44" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="660" y="188" class="t sm">population of genomes on hosts</text>
+  <rect x="640" y="220" width="480" height="44" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="660" y="248" class="t sm">live work · mechanical scores</text>
+  <rect x="640" y="280" width="480" height="44" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="660" y="308" class="t sm">rotate / expire · remove obvious fails</text>
+  <rect x="640" y="340" width="480" height="44" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="660" y="368" class="t sm">judge the record (holistic life)</text>
+  <rect x="640" y="400" width="140" height="52" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="660" y="432" class="t sm">heaven</text>
+  <rect x="800" y="400" width="140" height="52" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="820" y="432" class="t sm">purgatory</text>
+  <rect x="960" y="400" width="160" height="52" rx="4" fill="#000000" stroke="#808080"/>
+  <text x="990" y="432" class="t sm">hell</text>
+  <rect x="640" y="474" width="480" height="44" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="660" y="502" class="t sm">canon pressure · heresy dial · mutate / elite</text>
+  <rect x="640" y="534" width="480" height="44" rx="4" fill="#000000" stroke="#8b5cf6"/>
+  <text x="660" y="562" class="t sm">next generation · rate improves</text>
+  <text x="640" y="610" class="t s">explore / exploit without self-worship</text>
+</svg>

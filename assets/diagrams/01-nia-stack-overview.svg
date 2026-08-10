@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .t { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; fill: #ffffff; }
+      .h { font-size: 26px; }
+      .s { font-size: 13px; fill: #808080; }
+      .b { font-size: 15px; }
+      .sm { font-size: 12px; fill: #b0b0b0; }
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#000000"/>
+  <rect x="2" y="2" width="1196" height="716" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="48" y="52" class="t h">nia · nexus architecture overview</text>
+  <text x="48" y="78" class="t s">doctrine → machine → node → public substrate · bittorrent of ai = logistics metaphor only</text>
+
+  <rect x="48" y="110" width="1104" height="72" rx="4" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="72" y="142" class="t b">nia — non-imperative architecture</text>
+  <text x="72" y="164" class="t sm">declare state + consequence · select · pull at execution · rate not force · safety halt only</text>
+
+  <rect x="48" y="202" width="1104" height="72" rx="4" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="72" y="234" class="t b">nexus — nia implemented</text>
+  <text x="72" y="256" class="t sm">services enforce · agents propose · hybrids route · resource fitness (compute · memory · disk · bandwidth)</text>
+
+  <rect x="48" y="300" width="352" height="280" rx="4" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="72" y="334" class="t b">control plane</text>
+  <text x="72" y="362" class="t sm">gateway / human interface</text>
+  <text x="72" y="384" class="t sm">router (rules → fitness → soft)</text>
+  <text x="72" y="406" class="t sm">resource ledger</text>
+  <text x="72" y="428" class="t sm">bus · dlq · event log</text>
+  <text x="72" y="450" class="t sm">mechanical verify</text>
+  <text x="72" y="472" class="t sm">watchdog (isolated halt)</text>
+  <text x="72" y="510" class="t s">deterministic where possible</text>
+
+  <rect x="424" y="300" width="352" height="280" rx="4" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="448" y="334" class="t b">seats · genomes</text>
+  <text x="448" y="362" class="t sm">beacon (route only)</text>
+  <text x="448" y="384" class="t sm">interceptors (match cards)</text>
+  <text x="448" y="406" class="t sm">workers (domain seats)</text>
+  <text x="448" y="428" class="t sm">genome = behavior package</text>
+  <text x="448" y="450" class="t sm">model pin (gemma / lfm…)</text>
+  <text x="448" y="472" class="t sm">hardware class match</text>
+  <text x="448" y="510" class="t s">ephemeral sessions</text>
+
+  <rect x="800" y="300" width="352" height="280" rx="4" fill="#0a0a0a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="824" y="334" class="t b">memory · mesh</text>
+  <text x="824" y="362" class="t sm">gene pools (3 dispositions)</text>
+  <text x="824" y="384" class="t sm">canon (kb tree + warehouse)</text>
+  <text x="824" y="406" class="t sm">dag receipts / validation</text>
+  <text x="824" y="428" class="t sm">content-addressed pieces</text>
+  <text x="824" y="450" class="t sm">docker mesh (ai-net)</text>
+  <text x="824" y="472" class="t sm">ollama · harness</text>
+  <text x="824" y="510" class="t s">public + private substrate</text>
+
+  <rect x="48" y="604" width="1104" height="72" rx="4" fill="#0a0a0a" stroke="#808080" stroke-width="1.5"/>
+  <text x="72" y="636" class="t b">public substrate (not invented here)</text>
+  <text x="72" y="658" class="t sm">python · typescript/js · docker · ollama · gemma · lfm · dag storage · open model registries</text>
+</svg>

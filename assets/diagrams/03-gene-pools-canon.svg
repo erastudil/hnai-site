@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <defs>
+    <style>
+      .t { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; fill: #ffffff; }
+      .h { font-size: 22px; }
+      .s { font-size: 12px; fill: #808080; }
+      .b { font-size: 14px; }
+      .sm { font-size: 12px; fill: #b0b0b0; }
+    </style>
+  </defs>
+  <rect width="1200" height="640" fill="#000000"/>
+  <rect x="2" y="2" width="1196" height="636" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="40" y="44" class="t h">gene pools + dual canon</text>
+  <text x="40" y="68" class="t s">not only genomes — raw data, history, records · useful / unknown / dangerous</text>
+
+  <rect x="40" y="100" width="540" height="130" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="64" y="134" class="t b">canon a — instruction tree</text>
+  <text x="64" y="162" class="t sm">knowledge-base policy · operating law</text>
+  <text x="64" y="184" class="t sm">standing goals · tests · validation plans</text>
+  <text x="64" y="206" class="t sm">yang structure (as far as bridged)</text>
+
+  <rect x="620" y="100" width="540" height="130" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="644" y="134" class="t b">canon b — data warehouse</text>
+  <text x="644" y="162" class="t sm">most useful residue distilled from pools</text>
+  <text x="644" y="184" class="t sm">patterns that compound rate</text>
+  <text x="644" y="206" class="t sm">still imperfect · always under revision</text>
+
+  <rect x="40" y="250" width="1120" height="56" rx="4" fill="#0a0a0a" stroke="#8b5cf6"/>
+  <text x="64" y="284" class="t sm">inference (yin) fills gaps yang has not yet bridged · minimize freestyle · prefer structured canon</text>
+
+  <rect x="40" y="340" width="350" height="200" rx="4" fill="#050a08" stroke="#808080"/>
+  <text x="64" y="380" class="t b">heaven</text>
+  <text x="64" y="408" class="t sm">useful</text>
+  <text x="64" y="436" class="t sm">what works · remine</text>
+  <text x="64" y="458" class="t sm">genomes · histories · raw</text>
+  <text x="64" y="480" class="t sm">that passed selection</text>
+  <text x="64" y="510" class="t s">pin · cite · promote</text>
+
+  <rect x="425" y="340" width="350" height="200" rx="4" fill="#0a0a05" stroke="#808080"/>
+  <text x="449" y="380" class="t b">purgatory</text>
+  <text x="449" y="408" class="t sm">unknown</text>
+  <text x="449" y="436" class="t sm">undecided · hold</text>
+  <text x="449" y="458" class="t sm">insufficient judgment</text>
+  <text x="449" y="480" class="t sm">re-open as canon shifts</text>
+  <text x="449" y="510" class="t s">not discarded</text>
+
+  <rect x="810" y="340" width="350" height="200" rx="4" fill="#0a0505" stroke="#808080"/>
+  <text x="834" y="380" class="t b">hell</text>
+  <text x="834" y="408" class="t sm">dangerous</text>
+  <text x="834" y="436" class="t sm">never-again methods</text>
+  <text x="834" y="458" class="t sm">contain the what</text>
+  <text x="834" y="480" class="t sm">keep the why</text>
+  <text x="834" y="510" class="t s">circuit breaker food</text>
+
+  <text x="40" y="580" class="t s">judgement of a life / record (holistic) → disposition · mistakes are data · iteration becomes canon</text>
+  <text x="40" y="604" class="t s">gene pools hold genomes + raw data + history — not "genes only"</text>
+</svg>
