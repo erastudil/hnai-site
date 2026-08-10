@@ -626,12 +626,15 @@ th {
 
 /* —— valor —— */
 .valor-banner {
-  /* compact: just big enough for the title art */
-  width: min(100%, 520px);
+  /* full content width · short vertical (setting header, not poster) */
+  width: 100%;
   max-width: 100%;
   height: auto;
+  max-height: min(28vw, 280px);
+  object-fit: cover;
+  object-position: center;
   display: block;
-  margin: 0 auto 0.85rem;
+  margin: 0 0 0.9rem;
   border: var(--border);
 }
 
