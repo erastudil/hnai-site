@@ -143,7 +143,7 @@ body {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.92);
   border-bottom: 1px solid var(--violet-soft);
   margin: 0 0 1.25rem;
   padding: 0.55rem 0;
@@ -154,22 +154,29 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 0.7rem;
+  gap: 0.5rem 1rem;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-brand {
+/* match nexus-ui top brand mark */
+.nav-brand,
+.brand {
   display: flex;
   align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
   color: inherit;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
 }
 
-.nav-brand img {
-  height: 26px;
+.nav-brand .brand-logo,
+.brand-logo {
+  height: 28px;
   width: auto;
   display: block;
+  image-rendering: auto;
 }
 
 .nav-links {
@@ -323,13 +330,14 @@ a:hover { color: var(--violet); }
 }
 
 .hero-logo {
-  /* double prior 720 display size */
-  max-width: min(1440px, 100%);
+  /* same mark as nexus-ui · never upscale past native 715px */
+  max-width: min(480px, 92vw);
   width: 100%;
   height: auto;
   margin: 0 auto 1.35rem;
   display: block;
-  filter: drop-shadow(0 0 32px var(--violet-glow));
+  image-rendering: auto;
+  filter: drop-shadow(0 0 18px var(--violet-glow));
 }
 
 .hero .tag,
