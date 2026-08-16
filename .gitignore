@@ -12,3 +12,5 @@ assets/brand/payments/cashapp-logos/
 assets/brand/payments/*.html
 assets/brand/payments/try-*
 assets/brand/payments/__MACOSX/
+.vercel
+.env*

@@ -459,8 +459,8 @@ a:hover { color: var(--violet); }
 }
 
 .crew-spacexai-mark {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   display: block;
 }
 
@@ -711,6 +711,18 @@ th {
   width: 30px;
   height: 30px;
   object-fit: contain;
+}
+
+.credit.credit-lg img {
+  width: auto;
+  height: 42px;
+  max-width: 108px;
+}
+
+.credit.credit-stack img {
+  width: auto;
+  height: 52px;
+  max-width: 110px;
 }
 
 .credit span {
