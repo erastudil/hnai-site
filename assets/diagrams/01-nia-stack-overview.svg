@@ -53,5 +53,5 @@
 
   <rect x="48" y="604" width="1104" height="72" rx="4" fill="#0a0a0a" stroke="#808080" stroke-width="1.5"/>
   <text x="72" y="636" class="t b">public substrate (not invented here)</text>
-  <text x="72" y="658" class="t sm">python · typescript/js · docker · ollama · gemma · lfm · dag storage · open model registries</text>
+  <text x="72" y="658" class="t sm">python · html/css/js · kotlin/compose · docker · ollama · gemma · lfm · dag storage · open model registries</text>
 </svg>
