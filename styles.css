@@ -813,6 +813,186 @@ footer p { text-align: center; }
   font-size: 0.7rem;
 }
 
+.footer-egg {
+  margin: 1.1rem 0 0;
+}
+
+.valor-egg {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #3d3d3d;
+  font-family: inherit;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.valor-egg:hover,
+.valor-egg:focus-visible {
+  color: var(--violet);
+  outline: none;
+}
+
+/* —— work cards —— */
+.work-grid {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .work-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.work-card {
+  border: var(--border);
+  background: rgba(10, 10, 10, 0.92);
+  padding: var(--pad);
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+
+.work-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 7px; height: 7px;
+  border-top: 2px solid var(--violet);
+  border-left: 2px solid var(--violet);
+}
+
+.work-card h3,
+.work-card p {
+  text-align: left;
+  width: 100%;
+}
+
+.work-kicker {
+  color: var(--violet);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.2rem;
+}
+
+.work-status {
+  color: var(--grey);
+  font-size: 0.75rem;
+  margin: 0 0 0.7rem;
+}
+
+.work-logo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 2;
+  object-fit: contain;
+  border: 1px solid var(--violet-soft);
+  background: #000;
+  display: block;
+  margin: 0 0 0.7rem;
+}
+
+.eee-mark {
+  margin-top: 0.75rem;
+  background: #000;
+  text-align: center;
+  padding: 0.4rem;
+  border: 1px solid #1a1a1a;
+}
+
+.eee-mark img {
+  width: min(100%, 420px);
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rate-lead {
+  text-align: center;
+}
+
+.rate-figure {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--white);
+  margin: 0 0 0.15rem;
+  letter-spacing: 0.02em;
+}
+
+.rate-figure span {
+  font-size: 0.45em;
+  color: var(--grey);
+}
+
+/* —— valor overlay —— */
+.valor-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.94);
+  overflow: auto;
+  padding: 1.25rem 0.75rem 2.5rem;
+}
+
+.valor-modal[hidden] { display: none; }
+
+.valor-sheet {
+  width: min(72vw, 920px);
+  max-width: 100%;
+  margin: 0 auto;
+  border: var(--border);
+  background: #000;
+  padding: 0 0 1.25rem;
+  position: relative;
+}
+
+.valor-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.5rem;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--violet-soft);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.valor-close:hover { border-color: var(--violet); color: var(--violet); }
+
+.valor-art {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: min(52vh, 520px);
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid var(--violet-soft);
+}
+
+.valor-sheet h2,
+.valor-sheet p {
+  padding: 0 1.1rem;
+  text-align: left;
+  width: auto;
+}
+
+.valor-sheet h2 {
+  margin: 1rem 0 0.5rem;
+  border-bottom: 0;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .valor-sheet { width: calc(100vw - 1.25rem); }
+}
+
 /* —— reveal —— */
 .reveal {
   opacity: 0;

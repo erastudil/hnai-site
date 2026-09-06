@@ -36,4 +36,33 @@
   } else {
     reveals.forEach((el) => el.classList.add("in"));
   }
+
+  const modal = document.getElementById("valor-modal");
+  const openBtn = document.getElementById("valor-open");
+  const closeBtn = document.getElementById("valor-close");
+
+  function openValor() {
+    if (!modal) return;
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeValor() {
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.style.overflow = "";
+    if (openBtn) openBtn.focus();
+  }
+
+  if (openBtn) openBtn.addEventListener("click", openValor);
+  if (closeBtn) closeBtn.addEventListener("click", closeValor);
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeValor();
+    });
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal && !modal.hidden) closeValor();
+  });
 })();
