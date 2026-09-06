@@ -5,8 +5,9 @@ Static site for **humans&ai** (HNAI).
 - Brand: black / white / grey `&` / ina violet / Cascadia Mono
 - Host: Vercel (`hnai-site`)
 - Repo: this directory is the deploy root
-- Face: philosophy · seven living pieces · sale now/soon · $1500 first-in-line
-- Valor: footer `v` easter egg, not a nav section
+- Face: why (comp tao) · stack · research · violet sale · rates
+- White/black: tease. no oem.
+- Valor: footer “two rivers crossing.”
 
 ## Local
 

@@ -821,10 +821,10 @@ footer p { text-align: center; }
   background: none;
   border: 0;
   padding: 0;
-  color: #3d3d3d;
+  color: #3a3a3a;
   font-family: inherit;
-  font-size: 0.68rem;
-  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
   cursor: pointer;
   text-transform: lowercase;
 }
