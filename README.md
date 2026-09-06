@@ -2,7 +2,7 @@
 
 Static site for **humans&ai** (HNAI).
 
-- Brand: black / white / grey `&` / ina violet / Cascadia Mono
+- Brand: black / white / grey `&` / ina violet / mono
 - Host: Vercel (`hnai-site`)
 - Repo: this directory is the deploy root
 - Face: why (comp tao) · stack · research · violet sale · rates
