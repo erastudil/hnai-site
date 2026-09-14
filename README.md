@@ -13,6 +13,7 @@ The official public web face for **Humans & AI (HNAI)**.
 - **Architecture:** Zero-dependency static front end.
 - **The Three Doors:**
   - **Door 1:** Free online browser intelligence and open education ([EasyLM](https://easylm.vercel.app)).
+- **Field manual:** [defense against the dark arts](https://dadavol1.vercel.app) — cybersecurity hardening for AI-assisted solo developers (`dadavol1/`).
   - **Door 2:** Free open-source architectural skeletons, compilers, and specifications.
   - **Door 3:** Sovereign, owned installations and dedicated hardware appliances.
 

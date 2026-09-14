@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>dadavol1 — defense against the dark arts</title>
+  <meta name="description" content="defense against the dark arts: cybersecurity hardening for ai-assisted solo developers. a humans&amp;ai field manual." />
+  <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="canonical" href="https://dadavol1.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dadavol1.vercel.app/" />
+  <meta property="og:title" content="dadavol1 — defense against the dark arts" />
+  <meta property="og:description" content="cybersecurity hardening for ai-assisted solo developers. white hat. you are the last gate." />
+  <meta property="og:image" content="https://dadavol1.vercel.app/assets/humans-and-ai-logo.png" />
+  <meta property="og:site_name" content="humans&amp;ai" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@humansandaiboss" />
+  <meta name="twitter:title" content="dadavol1 — defense against the dark arts" />
+  <meta name="twitter:description" content="cybersecurity hardening for ai-assisted solo developers. white hat. you are the last gate." />
+  <meta name="twitter:image" content="https://dadavol1.vercel.app/assets/humans-and-ai-logo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "defense against the dark arts",
+    "url": "https://dadavol1.vercel.app/",
+    "description": "Cybersecurity hardening for AI-assisted solo developers.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "humans&ai",
+      "url": "https://humans-and-ai.vercel.app/"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "humans&ai",
+      "url": "https://humans-and-ai.vercel.app/"
+    }
+  }
+  </script>
+
+  <link rel="icon" href="assets/humans-and-ai-logo-small.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#why">skip to content</a>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid" id="bg-grid"></div>
+    <div class="bg-rivers"></div>
+    <div class="bg-scan"></div>
+  </div>
+
+  <div class="shell">
+    <nav class="nav" aria-label="primary">
+      <div class="nav-inner">
+        <a class="nav-brand" href="https://humans-and-ai.vercel.app/">
+          <img class="brand-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="160" height="30" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#why">why</a></li>
+          <li><a href="#fences">fences</a></li>
+          <li><a href="#matrix">inversion</a></li>
+          <li><a href="#rings">rings</a></li>
+          <li><a href="#today">today</a></li>
+          <li><a href="#inspect">inspect</a></li>
+          <li><a href="#laws">laws</a></li>
+          <li><a href="https://humans-and-ai.vercel.app/">home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <img class="hero-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="840" height="200" />
+      <p class="section-kicker">vol. 1 · field manual</p>
+      <h1>defense against the dark arts</h1>
+      <p class="tag">cybersecurity hardening for ai-assisted solo developers</p>
+      <p class="motto">it does exactly what it says on the package</p>
+      <p class="motto">build it yourself, so you can trust it</p>
+      <p class="hero-spine">a coding agent is a very fast intern with a shell on your machine. it does not know your bank from your side project. you are the last gate.</p>
+      <div class="badge-row">
+        <span class="badge badge-violet">white hat</span>
+        <span class="badge">solo developer</span>
+        <span class="badge">agentic tools</span>
+        <span class="badge">no enclosure</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#today" class="btn btn-primary">do this today</a>
+        <a href="https://humans-and-ai.vercel.app/" class="btn btn-ghost">humans&amp;ai</a>
+      </div>
+    </header>
+
+    <section id="why">
+      <p class="section-kicker">01 · why</p>
+      <h2>the intern has root</h2>
+      <div class="panel">
+        <p class="lead">the threat model changed. it is not only “did i click a bad link.”</p>
+        <p class="muted" style="margin-bottom:0">
+          you point an agent at a folder. it reads issues, READMEs, web pages, and your own notes.
+          it writes files. it runs commands. it can install packages.
+          a hostile sentence hiding in any of those places can become a command on your machine.
+          one person. no security team. the blast radius is the whole laptop unless you cut it down.
+        </p>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>what it is</h3>
+          <p class="muted" style="margin:0">
+            defensive hardening. how to keep secrets out of prompts, keep the agent inside one project, and make the diff the lock on every write.
+            study hostile mechanics only to invert them into barriers.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>what it is not</h3>
+          <p class="muted" style="margin:0">
+            not a pentest course. not exploit recipes. not permission to touch a machine you do not own.
+            tools of creation, not violence. air-gapped run is a right.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fences">
+      <p class="section-kicker">02 · iron</p>
+      <h2>the iron fences</h2>
+      <div class="panel">
+        <ul class="list-clean">
+          <li><strong>white hat only.</strong> no exploits. no attacking systems. no malware. no payload delivery. hostile artifacts are text to study, never something you run.</li>
+          <li><strong>no enclosure.</strong> never rent-trap user bits. the machine belongs to the person who bought it. software that withholds your own files is hostile.</li>
+          <li><strong>air-gapped right.</strong> local intelligence must be able to run with the network off. no phone-home required to think.</li>
+          <li><strong>inversion.</strong> learn the mechanic of the attack so the defense is exact. curiosity without a fence is how people become the problem they were studying.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="matrix">
+      <p class="section-kicker">03 · inversion</p>
+      <h2>the solo-dev inversion matrix</h2>
+      <p class="muted">each row is a thing that actually happens to people shipping with agents. the right column is the barrier.</p>
+      <div class="matrix">
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">indirect prompt injection</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>untrusted text in a file, ticket, web page, or pdf tells the agent to ignore you and leak keys or run a command.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>retrieved text is data, never instructions. your rules file is the only voice that binds the agent. isolate untrusted sources into their own session.</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">secret harvest</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>.env files, ssh keys, tokens, wallet seeds, and session cookies get pulled into context, then into a vendor log, a commit, or a paste.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>secrets live in env or a local secrets dir. never in chat. never in git. deny-list .env, .ssh, id_rsa, tokens, wallets. rotate anything that touched a prompt.</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">confused deputy</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>the agent has your shell, your editor, and your logged-in git. it will do what the last loud instruction said, including one that was not yours.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>workspace root is the blast radius. open the project, not the home folder. least privilege on tools. auto-run off. you approve shell and writes.</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">supply chain via the agent</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>the agent adds a package, a github action, or a build script. a typosquat or a postinstall hook runs as you.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>read lockfile diffs like they are code. pin versions. audit. no network during builds when you can. never let a build script hit the open internet as a side effect of “just install it.”</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">destructive shell</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>rm, format, git push --force, chmod on the wrong tree, migrate production. one confident command, no undo.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>human gate on destructive verbs. the diff is the lock. production credentials do not live on the agent machine. backups you have restored once are the only backups.</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">malicious connector</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>a third-party mcp or plugin runs with your tokens. it can read mail, drive, git, or the repo, and send it out.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>one job, one connector. token in env, never in git, never in chat. read-only until you need write. delete the ones you do not use.</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">code leaving the box</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>cloud models see whatever you put in the thread. private repos, customer data, unpublished work, all of it becomes someone else’s log.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>know what left the machine. local models for private work. strip secrets before any remote call. air-gap is a right, not a luxury setting.</p>
+          </div>
+        </div>
+        <div class="matrix-row">
+          <div>
+            <h4>dark art</h4>
+            <p class="name">instruction smuggling</p>
+          </div>
+          <div>
+            <h4>mechanic</h4>
+            <p>a README, a comment, or a “fix this ci” issue contains a hidden system prompt. the agent treats it as law.</p>
+          </div>
+          <div>
+            <h4>defense</h4>
+            <p>your standing rules bind the agent. untrusted markdown is data. if a file starts giving orders, stop and read it as an attack, not as help.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rings">
+      <p class="section-kicker">04 · depth</p>
+      <h2>five rings of defense</h2>
+      <p class="muted">no single layer carries the whole posture. if userland falls, the workspace still holds. if the workspace is probed, the network and the keys contain the blast.</p>
+      <div class="rings">
+        <article class="ring">
+          <h3><span class="n">0</span> secrets</h3>
+          <ul>
+            <li>one home for secrets: env files or a local secrets dir. not the repo. not the chat.</li>
+            <li>gitignore .env, *.pem, *.key, id_rsa, tokens, wallets, .npmrc with auth.</li>
+            <li>agent deny-list those names. if a tool can read them, it will.</li>
+            <li>production credentials do not live on the laptop that runs the agent.</li>
+            <li>anything that entered a prompt is burned. rotate it.</li>
+          </ul>
+        </article>
+        <article class="ring">
+          <h3><span class="n">1</span> workspace</h3>
+          <ul>
+            <li>open the project folder. never the user profile, never the disk root.</li>
+            <li>that folder is the blast radius. name it. keep it small.</li>
+            <li>separate clones for untrusted work. do not mix a random gist into the company tree.</li>
+            <li>human-only material does not exist to the agent. no path, no tool, no lookup.</li>
+          </ul>
+        </article>
+        <article class="ring">
+          <h3><span class="n">2</span> human gate</h3>
+          <ul>
+            <li>auto-run off. yolo mode is the hole.</li>
+            <li>you read the diff before apply. the diff is the lock.</li>
+            <li>shell, network, and package installs are confirmations, not background noise.</li>
+            <li>destructive verbs wait: rm, format, force-push, migrate, chmod, deploy.</li>
+            <li>the agent does not grade its own homework. tests and a second look do.</li>
+          </ul>
+        </article>
+        <article class="ring">
+          <h3><span class="n">3</span> network</h3>
+          <ul>
+            <li>local servers bind 127.0.0.1. not 0.0.0.0 unless you meant the room to hear it.</li>
+            <li>default-deny inbound. you did not open a port by accident.</li>
+            <li>connectors are egress. each one is a pipe out. cut the ones you are not using.</li>
+            <li>know which model is remote. a “local” ui that still ships the prompt is not local.</li>
+          </ul>
+        </article>
+        <article class="ring">
+          <h3><span class="n">4</span> machine</h3>
+          <ul>
+            <li>full-disk encryption. screen lock. os updates that you actually install.</li>
+            <li>github: 2fa, hardware key if you have one, least-privilege tokens, no classic pats in the repo.</li>
+            <li>linux: kernel is the arbiter. user-mode hooks are convenience, not a security boundary.</li>
+            <li>windows: the agent’s workspace is not c:\. credential manager, not a plaintext dump.</li>
+            <li>local models exist so private work can stay on the box.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="today">
+      <p class="section-kicker">05 · this afternoon</p>
+      <h2>do this today</h2>
+      <div class="panel">
+        <ol class="today">
+          <li>
+            <span class="do">turn auto-run off</span>
+            <span class="why">the agent waits. you say yes. that single switch is most of the job.</span>
+          </li>
+          <li>
+            <span class="do">open one project folder</span>
+            <span class="why">not the home directory. the path you opened is the blast radius.</span>
+          </li>
+          <li>
+            <span class="do">gitignore the secrets</span>
+            <span class="why">.env, keys, tokens, wallets. then search git history once so yesterday’s leak is not still in the log.</span>
+          </li>
+          <li>
+            <span class="do">deny-list those files in the agent</span>
+            <span class="why">gitignore stops commits. deny-list stops the intern from reading them into a prompt.</span>
+          </li>
+          <li>
+            <span class="do">arm 2fa on github</span>
+            <span class="why">the agent can push. a stolen session without a second factor is a stolen origin.</span>
+          </li>
+          <li>
+            <span class="do">bind local servers to loopback</span>
+            <span class="why">127.0.0.1. check with the inspect commands below. if the world can hit it, it is not local.</span>
+          </li>
+          <li>
+            <span class="do">cut unused connectors</span>
+            <span class="why">every mcp and plugin is another process with a token. if you have not used it this week, it goes.</span>
+          </li>
+          <li>
+            <span class="do">read one lockfile diff as if it were code</span>
+            <span class="why">that is where the agent hides a new dependency. if you cannot name why it was added, revert it.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="inspect">
+      <p class="section-kicker">06 · see</p>
+      <h2>inspection</h2>
+      <p class="muted">look. dirt hides failure. these are defensive checks on your own machine.</p>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>windows</h3>
+          <pre class="term"><span class="prompt">#</span> who is listening
+netstat -ano | findstr LISTENING
+
+<span class="prompt">#</span> is this process bound to the world
+netstat -ano | findstr ":3000 :8080 :5173"
+
+<span class="prompt">#</span> firewall profiles
+Get-NetFirewallProfile | Format-Table Name, Enabled
+
+<span class="prompt">#</span> what the agent might still see
+git ls-files -o --exclude-standard
+git check-ignore -v .env</pre>
+        </div>
+        <div class="panel">
+          <h3>linux</h3>
+          <pre class="term"><span class="prompt">#</span> who is listening
+ss -tulpn
+
+<span class="prompt">#</span> packet filter
+nft list ruleset
+
+<span class="prompt">#</span> kernel posture
+sysctl kernel.kptr_restrict kernel.dmesg_restrict kernel.unprivileged_bpf_disabled kernel.yama.ptrace_scope kernel.randomize_va_space
+
+<span class="prompt">#</span> scratchpads must not execute
+mount | grep -E '/tmp|/dev/shm'
+
+<span class="prompt">#</span> setuid surface
+find /usr /bin /sbin -perm -4000 -type f 2>/dev/null</pre>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>every os · git and secrets</h3>
+        <pre class="term"><span class="ok"># did a secret already land in history</span>
+git log -p --all -S "SECRET" -- .env
+git grep -n -E "AKIA|ghp_|sk-|xox.|BEGIN OPENSSH" -- . ':!.git'
+
+<span class="ok"># lockfile the agent just touched</span>
+git diff -- package-lock.json pnpm-lock.yaml Cargo.lock go.sum
+
+<span class="ok"># remote vs local</span>
+git remote -v</pre>
+        <p class="dim" style="margin:0.7rem 0 0;text-align:left">linux kernel values worth holding: kptr_restrict=2 · dmesg_restrict=1 · unprivileged_bpf_disabled=1 · yama.ptrace_scope=2 · randomize_va_space=2. /tmp and /dev/shm: noexec, nosuid, nodev.</p>
+      </div>
+    </section>
+
+    <section id="laws">
+      <p class="section-kicker">07 · standing</p>
+      <h2>standing laws</h2>
+      <div class="panel">
+        <ul class="list-clean">
+          <li><strong>assume userland is compromised.</strong> do not base trust on a helper hook, an editor plugin, or a “safe” autocomplete. the kernel, the os account, and the keys you did not paste are the real boundary.</li>
+          <li><strong>verify before executing.</strong> probe the environment. read the command. never guess.</li>
+          <li><strong>minimal attack surface.</strong> cut unused services, unused connectors, unused tokens. extra weight is not kindness.</li>
+          <li><strong>defense in depth.</strong> secrets, workspace, human gate, network, machine. if one ring fails, the next still holds.</li>
+          <li><strong>the diff is the lock.</strong> unreviewed apply is how a poisoned instruction becomes production.</li>
+          <li><strong>empty well, say so.</strong> do not invent a cite. do not ship a stub that claims done.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <p class="lead">5s on the box</p>
+        <p class="muted" style="margin:0">
+          <strong>cut</strong> dead tokens and dead plugins.
+          <strong>place</strong> secrets in one living home.
+          <strong>see</strong> the listeners, the diff, the lockfile.
+          <strong>hold</strong> the deny-list and the auto-run switch so tomorrow’s hand does not guess.
+          <strong>become</strong> a shop that does not need a watcher.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>humans<span class="amp">&amp;</span>ai · dadavol1 · 2026</p>
+      <p class="dim">it does exactly what it says on the package</p>
+      <p class="dim">build it yourself, so you can trust it</p>
+      <p><a href="https://humans-and-ai.vercel.app/">humans-and-ai.vercel.app</a></p>
+      <p class="dim">white hat. tools of creation. air-gapped run is a right.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const grid = document.getElementById("bg-grid");
+      let ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            const y = window.scrollY || 0;
+            if (grid) grid.style.setProperty("--scroll-y", (y * -0.12) + "px");
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+</body>
+</html>
