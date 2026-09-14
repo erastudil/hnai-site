@@ -14,3 +14,15 @@ assets/brand/payments/try-*
 assets/brand/payments/__MACOSX/
 .vercel
 .env*
+
+# secrets & credentials
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.p12
+*.pfx
+*token*
+*wallet*
+*.seed
+.npmrc
