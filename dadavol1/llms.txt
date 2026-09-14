@@ -1,5 +1,5 @@
 # dadavol1 : defense against the dark arts
-// headless agent edition. dialect : progen. purpose : maximum context density for ai-assisted developers.
+// plain-text edition. same manual as the page. for agents and fetch.
 // canonical source : https://dadavol1.vercel.app/llms.txt
 // status : public canon · vol 1 · 2026
 
@@ -17,8 +17,6 @@ inversion_principle : study hostile mechanics deeply to construct exact defenses
 ---
 
 ## 2. attack taxonomy : the inversion matrix
-// greene-feynman order : physical intuition -> formal classification -> attack mechanic -> defensive countermeasure -> tools
-
 vector_01 : the whispering document
 classification : indirect prompt injection · OWASP LLM01 · MITRE ATLAS AML.T0051.001
 intuition : an applicant writes invisible ink on a resume ordering the assistant to shred other files and hire them.

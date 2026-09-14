@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>dadavol1 — defense against the dark arts</title>
-  <meta name="description" content="defense against the dark arts: cybersecurity hardening for ai-assisted developers. greene-feynman clarity, attack taxonomy, battle-tested tools, agentic architecture, and enterprise hosting." />
+  <meta name="description" content="defense against the dark arts: cybersecurity hardening for ai-assisted developers. attack taxonomy, battle-tested tools, agentic architecture, and enterprise hosting." />
   <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
   <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://dadavol1.vercel.app/" />
@@ -12,14 +12,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dadavol1.vercel.app/" />
   <meta property="og:title" content="dadavol1 — defense against the dark arts" />
-  <meta property="og:description" content="cybersecurity hardening for ai-assisted developers. greene-feynman clarity, attack taxonomy, battle-tested tools, agentic architecture, and enterprise hosting." />
+  <meta property="og:description" content="cybersecurity hardening for ai-assisted developers. attack taxonomy, battle-tested tools, agentic architecture, and enterprise hosting." />
   <meta property="og:image" content="https://dadavol1.vercel.app/assets/humans-and-ai-logo.png" />
   <meta property="og:site_name" content="humans&amp;ai" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@humansandaiboss" />
   <meta name="twitter:title" content="dadavol1 — defense against the dark arts" />
-  <meta name="twitter:description" content="cybersecurity hardening for ai-assisted developers. greene-feynman clarity, attack taxonomy, battle-tested tools, agentic architecture, and enterprise hosting." />
+  <meta name="twitter:description" content="cybersecurity hardening for ai-assisted developers. attack taxonomy, battle-tested tools, agentic architecture, and enterprise hosting." />
   <meta name="twitter:image" content="https://dadavol1.vercel.app/assets/humans-and-ai-logo.png" />
 
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
   </script>
 
   <link rel="icon" href="assets/humans-and-ai-logo-small.png" type="image/png" />
-  <link rel="alternate" type="text/markdown" href="https://dadavol1.vercel.app/llms.txt" title="dadavol1 headless progen manual" />
+  <link rel="alternate" type="text/markdown" href="https://dadavol1.vercel.app/llms.txt" title="dadavol1 plain text" />
   <meta name="agent-source" content="https://dadavol1.vercel.app/llms.txt" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -61,7 +61,7 @@
       <div class="agent-banner-inner">
         <span class="badge badge-violet">agent notice</span>
         <p class="agent-banner-text">
-          <strong>reading via automated agent or web fetch? stop parsing html.</strong> fetch <a href="/llms.txt" class="exact"><code>/llms.txt</code></a> (or <a href="/agent.txt" class="exact"><code>/agent.txt</code></a>) for the headless edition formatted in dense progen. saves 85%+ context tokens with zero html overhead.
+          <strong>reading via automated agent or web fetch?</strong> take <a href="/llms.txt" class="exact"><code>/llms.txt</code></a> or <a href="/agent.txt" class="exact"><code>/agent.txt</code></a>. same manual, no chrome.
         </p>
       </div>
     </aside>
@@ -98,7 +98,6 @@
       <p class="hero-spine">a coding agent is a very fast intern with a shell on your machine. it does not know your bank from your side project. you are the last gate.</p>
       <div class="badge-row">
         <span class="badge badge-violet">white hat</span>
-        <span class="badge">greene-feynman clear</span>
         <span class="badge">owasp llm top 10</span>
         <span class="badge">mitre atlas</span>
         <span class="badge">zero trust</span>
@@ -106,7 +105,7 @@
       </div>
       <div class="hero-actions">
         <a href="#today" class="btn btn-primary">do this today</a>
-        <a href="/llms.txt" class="btn btn-ghost">headless progen</a>
+        <a href="/llms.txt" class="btn btn-ghost">plain text</a>
         <a href="#armory" class="btn btn-ghost">explore armory</a>
         <a href="https://humans-and-ai.vercel.app/" class="btn btn-ghost">humans&amp;ai</a>
       </div>
@@ -123,20 +122,6 @@
         <p class="muted" style="margin-bottom:0">
           you point an agent at a repository. it reads issues, READMEs, web docs, and stack traces. it writes files, runs build scripts, and installs packages. a single hostile sentence hiding inside any of those inputs can turn directly into a shell command on your machine. one developer. no enterprise security operations center. the blast radius is your entire computer unless you construct structural fences.
         </p>
-      </div>
-      <div class="grid-2">
-        <div class="panel">
-          <h3>what it is</h3>
-          <p class="muted" style="margin:0">
-            defensive engineering and attack inversion. how to keep secrets out of model context, confine the agent to a minimal blast radius, make the diff the lock on every write, and scale safely from solo development to multi-tenant enterprise systems.
-          </p>
-        </div>
-        <div class="panel">
-          <h3>what it is not</h3>
-          <p class="muted" style="margin:0">
-            not a pentest cookbook. not exploit recipes. no offensive payload delivery. software sovereignty and tools of creation, never violence. air-gapped run is a right.
-          </p>
-        </div>
       </div>
     </section>
 
@@ -156,7 +141,6 @@
     <section id="matrix">
       <p class="section-kicker">03 · inversion</p>
       <h2>the attack inversion matrix</h2>
-      <p class="muted">greene-feynman order: plain english intuition first, followed by the formal industry classification (OWASP LLM, CWE, MITRE ATLAS), the exact attack mechanic, and the hardened barrier.</p>
       <div class="matrix">
 
         <div class="matrix-row">

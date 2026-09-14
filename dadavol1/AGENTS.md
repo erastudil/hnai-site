@@ -10,7 +10,7 @@ public static page. vercel project **dadavol1** · `https://dadavol1.vercel.app`
 
 **ideas live in** `kb/DEFENSE_AGAINST_THE_DARK_ARTS.md` (house + field).  
 **this folder** is the public cut. no house paths. no exploits. no payloads. white hat only.
-**headless edition:** `llms.txt` (mirrored to `agent.txt`, `progen.txt`) · dense progen for 85%+ token economy.
+**plain text:** `llms.txt` · `agent.txt`. same manual. no chrome.
 
 ## law
 
