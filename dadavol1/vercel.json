@@ -1,6 +1,34 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*(text/plain|text/markdown).*"
+        }
+      ],
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(curl|wget|python|httpie|aiohttp|scrapy|node-fetch|got|axios|anthropic|chatgpt|openai|google-extended|claudebot|gptbot|perplexity|bytespider).*"
+        }
+      ],
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/raw",
+      "destination": "/llms.txt"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -8,7 +36,16 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
         { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-DNS-Prefetch-Control", "value": "off" }
+        { "key": "X-DNS-Prefetch-Control", "value": "off" },
+        { "key": "Link", "value": "</llms.txt>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "X-Agent-Source", "value": "https://dadavol1.vercel.app/llms.txt" }
+      ]
+    },
+    {
+      "source": "/(llms\\.txt|agent\\.txt|progen\\.txt)",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
   ]

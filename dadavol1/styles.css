@@ -92,6 +92,42 @@ code, pre, kbd, samp, .term, .exact {
   }
 }
 
+.agent-banner {
+  width: 100%;
+  background: rgba(13, 10, 24, 0.95);
+  border: 1px solid var(--violet);
+  border-left: 3px solid var(--violet);
+  padding: 0.65rem 1rem;
+  margin: 0 0 1.25rem;
+  text-align: left;
+}
+
+.agent-banner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.85rem;
+  width: 100%;
+}
+
+.agent-banner-text {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--white);
+  flex: 1 1 20rem;
+  text-align: left;
+}
+
+.agent-banner-text a {
+  color: #c4b5fd;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.agent-banner-text a:hover {
+  color: var(--white);
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -365,6 +401,19 @@ section {
 }
 @media (min-width: 640px) {
   .grid-2 { grid-template-columns: 1fr 1fr; }
+}
+
+.grid-3 {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 960px) {
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
 }
 
 .matrix {
