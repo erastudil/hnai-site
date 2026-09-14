@@ -409,18 +409,51 @@ a:hover { color: var(--violet); }
   width: 100%;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .crew-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 960px) {
+  .crew-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
 
 .crew-card {
   border: 1px solid #2a2a2a;
   padding: 0.85rem 0.9rem;
   min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.crew-card.crew-grok {
+.crew-card.crew-grok,
+.crew-card.crew-agy {
   border-color: var(--violet-soft);
+}
+
+.crew-card.crew-agy:hover,
+.crew-card.crew-grok:hover {
+  box-shadow: 0 0 14px var(--violet-glow);
+}
+
+.crew-agy-mark {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.crew-agy-name {
+  color: var(--white);
+  font-size: 1.05rem;
+}
+
+.crew-deepmind {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
 }
 
 .crew-name {
