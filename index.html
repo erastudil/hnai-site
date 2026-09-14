@@ -3,9 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>humans&amp;ai</title>
-  <meta name="description" content="humans&amp;ai — computational taoism. software you own. a computer that is a company. not saas." />
+  <title>humans&amp;ai — computational taoism · sovereign software · easylm</title>
+  <meta name="description" content="humans&amp;ai builds deterministic, sovereign computing systems and open-source AI tools. Home of EasyLM: in-browser WebGPU AI with 28 Dewey collegiate courses." />
+  <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
   <meta name="theme-color" content="#000000" />
+  <link rel="canonical" href="https://humans-and-ai.vercel.app/" />
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://humans-and-ai.vercel.app/" />
+  <meta property="og:title" content="humans&amp;ai — computational taoism · sovereign software" />
+  <meta property="og:description" content="Deterministic engineering, sovereign software you own, and EasyLM: in-browser WebGPU AI with 28 Dewey textbooks." />
+  <meta property="og:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
+  <meta property="og:site_name" content="humans&amp;ai" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@humansandaiboss" />
+  <meta name="twitter:creator" content="@humansandaiboss" />
+  <meta name="twitter:title" content="humans&amp;ai — computational taoism · sovereign software" />
+  <meta name="twitter:description" content="Deterministic engineering, sovereign software you own, and EasyLM: in-browser WebGPU AI with 28 Dewey textbooks." />
+  <meta name="twitter:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://humans-and-ai.vercel.app/#organization",
+        "name": "humans&ai",
+        "alternateName": ["Humans & AI", "HNAI"],
+        "url": "https://humans-and-ai.vercel.app",
+        "logo": "https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png",
+        "founder": {
+          "@type": "Person",
+          "name": "Patrick McQueeny",
+          "jobTitle": "Founder & Lead Architect",
+          "url": "https://patents.google.com/patent/US11578890B2/en"
+        },
+        "sameAs": [
+          "https://x.com/humansandaiboss",
+          "https://github.com/erastudil"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://humans-and-ai.vercel.app/#easylm",
+        "name": "EasyLM",
+        "operatingSystem": "Web Browser with WebGPU support",
+        "applicationCategory": "EducationalApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "url": "https://easylm.vercel.app",
+        "description": "Sovereign in-browser WebGPU AI workstation with 28 Dewey collegiate textbooks, AtMem context governance, and zero remote dependencies."
+      }
+    ]
+  }
+  </script>
+
   <link rel="icon" href="assets/humans-and-ai-logo smaller.png" type="image/png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -26,28 +86,29 @@
           <img class="brand-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="160" height="30" />
         </a>
         <ul class="nav-links">
+          <li><a href="#easylm" class="nav-highlight">easylm</a></li>
           <li><a href="#why">why</a></li>
-          <li><a href="#work">what</a></li>
+          <li><a href="#work">the stack</a></li>
           <li><a href="#research">research</a></li>
-          <li><a href="#sale">sale</a></li>
+          <li><a href="#sale">rates</a></li>
           <li><a href="#contact">contact</a></li>
-          <li><a href="#credits">how</a></li>
-          <li><a href="#contracts">terms</a></li>
+          <li><a href="#credits">credits</a></li>
+          <li><a href="#contracts">agreements</a></li>
         </ul>
       </div>
     </nav>
 
     <header class="hero" id="top">
       <img class="hero-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="840" height="200" />
-      <p class="tag">ai without the bullshit · enough money, not max</p>
+      <p class="tag">sovereign computing · computational taoism · software you own</p>
       <p class="motto">it does exactly what it says on the package</p>
       <p class="motto">build it yourself, so you can trust it</p>
       <p class="hero-spine">the why is the what that leads to the how.</p>
       <p class="term">
         <span class="prompt">$</span> <span class="ok">whoami</span><br />
-        patrick mcqueeny · bro / dude / man<br />
+        patrick mcqueeny · founder · inventor · systems architect<br />
         <span class="prompt">$</span> <span class="ok">cat mission.txt</span><br />
-        seek the truth · explore new frontiers · solve the unsolvable
+        seek truth · build tools of creation · eliminate bit rent · solve the unsolvable
       </p>
 
       <div class="crew-panel">
@@ -55,25 +116,23 @@
         <div class="crew-grid">
           <div class="crew-card">
             <p class="crew-name">patrick mcqueeny</p>
-            <p class="crew-role">founder · the final boss</p>
+            <p class="crew-role">founder · lead architect</p>
             <p class="crew-note">
-              ideas · iteration · problem solving · the cash register<br />
-              7 years cnc programming / setup · 8 years management · 10 years skilled manual labor (dental / machining) · 26 years software dev.
-              no degree. school of hard knocks. self taught + learn on the job.<br />
-              <a href="https://patents.google.com/patent/US11578890B2/en" target="_blank" rel="noopener noreferrer">us 11,578,890</a>
-              — gear geometry, solo. my brain, my hands.
-              whiteboard sketch → draft → 3d print → first piece → production.
-              fortune 500 and institutional customers.
+              systems architecture · precision mechanics · algorithmic modeling.<br />
+              26 years software engineering · 7 years precision cnc / g-code · 8 years operations.
+              solo inventor of <a href="https://patents.google.com/patent/US11578890B2/en" target="_blank" rel="noopener noreferrer">us patent 11,578,890</a>
+              (gear &amp; cycloidal geometry) — whiteboard concept through mathematical simulation, 3d prototype, cnc fabrication, and volume production for institutional and fortune 500 customers.<br />
+              first-principles engineering: deterministic, zero debt, built to last.
             </p>
           </div>
           <div class="crew-card crew-grok">
             <a class="crew-brand" href="https://x.ai" target="_blank" rel="noopener noreferrer" title="Grok by xAI">
               <img src="assets/brand/xai/Grok_Full_Logomark_Light.svg" alt="Grok" class="crew-grok-logo" width="200" height="78" />
             </a>
-            <p class="crew-role">writing · coding · first employee</p>
+            <p class="crew-role">first digital engineer · systems &amp; writing partner</p>
             <p class="crew-note">
-              co-creator of this site and the stack behind it.
-              written with grok · created with grok.
+              co-architect of the hnai runtime, toolchains, and research stack.
+              built in continuous pairing with grok.
             </p>
             <a class="crew-brand crew-spacexai" href="https://x.ai" target="_blank" rel="noopener noreferrer" title="SpaceXAI / xAI">
               <img src="assets/brand/xai/spacexai-symbol-white.svg" alt="SpaceXAI" class="crew-spacexai-mark" width="40" height="40" />
@@ -82,17 +141,102 @@
           </div>
         </div>
       </div>
+
+      <div class="hero-actions">
+        <a href="#easylm" class="btn btn-primary">Featured: EasyLM ↓</a>
+        <a href="https://easylm.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Launch WebGPU AI →</a>
+        <a href="#why" class="btn btn-ghost">Our Philosophy ↓</a>
+      </div>
+
+      <a href="#easylm" class="hero-scroll-cue" aria-label="scroll to explore">
+        <span>scroll to explore the stack</span>
+        <div class="chevron"></div>
+      </a>
     </header>
+
+    <!-- EASYLM: FLAGSHIP LIVE APPLICATION -->
+    <section id="easylm" class="easylm-showcase reveal in">
+      <p class="section-kicker">00 · flagship open source software</p>
+      <div class="easylm-card">
+        <div class="easylm-badges">
+          <span class="badge badge-violet">Live Now</span>
+          <span class="badge">Open Source · MIT</span>
+          <span class="badge">WebGPU In-Browser</span>
+          <span class="badge">Zero Cloud Subscriptions</span>
+          <span class="badge">AtMem Governance</span>
+        </div>
+
+        <div class="easylm-header">
+          <img src="assets/easylm-icon.svg" alt="EasyLM" width="58" height="58" class="easylm-icon" />
+          <div>
+            <h2>easylm</h2>
+            <p class="easylm-tagline">the sovereign ai workstation in your browser</p>
+          </div>
+        </div>
+
+        <p class="lead easylm-lead">
+          full language model inference, strict context governance, and an integrated 28-volume dewey decimal collegiate library — running 100% locally on your gpu via webgpu. no login. no remote api keys. zero monthly rent on bits.
+        </p>
+
+        <div class="easylm-cta-group">
+          <a href="https://easylm.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+            Launch EasyLM WebGPU →
+          </a>
+          <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">
+            View GitHub Source →
+          </a>
+        </div>
+
+        <div class="easylm-features">
+          <div class="feature-box">
+            <h4>client-side webgpu engine</h4>
+            <p>weights execute directly on your local hardware via webgpu / onnx. your tokens, prompts, and notes never touch an external cloud server.</p>
+          </div>
+          <div class="feature-box">
+            <h4>28 dewey collegiate courses</h4>
+            <p>structured collegiate textbooks spanning mathematics, computer science, law, medicine, engineering, and logic. greene-feynman intuitive pedagogy.</p>
+          </div>
+          <div class="feature-box">
+            <h4>atmem memory governance</h4>
+            <p>atomic memory architecture with isolated profile separation, parental safety controls, and persistent local cognitive state.</p>
+          </div>
+          <div class="feature-box">
+            <h4>zero-knowledge encryption</h4>
+            <p>optional client-side aes encryption secured by your password or pin. chats and personal study profiles stay unreadable to anyone else.</p>
+          </div>
+          <div class="feature-box">
+            <h4>zero remote mcp overhead</h4>
+            <p>in-process deterministic tools for live mathematics, latex rendering, and document inspection without remote daemon lag or failure points.</p>
+          </div>
+          <div class="feature-box">
+            <h4>package-honest architecture</h4>
+            <p>built under 5s and computational taoism. it does exactly what it says on the package, with unbounded local potential.</p>
+          </div>
+        </div>
+
+        <div class="easylm-term">
+          <code>
+            <span class="ok">> easylm v0.4.0 status:</span><br />
+            &nbsp;&nbsp;engine: webgpu / onnx runtime in-browser [active]<br />
+            &nbsp;&nbsp;courses: 28 collegiate dewey volumes loaded<br />
+            &nbsp;&nbsp;memory: atmem context governance (profile isolation armed)<br />
+            &nbsp;&nbsp;security: client-side aes session cipher [available]<br />
+            &nbsp;&nbsp;telemetry: zero cloud tracking · zero remote dependencies<br />
+            <span class="ok">> launch live:</span> <a href="https://easylm.vercel.app" target="_blank" rel="noopener noreferrer">easylm.vercel.app</a>
+          </code>
+        </div>
+      </div>
+    </section>
 
     <!-- WHY -->
     <section id="why" class="reveal">
-      <p class="section-kicker">00 · why</p>
+      <p class="section-kicker">01 · why</p>
       <h2>computational taoism</h2>
       <div class="panel">
         <p class="lead">why we build the way we build. a shop philosophy, not a sermon.</p>
         <p class="muted" style="margin-bottom:0">
-          you cannot bullshit iron. a computer cannot take a hint.
-          so the plant runs on three moves from the factory floor, one from chinese thought, and an architecture that does not puppet people.
+          you cannot bluff the iron. a computer cannot take a hint.
+          so the plant runs on three moves from the precision factory floor, one from classical taoism, and an architecture that treats users as sovereign operators.
         </p>
       </div>
 
@@ -177,10 +321,10 @@
       <div class="panel">
         <h3 class="mt-0">what it is not</h3>
         <ul class="list-clean">
-          <li>not a bigger strongman in a louder building</li>
-          <li>not vibes as engineering</li>
-          <li>not “we're a family” guilt theater</li>
-          <li>not one genius who never fails</li>
+          <li>not rent-trapped cloud models that decay overnight</li>
+          <li>not vibes disguised as engineering</li>
+          <li>not corporate guilt theater</li>
+          <li>not a single strongman who never fails</li>
         </ul>
       </div>
 
@@ -194,7 +338,7 @@
 
     <!-- WHAT -->
     <section id="work" class="reveal">
-      <p class="section-kicker">01 · what</p>
+      <p class="section-kicker">02 · what</p>
       <h2>the stack</h2>
       <p class="lead">six pieces of one plant. an os that installs what you need. a mill language. a compiler for english. a single-spindle workstation. a company that runs on your disk. a house that shares brains, not files. you own your copy. none of this is a subscription.</p>
 
@@ -242,7 +386,7 @@
           <p class="muted">
             you write the sentence. a rust compiler checks it. then it casts — real binary, not a model guessing what you meant.
             english first. other languages arrive as dialects that compile to the same core.
-            students stay because it is exact and it is fun. companies stay because it refuses bullshit.
+            students stay because it is exact and engaging. companies stay because it eliminates ambiguity and false promises.
           </p>
         </article>
 
@@ -296,7 +440,7 @@
 
     <!-- RESEARCH -->
     <section id="research" class="reveal">
-      <p class="section-kicker">02 · science</p>
+      <p class="section-kicker">03 · science</p>
       <h2>research</h2>
       <p class="lead">four lines of inquiry. hypotheses, observables, and the measurements they imply.</p>
       <div class="research-grid">
@@ -360,38 +504,40 @@
 
     <!-- SALE -->
     <section id="sale" class="reveal">
-      <p class="section-kicker">03 · register</p>
-      <h2>for sale</h2>
+      <p class="section-kicker">04 · commercial</p>
+      <h2>rates &amp; engagements</h2>
 
       <article class="label-card violet-label" style="min-height:auto;margin-bottom:0.85rem">
         <div>
-          <div class="sku">sku · violet label · buy this</div>
-          <h3>custom</h3>
+          <div class="sku">sku · violet label · custom engagements</div>
+          <h3>custom software &amp; r&amp;d</h3>
           <p class="muted" style="font-size:0.85rem;margin:0">
-            dyed for you. you own the work. carte blanche.
-            each contract writes its own terms.
+            crafted for you. you own the work outright. carte blanche.
+            each statement of work writes its own terms.
           </p>
         </div>
         <span class="seal">violet = yours</span>
       </article>
 
       <div class="panel">
-        <table>
-          <thead>
-            <tr><th>product</th><th>what it is</th><th>bill</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>custom software</td><td>build / fix / ship · you own it · do what you want with it</td><td>one payment</td></tr>
-            <tr><td>custom r&amp;d</td><td>research · design · experiments</td><td>discrete or contract</td></tr>
-            <tr><td>hands</td><td>labor · execution · i do the work</td><td>hourly / day</td></tr>
-            <tr><td>business consulting</td><td>management · ops · leadership · culture · books literacy</td><td>contract preferred</td></tr>
-            <tr><td>first in line retainer</td><td>reserved capacity · place at the front</td><td><strong>$1,500 / mo</strong></td></tr>
-            <tr><td>exclusive lane</td><td>one client owns the calendar</td><td><strong>$5,000 / mo</strong> base</td></tr>
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>service / deliverable</th><th>scope &amp; nature</th><th>terms</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>custom software</td><td>build / architect / ship · you own it · unrestricted rights</td><td>one payment</td></tr>
+              <tr><td>custom r&amp;d</td><td>research · mathematical modeling · experiments</td><td>milestone or contract</td></tr>
+              <tr><td>hands-on engineering</td><td>architecture · execution · direct development</td><td>hourly / day</td></tr>
+              <tr><td>business &amp; technical consulting</td><td>systems architecture · ops · leadership · technical literacy</td><td>retainer or contract</td></tr>
+              <tr><td>first in line retainer</td><td>reserved capacity · front of queue priority</td><td><strong>$1,500 / mo</strong></td></tr>
+              <tr><td>exclusive lane</td><td>one client owns dedicated development calendar</td><td><strong>$5,000 / mo</strong> base</td></tr>
+            </tbody>
+          </table>
+        </div>
         <p class="muted" style="margin:0;font-size:0.85rem">
           violet: the artifact is yours. the user agreement at the end of this page does not apply.
-          no retainer: still yes. you wait. he writes when he has time.
+          no retainer: still yes. you wait in line. we write when time permits.
         </p>
       </div>
 
@@ -492,22 +638,24 @@
       </div>
 
       <div class="panel">
-        <table>
-          <thead>
-            <tr><th>lane</th><th>rate / term</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>remote &amp; support</td><td><strong>$50 / hr</strong> · <strong>cli timestamps</strong></td></tr>
-            <tr><td>onsite</td><td><strong>$125 / hr</strong> + expenses · <strong>stopwatch</strong></td></tr>
-            <tr><td>first in line retainer</td><td><strong>$1,500 / mo</strong> · hours bill against it at the rates above</td></tr>
-            <tr><td>exclusive partnership</td><td><strong>$5,000 / mo</strong> base</td></tr>
-            <tr><td>time grain</td><td>billed <strong>to the minute</strong></td></tr>
-            <tr><td>wait list</td><td>no retainer still yes · wait · he writes when he has time</td></tr>
-            <tr><td>contracts</td><td>invoice 1st of month · <strong>net 14</strong></td></tr>
-            <tr><td>discrete jobs</td><td>invoice at completion · <strong>net 14</strong></td></tr>
-            <tr><td>overpay</td><td><strong>exact change</strong> — like a grocery store</td></tr>
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>lane</th><th>rate / term</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>remote &amp; support</td><td><strong>$50 / hr</strong> · <strong>cli timestamps</strong></td></tr>
+              <tr><td>onsite</td><td><strong>$125 / hr</strong> + expenses · <strong>stopwatch</strong></td></tr>
+              <tr><td>first in line retainer</td><td><strong>$1,500 / mo</strong> · hours bill against it at the rates above</td></tr>
+              <tr><td>exclusive partnership</td><td><strong>$5,000 / mo</strong> base</td></tr>
+              <tr><td>time grain</td><td>billed <strong>to the minute</strong></td></tr>
+              <tr><td>wait list</td><td>no retainer still yes · wait · we write when time permits</td></tr>
+              <tr><td>contracts</td><td>invoice 1st of month · <strong>net 14</strong></td></tr>
+              <tr><td>discrete jobs</td><td>invoice at completion · <strong>net 14</strong></td></tr>
+              <tr><td>overpay</td><td><strong>exact change</strong> — like a grocery store</td></tr>
+            </tbody>
+          </table>
+        </div>
         <p class="muted" style="font-size:0.85rem;margin:0">
           club-store rule: one deliverable at a time.
           retainer is place in line, not unlimited hours and not a subscription to a soul.
@@ -540,7 +688,7 @@
 
     <!-- CONTACT -->
     <section id="contact" class="reveal">
-      <p class="section-kicker">04 · reach</p>
+      <p class="section-kicker">05 · reach</p>
       <h2>contact</h2>
       <div class="grid-2">
         <div class="panel">
@@ -562,7 +710,7 @@
 
     <!-- CREDITS = HOW -->
     <section id="credits" class="reveal">
-      <p class="section-kicker">05 · how</p>
+      <p class="section-kicker">06 · how</p>
       <h2>credits · standing on shoulders</h2>
       <p class="muted">
         logos as provided by their owners. we respect the marks.
@@ -728,7 +876,7 @@
 
     <!-- CONTRACTS -->
     <section id="contracts" class="reveal">
-      <p class="section-kicker">06 · paper</p>
+      <p class="section-kicker">07 · paper</p>
       <h2>agreements</h2>
 
       <div class="panel">
@@ -786,7 +934,7 @@
           <li><strong>Your data</strong> stays yours. Our packaged methods stay ours.</li>
           <li><strong>Support.</strong> Reasonable help for the original purchase. New features = new sale.</li>
           <li><strong>No debt games.</strong> Clear pay for clear work.</li>
-          <li><strong>Accessibility.</strong> Built for people who think tech is often bullshit. Respect cognitive load.</li>
+          <li><strong>Accessibility.</strong> Built for people exhausted by tech industry complexity and bloat. Respect cognitive load.</li>
           <li><strong>Disputes.</strong> Tell us in writing. Fix first. Refunds under quality.</li>
           <li><strong>Changes.</strong> New sales may use new terms. Past purchases keep the terms you bought under unless both agree to switch.</li>
           <li><strong>Home ground.</strong> Kansas / Missouri. Plain english wins if a line is unclear.</li>
