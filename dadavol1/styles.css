@@ -336,27 +336,55 @@ a:hover { color: var(--violet); }
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.6rem 1.15rem;
+  padding: 0.65rem 1.25rem;
+  min-height: 44px;
   font-family: var(--mono);
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 0;
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.16s ease,
+              border-color 0.16s ease,
+              box-shadow 0.16s ease;
+  border-radius: 4px;
   line-height: 1.25;
   white-space: normal;
   text-transform: lowercase;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
 }
 
 .btn-primary {
   background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
   color: #ffffff;
   border: 1px solid #a78bfa;
-  box-shadow: 0 0 16px rgba(139, 92, 246, 0.35);
+  box-shadow: 0 2px 14px rgba(139, 92, 246, 0.35);
 }
+
 .btn-primary:hover {
+  transform: translateY(-2px);
   background: linear-gradient(135deg, #9d74ff 0%, #7c3aed 100%);
+  box-shadow: 0 4px 22px rgba(139, 92, 246, 0.65);
   color: #ffffff;
+}
+
+.btn-secondary {
+  background: rgba(18, 18, 26, 0.92);
+  color: var(--white);
+  border: 1px solid var(--violet-soft);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--violet);
+  background: rgba(28, 28, 42, 0.98);
+  color: var(--white);
+  box-shadow: 0 4px 18px rgba(139, 92, 246, 0.32);
 }
 
 .btn-ghost {
@@ -364,9 +392,31 @@ a:hover { color: var(--violet); }
   color: var(--grey);
   border: 1px solid #333;
 }
+
 .btn-ghost:hover {
+  transform: translateY(-2px);
   color: var(--white);
-  border-color: var(--violet-soft);
+  border-color: var(--violet);
+  background: rgba(139, 92, 246, 0.1);
+  box-shadow: 0 2px 12px rgba(139, 92, 246, 0.2);
+}
+
+.matrix-row,
+.ring,
+.panel {
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.matrix-row:hover {
+  border-color: var(--violet);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.18);
+}
+
+.ring:hover {
+  border-color: var(--violet);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.2);
 }
 
 .hero-actions {

@@ -80,4 +80,28 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modal && !modal.hidden) closeValor();
   });
+
+  /* copy button feedback */
+  document.querySelectorAll(".copy-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.getAttribute("data-copy-target");
+      const targetEl = targetId ? document.getElementById(targetId) : null;
+      const textToCopy = targetEl ? (targetEl.value || targetEl.textContent) : btn.getAttribute("data-copy");
+      if (textToCopy) {
+        navigator.clipboard.writeText(textToCopy.trim()).then(() => {
+          const original = btn.textContent;
+          btn.textContent = "copied!";
+          btn.style.background = "#8b5cf6";
+          btn.style.color = "#ffffff";
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.style.background = "";
+            btn.style.color = "";
+          }, 2000);
+        }).catch(() => {
+          btn.textContent = "select text";
+        });
+      }
+    });
+  });
 })();
