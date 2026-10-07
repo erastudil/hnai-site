@@ -265,7 +265,7 @@
             <div class="hydra-feature-card">
               <div class="card-icon-tag">03</div>
               <h4>interactive tui terminal mode</h4>
-              <p>Launches a persistent coding agent REPL via <code>hydra agent</code> or <code>-i</code>. An inline prompt_toolkit composer remains pinned beneath native terminal scrollback. Features live status reporting, a rounded composer, a context token gauge meter, Tab slash-command autocompletion, <code>Ctrl+Space</code> dictation, and in-flight tool steering upon double Enter.</p>
+              <p>Launches a persistent coding agent REPL via <code>hydra agent</code> or <code>-i</code>. The composer stays pinned beneath native terminal scrollback and shows the active model, working directory, detected rules, and session id. <code>Ctrl+Space</code> dictates. Enter sends. A second Enter steers a running turn. <code>Ctrl+C</code> interrupts. Slash opens commands, and a context gauge tracks the window.</p>
             </div>
 
             <div class="hydra-feature-card">
@@ -455,50 +455,9 @@
           <h3 class="hydra-subheading">terminal agent view pinned beneath native scrollback</h3>
 
           <div class="hydra-tui-preview">
-            <div class="tui-window-titlebar">
-              <span class="tui-win-dot red"></span>
-              <span class="tui-win-dot yellow"></span>
-              <span class="tui-win-dot green"></span>
-              <span class="tui-win-title">hydra agent — cascadia code — 127.0.0.1:7777 active</span>
-            </div>
-            <div class="tui-screen">
-              <pre class="tui-ascii"><span class="tui-green">   ___ ___            .___              
-  /   |   \___.__.  __| _/___________   
- /    ~    &lt;   |  | / __ |\_  __ \__  \  
- \    Y    /\___  |/ /_/ | |  | \// __ \_
-  \___|_  / / ____|\____ | |__|  (____  /
-        \/  \/          \/            \/ 
-       Sovereign Multi-Headed AI Shell · v1.2.1</span></pre>
-              <div class="tui-chat-log">
-                <div class="tui-turn-user"><span class="tui-prompt-sign">&gt;</span> verify distributed state machine invariants and run mutation tests</div>
-                <div class="tui-turn-agent">
-                  <span class="tui-agent-tag">[HYDRA AGENT : SONNET 5.5]</span>
-                  <div class="tui-agent-text">Examining consensus state machine. Discovered three unhandled edge cases in partition recovery. Generating property test suite...</div>
-                </div>
-              </div>
-
-              <!-- PINNED COMPOSER -->
-              <div class="tui-composer-area">
-                <div class="tui-status-bar">
-                  <span class="status-indicator live"></span>
-                  <span class="status-model">model: anthropic/claude-sonnet-5.5</span>
-                  <span class="status-effort">effort: high</span>
-                  <span class="status-gauge">tokens: 18.4k / 200k <span class="gauge-meter">[▂▃▄▅    ]</span></span>
-                </div>
-                <div class="tui-composer-box">
-                  <span class="composer-caret">&gt;</span>
-                  <span class="composer-text">refactor ring buffer to zero-copy memoryview and rerun pytest</span>
-                </div>
-                <div class="tui-key-hints">
-                  <span><kbd>Enter</kbd> send</span>
-                  <span><kbd>Alt+Enter</kbd> newline</span>
-                  <span><kbd>Enter x2</kbd> steer running turn</span>
-                  <span><kbd>Tab</kbd> commands</span>
-                  <span><kbd>Ctrl+Space</kbd> dictation</span>
-                </div>
-              </div>
-            </div>
+            <img class="hydra-tui-shot" src="assets/hydra-tui.png" alt="Hydra v1.2.1 idle composer with the three-headed mark, model line, working directory, detected rules, session id, pinned prompt, and context gauge." />
           </div>
+          <p class="dim hydra-tui-caption">Current idle composer. The mark, model, directory, detected rules, and session sit above the pinned prompt. Ctrl+Space dictates. Enter sends. A second Enter steers a running turn. Slash opens commands.</p>
         </div>
         <!-- COMMAND WORKBENCH -->
         <div class="hydra-block">
@@ -723,50 +682,218 @@ print(result)</pre>
         </div>
 
         <p class="repo-desc">
-          Four tabs on one local machine: Chat, Studio, Learn, and Options. Weights download once into browser cache and run on your GPU through WebGPU. Prompts, course progress, and profile memory stay on the device.
+          Four tabs on one local machine: Chat, Studio, Learn, and Options. Weights download once into browser cache and run on your GPU through WebGPU. Prompts, course progress, and profile memory stay on the device. The model, the textbook, and the homework coach share one profile, so a chapter, a graph, and a chat thread are the same session.
         </p>
 
+        <div class="hydra-iron-box">
+          <div class="hydra-iron-header">
+            <span class="prompt">easylm</span>
+            <span class="dim">workstation contract · local only</span>
+          </div>
+          <div class="hydra-iron-body">
+            <div class="iron-line"><span class="iron-topic">scope</span> <span class="iron-sep">:</span> <span class="iron-comment">in-browser WebGPU workstation for chat, study, and making.</span></div>
+            <div class="iron-line"><span class="iron-topic">tabs</span> <span class="iron-sep">:</span> <span class="iron-comment">Chat, Studio, Learn, Options.</span></div>
+            <div class="iron-line"><span class="iron-topic">weights</span> <span class="iron-sep">:</span> <span class="iron-comment">cached once in the browser, then inference stays on the local GPU.</span></div>
+            <div class="iron-line"><span class="iron-topic">memory</span> <span class="iron-sep">:</span> <span class="iron-comment">AtMem atoms scored into a 256-token envelope, with an optional AES-GCM-256 vault.</span></div>
+            <div class="iron-line"><span class="iron-topic">stacks</span> <span class="iron-sep">:</span> <span class="iron-comment">31 Dewey textbooks, each with a link index of official sources.</span></div>
+            <div class="iron-line"><span class="iron-topic">learn</span> <span class="iron-sep">:</span> <span class="iron-comment">eight courses, a today plan, a lesson walk, Leitner cards, and a progress record.</span></div>
+            <div class="iron-line"><span class="iron-topic">kid safe</span> <span class="iron-sep">:</span> <span class="iron-comment">separate Student profile, parental PIN, Homework Coach, web tools off, model allowlist.</span></div>
+          </div>
+        </div>
+
         <div class="hydra-block">
+          <span class="repo-section-label">functions · the four tabs</span>
+          <h3 class="hydra-subheading">six parts of one local session</h3>
           <div class="hydra-grid-3">
             <div class="hydra-feature-card">
               <div class="card-icon-tag">01</div>
               <h4>chat</h4>
-              <p>Local inference on open-weight models, including Bonsai 27B, Qwen 2.5, Llama 3.2, DeepSeek-R1 Distill, and Gemma 2 9B. AtMem keeps a profile notebook and injects only the atoms that fit a 256-token envelope. An optional AES-256 vault encrypts that memory. A finished note can move into Studio, and a Studio result can come back into the thread.</p>
+              <p>The thread runs an open-weight model on the GPU you already have. Qwen 2.5, Llama 3.2, Llama 3.1 8B, Gemma 2, Gemma 3, Mistral 7B, Phi-3.5, DeepSeek-R1 distill, and Qwen 2.5 Coder are in the picker, plus the EasyLM Hands adapters and the Alice EMap adapter. AtMem keeps a notebook per profile and injects only the atoms that fit a 256-token envelope, so memory helps the reply without eating the whole context. A note can move into Studio, and a Studio result can come back into the thread.</p>
             </div>
             <div class="hydra-feature-card">
               <div class="card-icon-tag">02</div>
               <h4>studio</h4>
-              <p>Five offline tools: Read, Write, Code, Graph, and Draw. Read opens a Stacks chapter and its official doors. Write drafts in markdown and exports Word, PDF, or LaTeX, and a markdown table can leave as CSV. Code is a sandbox. Graph plots functions, derivatives, roots, and integrals. Draw is a canvas. Any of those can open in Write or drop back into Chat.</p>
+              <p>Five offline tools sit beside the model: Read, Write, Code, Graph, and Draw. Read opens a Stacks chapter and the official doors for that pack. Write drafts markdown and exports Word, PDF, or LaTeX, and a markdown table can leave as CSV. Code runs JavaScript in a page worker with a live console. Graph plots a function and can show the derivative, the roots, and an integral. Draw is a canvas. Any of those can open in Write or drop back into Chat.</p>
             </div>
             <div class="hydra-feature-card">
               <div class="card-icon-tag">03</div>
               <h4>learn</h4>
-              <p>Eight courses with a catalog, a lesson walk, a today plan, Leitner cards, and a progress record. The set is Scientific Inquiry, Calculus, Physics, Chemistry, Biology, Civics, Health Sciences, and Philosophy. A missed question becomes a card. Today tells you what is due. Lessons can open the matching chapter in Studio.</p>
+              <p>Eight courses: Scientific Inquiry, Calculus, Physics, Chemistry, Biology, Civics, Health Sciences, and Philosophy. Catalog is the shelf. Walk is the lesson. Today is the plan for this calendar day. Cards are Leitner reviews, and a missed question becomes a card. Record is the progress ledger. A lesson can open the matching chapter in Studio, so the explanation and the tool stay in one profile.</p>
             </div>
             <div class="hydra-feature-card">
               <div class="card-icon-tag">04</div>
               <h4>the stacks</h4>
-              <p>31 Dewey packs from scientific method through geography, each with a textbook and a link index of official sources. Computing, software, security, mathematics, trades, literature, and the Tao Te Ching sit in the same shelf. Search returns the chapter. A miss says so. Kid-facing packs carry a floor age.</p>
+              <p>31 Dewey packs from scientific method through geography. Each pack is a textbook plus a link index of official sources. Computing, software, security, mathematics, trades, literature, civics, health, and the Tao Te Ching share the shelf. Search returns the chapter. A miss says so. Some packs declare a floor age, so a younger reader stays on the chapters written for that floor.</p>
             </div>
             <div class="hydra-feature-card">
               <div class="card-icon-tag">05</div>
               <h4>personalities</h4>
-              <p>Perspectives and author voices shape the reply: practical coaches, philosophy, science, classic authors, literary characters, and clinical counseling. Search by name, era, or book. A custom voice imports and exports as JSON. The Student profile locks the gallery to the Kids and Homework Coach.</p>
+              <p>Perspectives and author voices shape the reply. The gallery covers practical coaches, philosophy, science, classic authors, literary characters, and clinical counseling. Search by name, era, or book. A custom voice imports and exports as JSON. The Student profile locks the gallery to the Kids and Homework Coach, so an adult author voice cannot be selected from that account.</p>
             </div>
             <div class="hydra-feature-card">
               <div class="card-icon-tag">06</div>
               <h4>kid safe</h4>
-              <p>The Student profile is a separate local account with a parental PIN, so leaving Kid Safe requires the PIN. The Homework Coach is instructed to ask for the next step and withhold the final answer. Web fetch and web search stay off. A sentinel blocks phone numbers, addresses, and school details in the prompt. The model list is an allowlist, SmolLM2 360M stays off it, and a disallowed pick falls back to Llama 3.2 1B.</p>
+              <p>The Student profile is a separate local account. A parental PIN is required to leave it. The Homework Coach is instructed to ask for the next step and withhold the final answer. Web fetch and web search stay off. A sentinel blocks phone numbers, home addresses, school names, and email in the prompt. The model list is an allowlist. SmolLM2 360M stays off it after it failed the kid-safe checks. A disallowed pick falls back to Llama 3.2 1B.</p>
             </div>
           </div>
         </div>
 
-        <div class="repo-grid">
-          <div class="repo-col">
-            <span class="repo-section-label">how to get started</span>
-            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
-              Open the live app in a WebGPU browser, or clone and run the tests locally:
-            </p>
+        <div class="hydra-block">
+          <span class="repo-section-label">studio · five tools</span>
+          <h3 class="hydra-subheading">read, write, code, graph, and draw without leaving the profile</h3>
+          <div class="hydra-grid-3">
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">read</div>
+              <h4>read</h4>
+              <p>Opens a Stacks textbook by chapter. The link index sits with the chapter, so a claim can be checked against the official door instead of a pasted dump. Send the chapter into Write when you want notes, or back into Chat when you want the model to work from that text.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">write</div>
+              <h4>write</h4>
+              <p>A markdown desk for the thing you are making: a problem set, a lab note, a short paper. Export Word, PDF, or LaTeX from the same buffer. If the buffer holds a table, that table can leave as CSV. The draft stays in the browser with the rest of the profile.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">code</div>
+              <h4>code</h4>
+              <p>A JavaScript sandbox with presets for common drills, including a Monte Carlo estimate, a Fibonacci sequence, and a quadratic solver. Run prints to a console in the page. The snippet can move into Write or into the chat thread.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">graph</div>
+              <h4>graph</h4>
+              <p>Plot a function of x. The same tool can mark the derivative, the roots, the extrema, and a numeric integral, and it can print a table of values. A calculus lesson can open here without a second app and without sending the expression to a server.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">draw</div>
+              <h4>draw</h4>
+              <p>A canvas for a diagram, a sketch of a mechanism, or a figure you want next to the writing. The drawing can open in Write or return to Chat, so the picture and the explanation stay in one session.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">opt</div>
+              <h4>options</h4>
+              <p>Context length runs from 8k through 256k. The hardware probe reads the GPU and can recommend a model that fits. The vault is optional AES-GCM-256 over conversations and sovereign memory, unlocked by a PIN or password you set. Profiles, the parental PIN, and the active personality live here too.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hydra-block">
+          <span class="repo-section-label">shelf · models, courses, and packs</span>
+          <h3 class="hydra-subheading">what actually loads on the machine</h3>
+          <div class="hydra-grid-2">
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Qwen 2.5 and the Hands adapters</span>
+                <span class="badge badge-sm">Default shelf</span>
+              </div>
+              <p>Qwen 2.5 Instruct at 1.5B, 3B, and 7B, plus Qwen 2.5 Coder 7B. EasyLM Hands ships 0.5B and 3B adapters on the same family. The 3B Instruct build is the everyday default.</p>
+            </div>
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Llama, Gemma, Mistral, Phi</span>
+                <span class="badge badge-sm">Open weights</span>
+              </div>
+              <p>Llama 3.2 at 1B and 3B, Llama 3.1 8B, Gemma 2 at 2B and 9B, Gemma 3 12B Thinking, Mistral 7B Instruct, and Phi-3.5 Mini. The picker shows a VRAM estimate so the choice matches the GPU.</p>
+            </div>
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">DeepSeek-R1 distill</span>
+                <span class="badge badge-sm">Reasoning</span>
+              </div>
+              <p>Distilled Qwen builds at 1.5B and 7B for a longer chain of thought when the question is a proof, a mechanism, or a multi-step problem.</p>
+            </div>
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Alice EMap adapter</span>
+                <span class="badge badge-sm">Local adapter</span>
+              </div>
+              <p>A 3B adapter on Qwen 2.5 for Alice-style proposition work, still executed in the browser. No separate cloud account.</p>
+            </div>
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Eight courses</span>
+                <span class="badge badge-sm">Learn</span>
+              </div>
+              <p>Scientific Inquiry, Calculus I, Physics I, Chemistry I, Biology I, Civics I, Health Sciences I, and Philosophy I. Each course has lessons, checks, a today queue, and spaced cards.</p>
+            </div>
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">31 Dewey stacks</span>
+                <span class="badge badge-sm">The shelf</span>
+              </div>
+              <p>Methods, computing, software, security, mathematics, physics, chemistry, biology, health, engineering, trades, civics, law, literature, poetry, history, geography, and the Tao Te Ching, among the full set. Textbook plus official doors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hydra-block">
+          <span class="repo-section-label">benefits · why the workstation stays local</span>
+          <h3 class="hydra-subheading">five reasons the study hall is on your GPU</h3>
+          <div class="hydra-grid-3">
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">01</span>
+              <h4>the weights and the chats stay here</h4>
+              <p>Inference runs through WebGPU in the browser. After the download, prompts and tokens do not need a remote API. There is no account to create and no monthly seat.</p>
+            </div>
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">02</span>
+              <h4>one profile holds the work</h4>
+              <p>Chat memory, course progress, the today plan, and the studio draft belong to the same local profile. You do not copy a chapter into a second product to keep studying.</p>
+            </div>
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">03</span>
+              <h4>kid safe is a lock, not a tone</h4>
+              <p>The Student account changes the model list, the voice, and the tools. Web search stays off. Leaving the account takes the parental PIN. The coach is told to withhold the final homework answer.</p>
+            </div>
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">04</span>
+              <h4>the book and the tool are adjacent</h4>
+              <p>A lesson can open the chapter. The chapter can open the graph, the editor, or the draft. The official link index stays next to the paragraph you are reading.</p>
+            </div>
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">05</span>
+              <h4>offline after the cache fills</h4>
+              <p>The first visit downloads the chosen weights into browser cache. Later sessions run from that cache, including a machine with no network.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hydra-block">
+          <span class="repo-section-label">use cases · what a session looks like</span>
+          <h3 class="hydra-subheading">five ways the workstation gets used</h3>
+          <div class="hydra-grid-3">
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">HOMEWORK</div>
+              <h4>a student night with the pin on</h4>
+              <p>Switch to the Student profile. The Homework Coach asks for the next step. Fetch and search stay off. The sentinel stops a phone number, an address, a school name, or an email from going into the prompt.</p>
+            </div>
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">CALCULUS</div>
+              <h4>a lesson that opens the graph</h4>
+              <p>Walk through Calculus I. Today shows what is due. A miss becomes a card. The same session can plot the function, mark roots, and drop the figure into Write.</p>
+            </div>
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">READING</div>
+              <h4>a chapter, then a draft</h4>
+              <p>Open a Stacks pack in Read. Follow the official door if a number matters. Send the chapter into Write and keep the draft on the machine.</p>
+            </div>
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">FAMILY</div>
+              <h4>two people, two memories</h4>
+              <p>Parent and Student are separate local accounts on one browser. AtMem, personality, and course progress do not mix. The parental PIN is what stands between them.</p>
+            </div>
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">OFFLINE</div>
+              <h4>study after the weights are cached</h4>
+              <p>Pick a model that fits the GPU, let the cache fill, then close the network. Chat, Learn, and Studio keep working from local storage and the cached weights.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hydra-block">
+          <span class="repo-section-label">how to get started</span>
+          <h3 class="hydra-subheading">open the app, or clone and run the tests</h3>
+          <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+            Open the live app in a WebGPU browser, or clone and run the tests locally:
+          </p>
             <div class="code-terminal">
               <div class="code-terminal-header">
                 <span>bash</span>
@@ -785,7 +912,6 @@ print(result)</pre>
             <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
               web app: <a href="https://easylm.app" target="_blank" rel="noopener noreferrer">easylm.app</a> · repo: <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer">github.com/erastudil/easylm</a>
             </p>
-          </div>
         </div>
       </article>
       <!-- 3. PROGEN -->

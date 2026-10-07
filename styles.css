@@ -2147,6 +2147,18 @@ footer p { text-align: center; }
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8), 0 0 20px var(--electric-violet-glow);
 }
 
+.hydra-tui-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000000;
+}
+
+.hydra-tui-caption {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+}
+
 .tui-window-titlebar {
   background: #0e0e14;
   border-bottom: 1px solid #1f1f2a;
