@@ -1,6 +1,6 @@
-# Humans & AI — Public Site
+﻿# Humans & AI : Public Site
 
-The official public web face for **Humans & AI (HNAI)**.
+The official public web face for **Humans & AI**.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://humans-and-ai.vercel.app)
 
@@ -8,22 +8,33 @@ The official public web face for **Humans & AI (HNAI)**.
 
 ## Identity & Mission
 
-- **Author & Ownership:** Patrick McQueeny (owned as a human being; zero corporate shield).
-- **Mission:** Build sovereign open-source software, collaborate with educators and students, live on donations.
-- **Palette:** Deep Obsidian (`#07070a`), Pure White (`#ffffff`), Ina Violet (`#8b5cf6`), Steel Grey (`#71717a`).
-- **Typography:** Cascadia Code / Monospace.
-- **Architecture:** Zero-dependency static front end.
-- **Key Links:**
-  - **EasyLM:** Sovereign in-browser WebGPU AI with 28 Dewey collegiate textbooks ([easylm.app](https://easylm.app)).
-  - **Field Manual:** Defense Against the Dark Arts ([dadavol1.vercel.app](https://dadavol1.vercel.app) · local `dadavol1/`).
-  - **GitHub:** Open source repositories and tools ([github.com/erastudil](https://github.com/erastudil)).
+- **Author & Ownership:** Patrick McQueeny.
+- **Mission:** Build and release sovereign, open-source software tools.
+- **Architecture:** Zero-dependency static front end with HTML5, CSS3, and vanilla JS.
+- **Design:** Deep Obsidian `#000000`, Pure White `#ffffff`, Electric Violet `#8a2be2`, Ina Violet `#8b5cf6`, Steel Grey `#808080`, Cascadia Code monospace typography.
 
 ---
 
-## Local Development
+## Public Repositories
+
+The site covers six public open-source tools:
+
+1. **[easylm.app](https://easylm.app)**: Sovereign in-browser WebGPU AI workstation with 30 collegiate textbooks, AtMem context governance, and zero remote cloud dependencies.
+2. **[progen](https://github.com/erastudil/progen)**: Dialect of English applying Japanese topic-comment grammar for agent think traces, system prompts, and offline verification.
+3. **[zcabs](https://github.com/erastudil/zcabs)**: Zero Context Agent Behavioral Scaffolding: deterministic proof-of-execution canary protocol and command-wrapping harness.
+4. **[gfc](https://github.com/erastudil/gfc)**: Greene Feynman Clarity: writing standard and offline linter for human-facing prose.
+5. **[hydra](https://github.com/erastudil/hydra)**: Sovereign multi-headed command-line AI engine, interactive TUI agent, and model gateway router with dual runtime parity in standard library Python and Node.
+6. **[tankbench](https://github.com/erastudil/tankbench)**: Defensive hardening and security refactoring benchmark for autonomous coding agents.
+
+---
+
+## Local Verification & Development
 
 ```bash
-# Serve static site locally
+# verify syntax, json-ld, and progen invariants:
+python verify_site.py
+
+# serve static site locally:
 npx serve .
 ```
 

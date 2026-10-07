@@ -104,4 +104,21 @@
       }
     });
   });
+
+  /* hydra interactive tab switcher */
+  const tabBtns = document.querySelectorAll('.hydra-tab-btn');
+  const tabPanels = document.querySelectorAll('.hydra-tab-panel');
+  if (tabBtns.length > 0 && tabPanels.length > 0) {
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+        tabBtns.forEach((b) => b.classList.remove('active'));
+        tabPanels.forEach((p) => p.classList.remove('active'));
+        btn.classList.add('active');
+        const panel = document.getElementById(targetTab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+
 })();

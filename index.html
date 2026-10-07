@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>humans&amp;ai — computational taoism · open source software · patrick mcqueeny</title>
-  <meta name="description" content="humans&amp;ai builds deterministic, open-source sovereign software. home of easylm: local in-browser webgpu ai with 28 dewey collegiate textbooks. owned by a human, funded by donations." />
+  <title>humans&amp;ai : public open source repositories · patrick mcqueeny</title>
+  <meta name="description" content="six sovereign, open-source repositories for local computing, agent reasoning, deterministic verification, clarity linting, model routing, and security evaluation. heres the stuff, heres what it does, heres how to get started." />
   <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
   <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://humans-and-ai.vercel.app/" />
@@ -12,8 +12,8 @@
   <!-- OpenGraph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://humans-and-ai.vercel.app/" />
-  <meta property="og:title" content="humans&amp;ai — computational taoism · open source software" />
-  <meta property="og:description" content="Deterministic engineering, open-source software, and EasyLM: in-browser WebGPU AI with 28 Dewey textbooks. Owned by a human, funded by donations." />
+  <meta property="og:title" content="humans&amp;ai : public open source repositories" />
+  <meta property="og:description" content="six open source tools: easylm.app, progen, zcabs, gfc, hydra, and tankbench. heres the stuff, heres what it does, heres how to get started." />
   <meta property="og:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
   <meta property="og:site_name" content="humans&amp;ai" />
 
@@ -21,8 +21,8 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@humansandaiboss" />
   <meta name="twitter:creator" content="@humansandaiboss" />
-  <meta name="twitter:title" content="humans&amp;ai — computational taoism · open source software" />
-  <meta name="twitter:description" content="Deterministic engineering, open-source software, and EasyLM: in-browser WebGPU AI with 28 Dewey textbooks. Owned by a human, funded by donations." />
+  <meta name="twitter:title" content="humans&amp;ai : public open source repositories" />
+  <meta name="twitter:description" content="six open source tools: easylm.app, progen, zcabs, gfc, hydra, and tankbench. heres the stuff, heres what it does, heres how to get started." />
   <meta name="twitter:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
 
   <!-- JSON-LD Structured Data -->
@@ -48,13 +48,53 @@
         "operatingSystem": "Web Browser with WebGPU support",
         "applicationCategory": "EducationalApplication",
         "license": "https://www.gnu.org/licenses/agpl-3.0.html",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
         "url": "https://easylm.app",
-        "description": "Sovereign in-browser WebGPU AI workstation with 28 Dewey collegiate textbooks, AtMem context governance, and zero remote cloud dependencies."
+        "description": "Sovereign in-browser WebGPU AI workstation with 30 collegiate textbooks, AtMem context governance, and zero remote cloud dependencies."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://humans-and-ai.vercel.app/#progen",
+        "name": "progen",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/erastudil/progen",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "description": "Dialect of English applying Japanese topic-comment grammar for agent think traces, system prompts, and offline verification."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://humans-and-ai.vercel.app/#zcabs",
+        "name": "zcabs",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/erastudil/zcabs",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "description": "Zero Context Agent Behavioral Scaffolding. Deterministic proof-of-execution canary protocol and command-wrapping harness."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://humans-and-ai.vercel.app/#gfc",
+        "name": "gfc",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/erastudil/gfc",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "description": "Greene Feynman Clarity writing standard and offline linter for human-facing prose."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://humans-and-ai.vercel.app/#hydra",
+        "name": "hydra",
+        "programmingLanguage": ["Python", "JavaScript"],
+        "codeRepository": "https://github.com/erastudil/hydra",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "description": "Sovereign multi-headed command-line AI engine, interactive TUI agent, and model gateway router with dual runtime parity in standard library Python and Node."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://humans-and-ai.vercel.app/#tankbench",
+        "name": "tankbench",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/erastudil/tankbench",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "description": "Defensive hardening and security refactoring benchmark for autonomous coding agents."
       }
     ]
   }
@@ -80,519 +120,993 @@
           <img class="brand-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="160" height="30" />
         </a>
         <ul class="nav-links">
-          <li><a href="#easylm" class="nav-highlight">easylm</a></li>
-          <li><a href="https://dadavol1.vercel.app/">defense</a></li>
-          <li><a href="#why">why</a></li>
-          <li><a href="#work">the stack</a></li>
-          <li><a href="#research">research</a></li>
-          <li><a href="#collaborators">collaborate</a></li>
-          <li><a href="#integrity">integrity</a></li>
-          <li><a href="#donations">fuel</a></li>
+          <li><a href="#easylm" class="nav-highlight">easylm.app</a></li>
+          <li><a href="#progen">progen</a></li>
+          <li><a href="#zcabs">zcabs</a></li>
+          <li><a href="#gfc">gfc</a></li>
+          <li><a href="#hydra">hydra</a></li>
+          <li><a href="#tankbench">tankbench</a></li>
+          <li><a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">github ↗</a></li>
+          <li><a href="#fuel">fuel</a></li>
           <li><a href="#credits">credits</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </div>
     </nav>
 
+    <!-- HERO -->
     <header class="hero" id="top">
       <img class="hero-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="840" height="200" />
-      <p class="section-kicker">mission : open source tools of creation</p>
-      <p class="tag">sovereign deterministic software · open source tools of creation · funded by donations</p>
-      <p class="motto">it does exactly what it says on the package</p>
-      <p class="motto">build it yourself, so you can trust it</p>
-      <p class="hero-spine">the why is the what that leads to the how.</p>
-      <p class="term">
-        <span class="prompt">$</span> <span class="ok">whoami</span><br />
-        patrick mcqueeny · human<br />
-        <span class="prompt">$</span> <span class="ok">cat mission.txt</span><br />
-        build open source tools of creation · collaborate with educators and students · complete integrity
-      </p>
-
-      <div class="crew-panel">
-        <p class="crew-kicker">crew : makers and machines</p>
-        <div class="crew-grid">
-          <div class="crew-card">
-            <p class="crew-name">patrick mcqueeny</p>
-            <p class="crew-role">author · human</p>
-            <p class="crew-note">
-              ideas · architecture · code · open source<br />
-              7 years cnc programming and setup · 8 years management · 10 years skilled manual labor in dental and machining · 26 years software dev.<br />
-              school of hard knocks. self taught in shops and software teams.<br />
-              <a href="https://patents.google.com/patent/US11578890B2/en" target="_blank" rel="noopener noreferrer">us 11,578,890</a>, gear geometry, solo. my brain, my hands.<br />
-              whiteboard sketch → draft → 3d print → first piece → production.<br />
-              owned and operated by an individual human. sue me personally. complete integrity in every cut.
-            </p>
-          </div>
-          <div class="crew-card crew-grok">
-            <a class="crew-brand" href="https://x.ai" target="_blank" rel="noopener noreferrer" title="Grok by xAI">
-              <img src="assets/brand/xai/Grok_Full_Logomark_Light.svg" alt="Grok" class="crew-grok-logo" width="200" height="78" />
-            </a>
-            <p class="crew-role">writing · coding · first employee</p>
-            <p class="crew-note">
-              co-creator of this site and the stack behind it.
-              written with grok · created with grok.
-            </p>
-            <a class="crew-brand crew-spacexai" href="https://x.ai" target="_blank" rel="noopener noreferrer" title="SpaceXAI / xAI">
-              <img src="assets/brand/xai/spacexai-symbol-white.svg" alt="SpaceXAI" class="crew-spacexai-mark" width="40" height="40" />
-              <span class="crew-spacexai-label">spacexai · xai</span>
-            </a>
-          </div>
-          <div class="crew-card crew-agy">
-            <a class="crew-brand" href="https://deepmind.google" target="_blank" rel="noopener noreferrer" title="Antigravity by Google DeepMind">
-              <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Antigravity" class="crew-agy-mark" width="32" height="32" />
-              <span class="crew-agy-name">antigravity</span>
-            </a>
-            <p class="crew-role">code · architecture · core team</p>
-            <p class="crew-note">
-              deep agentic engineering, continuous verification, and full-stack implementation.
-              co-architect of easylm and the hnai runtime.
-            </p>
-            <a class="crew-brand crew-deepmind" href="https://deepmind.google" target="_blank" rel="noopener noreferrer" title="Google DeepMind">
-              <img src="https://cdn.simpleicons.org/google/ffffff" alt="Google" width="20" height="20" />
-              <span class="crew-spacexai-label">deepmind · google</span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <p class="section-kicker">public repositories · open source tools</p>
+      <h1 class="hero-tag">heres the stuff. heres what it does. heres how to get started.</h1>
+      <p class="hero-spine">six sovereign, open-source repositories for local computing, agent reasoning, deterministic verification, clarity linting, model routing, and security evaluation.</p>
 
       <div class="hero-actions">
-        <a href="#easylm" class="btn btn-primary">Featured: EasyLM ↓</a>
+        <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Profile (@erastudil) ↗</a>
         <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Launch easylm.app ↗</a>
-        <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Source ↗</a>
-        <a href="#collaborators" class="btn btn-ghost">Collaborate With Us ↓</a>
-        <a href="#donations" class="btn btn-ghost">Fuel The Work ↓</a>
+        <a href="#repos" class="btn btn-ghost">View Repositories ↓</a>
       </div>
 
-      <a href="#easylm" class="hero-scroll-cue" aria-label="scroll to explore">
-        <span>scroll to explore sovereign software</span>
+      <a href="#repos" class="hero-scroll-cue" aria-label="scroll to explore repositories">
+        <span>scroll to view the 6 public tools</span>
         <div class="chevron"></div>
       </a>
     </header>
 
-    <!-- EASYLM: FLAGSHIP LIVE APPLICATION -->
-    <section id="easylm" class="easylm-showcase reveal in">
-      <p class="section-kicker">00 · flagship : sovereign ai workstation</p>
-      <div class="easylm-card">
-        <div class="easylm-badges">
-          <span class="badge badge-violet">Live Now · v0.4.0</span>
+    <!-- QUICKNAV BAR -->
+    <nav class="repo-quicknav" aria-label="public repositories index">
+      <a href="#easylm" class="quicknav-pill">
+        <span class="pill-name">01 · easylm.app</span>
+        <span class="pill-desc">in-browser webgpu intelligence workstation</span>
+      </a>
+      <a href="#progen" class="quicknav-pill">
+        <span class="pill-name">02 · progen</span>
+        <span class="pill-desc">topic-comment dialect &amp; think traces</span>
+      </a>
+      <a href="#zcabs" class="quicknav-pill">
+        <span class="pill-name">03 · zcabs</span>
+        <span class="pill-desc">deterministic proof-of-execution canary</span>
+      </a>
+      <a href="#gfc" class="quicknav-pill">
+        <span class="pill-name">04 · gfc</span>
+        <span class="pill-desc">greene feynman clarity writing standard</span>
+      </a>
+      <a href="#hydra" class="quicknav-pill">
+        <span class="pill-name">05 · hydra</span>
+        <span class="pill-desc">sovereign multi-headed ai shell, tui agent &amp; gateway router</span>
+      </a>
+      <a href="#tankbench" class="quicknav-pill">
+        <span class="pill-name">06 · tankbench</span>
+        <span class="pill-desc">agent security refactoring benchmark</span>
+      </a>
+    </nav>
+
+    <!-- PUBLIC REPOSITORIES -->
+    <main id="repos">
+      <p class="section-kicker">01 · the stuff : six public repositories</p>
+
+      <!-- 1. EASYLM -->
+      <article class="repo-card reveal in" id="easylm">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>01 · easylm.app</h2>
+            <span class="repo-tagline">sovereign in-browser webgpu intelligence workstation</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch easylm.app ↗</a>
+            <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-violet">Live at easylm.app</span>
           <span class="badge">Open Source · AGPL-3.0</span>
           <span class="badge">WebGPU In-Browser</span>
-          <span class="badge">100% Free Software</span>
-          <span class="badge">AtMem Governance</span>
+          <span class="badge">Zero Cloud Dependencies</span>
+          <span class="badge">30 Stacks Textbooks</span>
+          <span class="badge">AtMem Memory</span>
         </div>
 
-        <div class="easylm-header">
-          <img src="assets/easylm-icon.svg" alt="EasyLM" width="58" height="58" class="easylm-icon" />
-          <div>
-            <h2>easylm : local webgpu workstation</h2>
-            <p class="easylm-tagline">the sovereign ai workstation in your browser</p>
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Executes language model inference directly inside your web browser on local graphics hardware via WebGPU. Model weights download once into browser CacheStorage and run offline. Prompts, tokens, and session history remain on your machine with zero server-side telemetry.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Client-Side WebGPU Inference:</strong> Runs open-weight models locally, including Bonsai 27B, Qwen 2.5 (1.5B/3B), Llama 3.2 3B, DeepSeek-R1 Distill, and Gemma 2 9B.</li>
+              <li><strong>The Stacks:</strong> 30 complete undergraduate textbooks covering mathematics, physics, computing, electronics, machining, and philosophy formatted for offline study.</li>
+              <li><strong>Learn Curriculum:</strong> Seven structured university courses (Scientific Inquiry, Calculus, Physics, Chemistry, Biology, Civics, Health) with interactive lessons and knowledge checks.</li>
+              <li><strong>Studio Workspace:</strong> Offline tools including KaTeX LaTeX math rendering, Markdown drafting, code editor, 2D function graphing, and drawing canvases.</li>
+              <li><strong>AtMem Memory Governance:</strong> Discrete memory atoms scored by BM25 relevance within a strict 256-token envelope with profile isolation and optional AES-GCM-256 vault encryption.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Run in any modern WebGPU-enabled browser (Chrome, Edge, Safari 18+, or Firefox Nightly) or run locally:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/easylm.git&#10;cd easylm&#10;npm install&#10;npm test&#10;npm run dev">copy commands</button>
+              </div>
+              <pre><span class="cmt"># 1. run immediately via web browser:</span>
+<span class="cmt"># navigate to https://easylm.app</span>
+
+<span class="cmt"># 2. or clone and run locally:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/easylm.git</span>
+<span class="prompt">$ </span><span class="cmd">cd easylm</span>
+<span class="prompt">$ </span><span class="cmd">npm install</span>
+<span class="prompt">$ </span><span class="cmd">npm test</span>
+<span class="prompt">$ </span><span class="cmd">npm run dev</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              web app: <a href="https://easylm.app" target="_blank" rel="noopener noreferrer">easylm.app</a> · repo: <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer">github.com/erastudil/easylm</a>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. PROGEN -->
+      <article class="repo-card reveal in" id="progen">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>02 · progen</h2>
+            <span class="repo-tagline">topic-comment dialect and structured think traces for agents</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
           </div>
         </div>
 
-        <p class="lead easylm-lead">
-          language model inference, strict context governance, and an integrated 28-volume dewey decimal collegiate library. runs entirely inside your browser on local graphics hardware via webgpu, starting instantly with offline storage and complete privacy.
-        </p>
-
-        <div class="easylm-cta-group">
-          <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
-            Launch easylm.app ↗
-          </a>
-          <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">
-            View GitHub Repository ↗
-          </a>
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Standard Library Only</span>
+          <span class="badge">Deterministic Grammar</span>
+          <span class="badge">Offline CLI Tools</span>
         </div>
 
-        <div class="easylm-features">
-          <div class="feature-box">
-            <h4>engine : client-side webgpu</h4>
-            <p>neural network weights execute directly on your local hardware via webgpu and onnx. your tokens, prompts, and personal notes stay in local device memory.</p>
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Applies Japanese topic-comment grammar structure under English vocabulary. Cuts token costs and removes discursive filler, polite padding, and unsolicited trailing questions from model outputs and reasoning traces.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Topic-Comment Grammar:</strong> Every operational statement asserts <code>topic : comment</code> per line. Statements declare raw predicates directly with zero filler verbs.</li>
+              <li><strong>Iron vs Slack Boundary:</strong> <code>agent iron</code> requires strict topic-comment structure for internal reasoning and execution; <code>human slack</code> allows informal, natural human prompts.</li>
+              <li><strong>Canonical State Vectors:</strong> Declares operational intent using canonical heads: intention, requirement, course of action, end result, demand, and compliance.</li>
+              <li><strong>Deterministic Truth:</strong> Exit code zero is passing. Blocked execution emits <code>ERROR</code>. An unverified or empty check emits <code>DONT_KNOW</code>.</li>
+              <li><strong>Offline Tooling:</strong> Python CLI utilities to parse topic-comment units into structured JSON, lint outputs against grammar anti-patterns, rewrite text into iron, and emit reference prompts.</li>
+            </ul>
           </div>
-          <div class="feature-box">
-            <h4>library : 28 dewey collegiate courses</h4>
-            <p>structured collegiate textbooks spanning mathematics, computer science, law, medicine, engineering, and logic available for study offline.</p>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Requires Python 3.10+. Standard library only, zero third-party dependencies:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/progen.git&#10;cd progen&#10;pip install -e .&#10;progen check&#10;progen lint examples/iron.md --role agent&#10;progen iron examples/mush.md&#10;progen prompt genome">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone and install in editable mode:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/progen.git</span>
+<span class="prompt">$ </span><span class="cmd">cd progen</span>
+<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
+
+<span class="cmt"># run language conformance self-check:</span>
+<span class="prompt">$ </span><span class="cmd">progen check</span>
+
+<span class="cmt"># lint agent output against topic-comment grammar:</span>
+<span class="prompt">$ </span><span class="cmd">progen lint examples/iron.md --role agent</span>
+
+<span class="cmt"># rewrite conversational prose into topic-comment iron:</span>
+<span class="prompt">$ </span><span class="cmd">progen iron examples/mush.md</span>
+
+<span class="cmt"># emit reference genome prompt:</span>
+<span class="prompt">$ </span><span class="cmd">progen prompt genome</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer">github.com/erastudil/progen</a>
+            </p>
           </div>
-          <div class="feature-box">
-            <h4>governance : atmem context control</h4>
-            <p>atomic memory architecture with isolated profile separation, parental safety controls, and persistent local cognitive state stored on your disk.</p>
+        </div>
+      </article>
+
+      <!-- 3. ZCABS -->
+      <article class="repo-card reveal in" id="zcabs">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>03 · zcabs</h2>
+            <span class="repo-tagline">zero context agent behavioral scaffolding &amp; proof of execution</span>
           </div>
-          <div class="feature-box">
-            <h4>security : client-side aes encryption</h4>
-            <p>optional local aes session cipher secured by your password. study profiles and conversations remain protected under your personal key.</p>
-          </div>
-          <div class="feature-box">
-            <h4>tools : in-process deterministic execution</h4>
-            <p>deterministic math engines, latex formatting, and document parsers execute in-memory with instant response.</p>
-          </div>
-          <div class="feature-box">
-            <h4>standards : package-honest engineering</h4>
-            <p>built under 5s and computational taoism. it does exactly what it says on the package, with unbounded local potential.</p>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
           </div>
         </div>
 
-        <div class="easylm-term">
-          <code>
-            <span class="ok">> easylm v0.4.0 status:</span><br />
-            &nbsp;&nbsp;engine: webgpu / onnx runtime in-browser [active]<br />
-            &nbsp;&nbsp;license: gnu agplv3 open source<br />
-            &nbsp;&nbsp;courses: 28 collegiate dewey volumes loaded<br />
-            &nbsp;&nbsp;memory: atmem context governance (profile isolation armed)<br />
-            &nbsp;&nbsp;security: client-side aes session cipher [available]<br />
-            &nbsp;&nbsp;telemetry: disabled · dependencies: in-browser standalone<br />
-            <span class="ok">> launch status:</span> live at <a href="https://easylm.app" target="_blank" rel="noopener noreferrer">easylm.app</a> · source at <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer">github.com/erastudil/easylm</a>
-          </code>
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Standard Library Only</span>
+          <span class="badge">Fail-Closed Invariant</span>
+          <span class="badge">Canary Scaffolding</span>
         </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Language models interpolate conversation history. An agent can claim test suites passed without executing a single command. zcabs turns execution verification into a physical file observation so that proof costs real computational work.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Dynamic Canary Invariant:</strong> The host mints a unique integer stored in an isolated local file. The agent receives only a target path (<code>LOOK: /path</code>) and required format (<code>FORMAT: the {string} number is {integer}</code>).</li>
+              <li><strong>Unfakable Proof:</strong> To prove completion, the model must read the target file from disk and report the live integer. Guessing, static scraping, or reading an empty path fails closed.</li>
+              <li><strong>Command Wrapping:</strong> <code>zcabs wrap -- pytest -q</code> executes any shell command. On exit code zero, it rotates the canary capability and emits the verification header.</li>
+              <li><strong>Repository Scanning:</strong> <code>zcabs scan .</code> traverses trees to verify no active canary stores, pointer files, or integers have leaked into git source files.</li>
+              <li><strong>Harness Integration:</strong> Clean Python module interface for test runners, evaluation harnesses, and multi-agent coordination loops.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Requires Python 3.10+. Standard library only, zero third-party dependencies:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/zcabs.git&#10;cd zcabs&#10;pip install -e .&#10;zcabs check&#10;zcabs wrap -- pytest -q&#10;zcabs scan .">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone and install in editable mode:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/zcabs.git</span>
+<span class="prompt">$ </span><span class="cmd">cd zcabs</span>
+<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
+
+<span class="cmt"># run protocol self-check:</span>
+<span class="prompt">$ </span><span class="cmd">zcabs check</span>
+
+<span class="cmt"># wrap a test command: runs pytest and emits canary on exit 0:</span>
+<span class="prompt">$ </span><span class="cmd">zcabs wrap -- pytest -q</span>
+
+<span class="cmt"># scan repository to detect leaked store integers:</span>
+<span class="prompt">$ </span><span class="cmd">zcabs scan .</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer">github.com/erastudil/zcabs</a>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. GFC -->
+      <article class="repo-card reveal in" id="gfc">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>04 · gfc</h2>
+            <span class="repo-tagline">greene feynman clarity writing standard &amp; prose linter</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Standard Library Only</span>
+          <span class="badge">Prose &amp; Educate Modes</span>
+          <span class="badge">Anti-Tell Linter</span>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Named in honor of physicists Brian Greene and Richard Feynman. Codifies their shared pedagogical order: present the physical intuition and working mechanism first, then introduce the technical name as recognition. Includes offline tools to catch AI writing tells.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Intuition First, Name Second:</strong> Flags documents that define technical terminology before showing how the mechanism works in everyday words.</li>
+              <li><strong>Say The Is, Once:</strong> Flags ungrounded reversals swapping abstractions without data or measurement.</li>
+              <li><strong>Regurgitation and Drift Guard:</strong> Catches headings or sentences that copy the user's prompt back into the body, or outputs that wander away from the ask.</li>
+              <li><strong>Contained Analogy:</strong> Catches metaphors that escape their introductory paragraph and hijack the vocabulary of the entire page.</li>
+              <li><strong>Corpus Echo Detection:</strong> Identifies identical eight-word phrases repeated across historical answer sessions to prevent model loop habits.</li>
+              <li><strong>Automated Stripper:</strong> <code>gfc strip</code> mechanically collapses empty reversals and strips likeability padding, disclaimer costumes, and trailing prompts.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Requires Python 3.10+. Standard library only, zero third-party dependencies:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/gfc.git&#10;cd gfc&#10;pip install -e .&#10;gfc check&#10;gfc lint docs/&#10;gfc lint examples/tensor-attention.md --mode educate&#10;gfc strip draft.md">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone and install in editable mode:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/gfc.git</span>
+<span class="prompt">$ </span><span class="cmd">cd gfc</span>
+<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
+
+<span class="cmt"># run test suite and fixtures:</span>
+<span class="prompt">$ </span><span class="cmd">gfc check</span>
+
+<span class="cmt"># lint human-facing markdown documentation:</span>
+<span class="prompt">$ </span><span class="cmd">gfc lint docs/</span>
+
+<span class="cmt"># educate mode: verifies mechanisms precede terminology:</span>
+<span class="prompt">$ </span><span class="cmd">gfc lint examples/tensor-attention.md --mode educate</span>
+
+<span class="cmt"># strip conversational padding and empty reversals:</span>
+<span class="prompt">$ </span><span class="cmd">gfc strip draft.md</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer">github.com/erastudil/gfc</a>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      ﻿      <!-- 5. HYDRA -->
+      <article class="repo-card reveal in hydra-showcase" id="hydra">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>05 · hydra</h2>
+            <span class="repo-tagline">sovereign multi-headed ai engine · interactive tui agent · model gateway router</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/hydra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repository ↗</a>
+            <a href="https://pypi.org/project/hydra-ai-cli/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">PyPI Package ↗</a>
+            <a href="https://www.npmjs.com/package/hydra-agent-cli" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">npm Package ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-electric">v1.2.1 release</span>
+          <span class="badge badge-violet">Python 3.8+ &amp; Node 18+</span>
+          <span class="badge">Open Source · Apache-2.0</span>
+          <span class="badge">Zero External Dependencies</span>
+          <span class="badge">Dual Runtime Parity</span>
+          <span class="badge">Interactive TUI Agent</span>
+          <span class="badge">OpenAI Server Port 7777</span>
+          <span class="badge">Autonomous Swarms</span>
+          <span class="badge">MCP &amp; Native Tools</span>
+        </div>
+
+        <!-- IRON GENOME SPECIFICATION -->
+        <div class="hydra-iron-box">
+          <div class="hydra-iron-header">
+            <span class="prompt">hydra</span>
+            <span class="dim">system execution genome · progen iron</span>
+          </div>
+          <div class="hydra-iron-body">
+            <div class="iron-line"><span class="iron-topic">scope</span> <span class="iron-sep">:</span> <span class="iron-comment">sovereign multi-headed command-line AI engine and model router.</span></div>
+            <div class="iron-line"><span class="iron-topic">runtime zero</span> <span class="iron-sep">:</span> <span class="iron-comment">identical standard library Python and Node runtimes with zero external dependencies.</span></div>
+            <div class="iron-line"><span class="iron-topic">gateway socket</span> <span class="iron-sep">:</span> <span class="iron-comment">OpenAI-compatible HTTP gateway on 127.0.0.1 port 7777.</span></div>
+            <div class="iron-line"><span class="iron-topic">terminal interface</span> <span class="iron-sep">:</span> <span class="iron-comment">inline prompt_toolkit TUI composer pinned beneath terminal scrollback with in-flight steering.</span></div>
+            <div class="iron-line"><span class="iron-topic">routing cascade</span> <span class="iron-sep">:</span> <span class="iron-comment">OpenRouter to Vercel AI Gateway to Cloudflare Workers AI to CheaperInference.</span></div>
+            <div class="iron-line"><span class="iron-topic">cognitive engine</span> <span class="iron-sep">:</span> <span class="iron-comment">Snowgate Alice proposition evaluation prior to remote model generation.</span></div>
+            <div class="iron-line"><span class="iron-topic">truth</span> <span class="iron-sep">:</span> <span class="iron-comment">exit code zero passing; unverified assertion carries zero truth value.</span></div>
+          </div>
+        </div>
+        <!-- FUNCTIONS -->
+        <div class="hydra-block">
+          <span class="repo-section-label">functions · operational capabilities</span>
+          <h3 class="hydra-subheading">six core functions for sovereign model summoning and terminal automation</h3>
+          
+          <div class="hydra-grid-3">
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">01</div>
+              <h4>multi-model routing</h4>
+              <p>Dispatches queries across frontier models, free cloud endpoints, and offline local daemons using single clean aliases like <code>hydra sonnet 5.5</code>, <code>hydra opus 5.5 high</code>, or <code>hydra sol 6.1 pro</code>. An automated cascade queries OpenRouter first, falls back to Vercel AI Gateway, and descends to Cloudflare Workers AI, redacting credentials and paths from error records.</p>
+            </div>
+
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">02</div>
+              <h4>prompt execution</h4>
+              <p>Executes single queries with real-time SSE token streaming, test-time compute controls like <code>--effort high</code> or <code>--reasoning-mode pro</code>, and structured <code>--json</code> output. Deep Unix pipe support enables <code>cat file.py | hydra &lt;alias&gt;</code> to treat stdin as the prompt, or pair stdin with instructions via <code>cat log.txt | hydra sol 6.1 - "audit errors"</code>.</p>
+            </div>
+
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">03</div>
+              <h4>interactive tui terminal mode</h4>
+              <p>Launches a persistent coding agent REPL via <code>hydra agent</code> or <code>-i</code>. An inline prompt_toolkit composer remains pinned beneath native terminal scrollback. Features live status reporting, a rounded composer, a context token gauge meter, Tab slash-command autocompletion, <code>Ctrl+Space</code> dictation, and in-flight tool steering upon double Enter.</p>
+            </div>
+
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">04</div>
+              <h4>continuous swarms</h4>
+              <p>Orchestrates multi-agent specialist teams via <code>hydra swarm</code>. Runs Architect and Coder heads in parallel, triggers an ordered Auditor head post-generation to inspect code patches, and finishes with a Synthesizer head delivering a unified consensus roadmap. Swarms support autonomous tool execution through the <code>--agentic</code> flag.</p>
+            </div>
+
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">05</div>
+              <h4>background orchestrator daemon</h4>
+              <p>Powers unattended long-horizon workflows and task intake via <code>hydra orchestrator</code> and idle compute worker scripts. Executes overnight repository audits, continuous research loops, automated test passes, and session context ledger persistence without human intervention.</p>
+            </div>
+
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">06</div>
+              <h4>openai api server on port 7777</h4>
+              <p>Hosts a zero-dependency OpenAI-compatible gateway on <code>127.0.0.1:7777</code> via <code>hydra serve</code>. Provides standard <code>/v1/models</code> and <code>/v1/chat/completions</code> endpoints with transparent alias resolution, provider failover, streaming token chunks, and tool calling passthrough for external runners like Hermes and Pi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- INTEGRATIONS -->
+        <div class="hydra-block">
+          <span class="repo-section-label">integrations · supported backends and models</span>
+          <h3 class="hydra-subheading">ten interconnected model providers, inference engines, and cognitive runners</h3>
+
+          <div class="hydra-grid-2">
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Claude Opus 5.5 &amp; Sonnet 5.5</span>
+                <span class="badge badge-sm">Anthropic</span>
+              </div>
+              <p>Frontier reasoning and surgical code crafting. Direct alias summoning with configurable reasoning effort tiers from low to max.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">GPT-6.1 Sol</span>
+                <span class="badge badge-sm">OpenAI</span>
+              </div>
+              <p>Flagship OpenAI reasoning with pro mode and high reasoning effort for formal invariant verification, security audits, and adversarial code reviews.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Cloudflare Workers AI</span>
+                <span class="badge badge-sm">Zero-Cost Tier</span>
+              </div>
+              <p>Powers <code>hydra free</code> at zero marginal cost using Meta Llama 3.3 70B Instruct fast running on global Cloudflare edge hardware.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">OpenRouter Free Forge &amp; Frontier</span>
+                <span class="badge badge-sm">Aggregator</span>
+              </div>
+              <p>Primary frontier router and secondary zero-cost fallback querying open-access Gemma 4 and Nemotron models when cloud quotas exhaust.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Vercel AI Gateway</span>
+                <span class="badge badge-sm">Edge Gateway</span>
+              </div>
+              <p>High-throughput, low-latency edge routing layer providing automated failover routing for production agent pipelines.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Hugging Face Serverless</span>
+                <span class="badge badge-sm">Inference API</span>
+              </div>
+              <p>Direct serverless inference routing via <code>hydra hf</code> targeting open-weight model endpoints without dedicated infrastructure.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">CheaperInference</span>
+                <span class="badge badge-sm">Discount Tier</span>
+              </div>
+              <p>Discounted frontier inference access and specialized GLM-5.3 models delivering budget efficiency on high-volume batch jobs.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Local Ollama &amp; llama.cpp</span>
+                <span class="badge badge-sm">Offline Local</span>
+              </div>
+              <p>Offline execution through <code>hydra local</code> connecting to Ollama, llama.cpp, or EasyLM HTTP sockets with zero internet data transfer.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">Snowgate Alice Cognitive Engine</span>
+                <span class="badge badge-sm">Cognitive Core</span>
+              </div>
+              <p>Evaluates input queries through native Alice proposition parsing and deterministic tool pipelines before remote model generation begins.</p>
+            </div>
+
+            <div class="hydra-integ-card">
+              <div class="integ-head">
+                <span class="integ-title">MCP Ecosystem &amp; Native Tools</span>
+                <span class="badge badge-sm">Tool Protocol</span>
+              </div>
+              <p>Built-in stdio JSON-RPC 2.0 client connecting Filesystem, Fetch, SQLite, Git, GitHub, Brave Search, Memory, and Playwright, paired with nine zero-dependency native coding tools.</p>
+            </div>
+          </div>
+        </div>
+        <!-- BENEFITS -->
+        <div class="hydra-block">
+          <span class="repo-section-label">benefits · architectural edge</span>
+          <h3 class="hydra-subheading">five structural advantages of sovereign multi-headed routing</h3>
+
+          <div class="hydra-grid-3">
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">01</span>
+              <h4>sovereign local data privacy</h4>
+              <p>Zero third-party telemetry, tracking daemons, or background data collection. Prompts and tokens stay strictly on local hardware during offline inference. Child MCP processes run with stripped environments to prevent API token leakage.</p>
+            </div>
+
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">02</span>
+              <h4>compute tiering economics</h4>
+              <p>Minimizes token spend by routing mechanical transforms, syntax linting, and directory navigation to free cloud tiers or local hardware. High-cost frontier tokens activate strictly when formal reasoning and architectural auditing demand them.</p>
+            </div>
+
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">03</span>
+              <h4>cross-model consensus verification</h4>
+              <p>Eliminates single-model blind spots. Multi-agent swarms pit independent model families against each other, verifying code patches and system designs through adversarial auditing and automated synthesis.</p>
+            </div>
+
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">04</span>
+              <h4>zero vendor lock-in</h4>
+              <p>Pure Python standard library and Node standard library implementations with zero external dependencies. Swapping upstream providers or switching models requires zero code refactoring.</p>
+            </div>
+
+            <div class="hydra-benefit-card">
+              <span class="benefit-number">05</span>
+              <h4>offline fallback</h4>
+              <p>Unbroken productivity during network outages or air-gapped field operations. When internet connectivity drops, commands route immediately to local model backends without crashing active workflows.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- USE CASES -->
+        <div class="hydra-block">
+          <span class="repo-section-label">use cases · real-world deployments</span>
+          <h3 class="hydra-subheading">five practical workflows for autonomous engineering and research</h3>
+
+          <div class="hydra-grid-3">
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">SWARMS</div>
+              <h4>autonomous coding swarms</h4>
+              <p>Multi-headed parallel refactoring where Opus models system architecture, Sonnet writes production code and tests, GPT-6.1 Sol audits security vulnerabilities, and Gemini synthesizes the verified release.</p>
+            </div>
+
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">DAEMONS</div>
+              <h4>continuous overnight research daemons</h4>
+              <p>Background orchestrator loops that poll technical feeds, ingest academic papers, parse propositions through Snowgate Alice, and generate structured markdown digests while you sleep.</p>
+            </div>
+
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">PIPELINES</div>
+              <h4>terminal workflow automation</h4>
+              <p>Seamless command-line pipes where compiler errors, test failure traces, git diffs, and server logs stream directly into reasoning models for immediate root-cause diagnostics.</p>
+            </div>
+
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">AUDITING</div>
+              <h4>multi-model code review and refactoring</h4>
+              <p>Pairing disparate model architectures to evaluate pull requests, ensuring that architectural invariants and boundary conditions face independent verification before merging.</p>
+            </div>
+
+            <div class="hydra-usecase-card">
+              <div class="usecase-badge">GRAPHS</div>
+              <h4>deterministic knowledge graph ingestion</h4>
+              <p>Extracting propositions from raw documentation through Alice cognitive grammar and recording structured entities directly into MCP Memory graphs or local SQLite stores.</p>
+            </div>
+          </div>
+        </div>
+        <!-- TUI PREVIEW -->
+        <div class="hydra-block">
+          <span class="repo-section-label">tui interface · inline terminal composer</span>
+          <h3 class="hydra-subheading">terminal agent view pinned beneath native scrollback</h3>
+
+          <div class="hydra-tui-preview">
+            <div class="tui-window-titlebar">
+              <span class="tui-win-dot red"></span>
+              <span class="tui-win-dot yellow"></span>
+              <span class="tui-win-dot green"></span>
+              <span class="tui-win-title">hydra agent — cascadia code — 127.0.0.1:7777 active</span>
+            </div>
+            <div class="tui-screen">
+              <pre class="tui-ascii"><span class="tui-green">   ___ ___            .___              
+  /   |   \___.__.  __| _/___________   
+ /    ~    &lt;   |  | / __ |\_  __ \__  \  
+ \    Y    /\___  |/ /_/ | |  | \// __ \_
+  \___|_  / / ____|\____ | |__|  (____  /
+        \/  \/          \/            \/ 
+       Sovereign Multi-Headed AI Shell · v1.2.1</span></pre>
+              <div class="tui-chat-log">
+                <div class="tui-turn-user"><span class="tui-prompt-sign">&gt;</span> verify distributed state machine invariants and run mutation tests</div>
+                <div class="tui-turn-agent">
+                  <span class="tui-agent-tag">[HYDRA AGENT : SONNET 5.5]</span>
+                  <div class="tui-agent-text">Examining consensus state machine. Discovered three unhandled edge cases in partition recovery. Generating property test suite...</div>
+                </div>
+              </div>
+
+              <!-- PINNED COMPOSER -->
+              <div class="tui-composer-area">
+                <div class="tui-status-bar">
+                  <span class="status-indicator live"></span>
+                  <span class="status-model">model: anthropic/claude-sonnet-5.5</span>
+                  <span class="status-effort">effort: high</span>
+                  <span class="status-gauge">tokens: 18.4k / 200k <span class="gauge-meter">[▂▃▄▅    ]</span></span>
+                </div>
+                <div class="tui-composer-box">
+                  <span class="composer-caret">&gt;</span>
+                  <span class="composer-text">refactor ring buffer to zero-copy memoryview and rerun pytest</span>
+                </div>
+                <div class="tui-key-hints">
+                  <span><kbd>Enter</kbd> send</span>
+                  <span><kbd>Alt+Enter</kbd> newline</span>
+                  <span><kbd>Enter x2</kbd> steer running turn</span>
+                  <span><kbd>Tab</kbd> commands</span>
+                  <span><kbd>Ctrl+Space</kbd> dictation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- COMMAND WORKBENCH -->
+        <div class="hydra-block">
+          <span class="repo-section-label">command workbench · interactive cheatsheet</span>
+          <h3 class="hydra-subheading">copy-ready terminal commands and programmatic sdk examples</h3>
+
+          <div class="hydra-tabs-container">
+            <div class="hydra-tab-nav" role="tablist" aria-label="hydra command tabs">
+              <button type="button" class="hydra-tab-btn active" data-tab="tab-frontier" role="tab">frontier</button>
+              <button type="button" class="hydra-tab-btn" data-tab="tab-tui" role="tab">tui agent</button>
+              <button type="button" class="hydra-tab-btn" data-tab="tab-swarms" role="tab">swarms</button>
+              <button type="button" class="hydra-tab-btn" data-tab="tab-gateway" role="tab">openai gateway :7777</button>
+              <button type="button" class="hydra-tab-btn" data-tab="tab-free-local" role="tab">free &amp; local</button>
+              <button type="button" class="hydra-tab-btn" data-tab="tab-mcp" role="tab">mcp &amp; tools</button>
+              <button type="button" class="hydra-tab-btn" data-tab="tab-sdk" role="tab">python &amp; node sdk</button>
+            </div>
+
+            <!-- TAB 1: FRONTIER -->
+            <div class="hydra-tab-panel active" id="tab-frontier" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>bash / powershell · frontier model summoning</span>
+                  <button type="button" class="copy-btn" data-copy="hydra sonnet 5.5 &quot;Implement a zero-copy ring buffer in Rust&quot;&#10;hydra opus 5.5 high &quot;Verify distributed raft state machine invariants&quot;&#10;hydra sol 6.1 pro &quot;Audit authentication token validation logic for side channels&quot;&#10;cat src/parser.c | hydra sonnet 5.5 - &quot;Identify potential memory leaks&quot;">copy commands</button>
+                </div>
+                <pre><span class="cmt"># summon claude sonnet 5.5 with default streaming:</span>
+<span class="prompt">$ </span><span class="cmd">hydra sonnet 5.5 "Implement a zero-copy ring buffer in Rust"</span>
+
+<span class="cmt"># summon claude opus 5.5 with high reasoning effort:</span>
+<span class="prompt">$ </span><span class="cmd">hydra opus 5.5 high "Verify distributed raft state machine invariants"</span>
+
+<span class="cmt"># summon gpt-6.1 sol with pro reasoning mode:</span>
+<span class="prompt">$ </span><span class="cmd">hydra sol 6.1 pro "Audit authentication token validation logic for side channels"</span>
+
+<span class="cmt"># pipe source code directly into model with trailing instruction:</span>
+<span class="prompt">$ </span><span class="cmd">cat src/parser.c | hydra sonnet 5.5 - "Identify potential memory leaks"</span></pre>
+              </div>
+            </div>
+
+            <!-- TAB 2: TUI AGENT -->
+            <div class="hydra-tab-panel" id="tab-tui" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>bash / powershell · interactive tui agent</span>
+                  <button type="button" class="copy-btn" data-copy="hydra agent&#10;hydra agent --steer&#10;hydra agent &quot;Inspect pyproject.toml and add coverage scripts&quot;&#10;hydra sonnet 5.5 --mcp &quot;Search sqlite database for stale sessions&quot;">copy commands</button>
+                </div>
+                <pre><span class="cmt"># launch interactive coding agent repl pinned beneath scrollback:</span>
+<span class="prompt">$ </span><span class="cmd">hydra agent</span>
+
+<span class="cmt"># launch with interactive in-flight tool confirmation:</span>
+<span class="prompt">$ </span><span class="cmd">hydra agent --steer</span>
+
+<span class="cmt"># run single autonomous agent task with native file and bash tools:</span>
+<span class="prompt">$ </span><span class="cmd">hydra agent "Inspect pyproject.toml and add coverage scripts"</span>
+
+<span class="cmt"># summon specific model with model context protocol tools enabled:</span>
+<span class="prompt">$ </span><span class="cmd">hydra sonnet 5.5 --mcp "Search sqlite database for stale sessions"</span></pre>
+              </div>
+            </div>
+
+            <!-- TAB 3: SWARMS -->
+            <div class="hydra-tab-panel" id="tab-swarms" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>bash / powershell · multi-agent swarms</span>
+                  <button type="button" class="copy-btn" data-copy="hydra swarm &quot;Design and test an async event dispatcher&quot;&#10;hydra swarm &quot;Refactor parser&quot; --heads architect:hermes,coder:pi,auditor&#10;hydra swarm &quot;Fix security vulnerabilities&quot; --agentic">copy commands</button>
+                </div>
+                <pre><span class="cmt"># fan out across default architect, coder, auditor, and synthesizer heads:</span>
+<span class="prompt">$ </span><span class="cmd">hydra swarm "Design and test an async event dispatcher"</span>
+
+<span class="cmt"># delegate specialist heads to hermes and pi cli binaries:</span>
+<span class="prompt">$ </span><span class="cmd">hydra swarm "Refactor parser" --heads architect:hermes,coder:pi,auditor</span>
+
+<span class="cmt"># enable autonomous tool-augmented execution loops across swarm heads:</span>
+<span class="prompt">$ </span><span class="cmd">hydra swarm "Fix security vulnerabilities" --agentic</span></pre>
+              </div>
+            </div>
+
+            <!-- TAB 4: GATEWAY SERVER -->
+            <div class="hydra-tab-panel" id="tab-gateway" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>bash / powershell · openai-compatible gateway server</span>
+                  <button type="button" class="copy-btn" data-copy="hydra serve --port 7777&#10;export OPENAI_BASE_URL=&quot;http://127.0.0.1:7777/v1&quot;&#10;export OPENAI_API_KEY=&quot;sovereign-hydra&quot;&#10;curl http://127.0.0.1:7777/v1/models&#10;curl http://127.0.0.1:7777/v1/chat/completions -H &quot;Content-Type: application/json&quot; -d '{&quot;model&quot;:&quot;sonnet 5.5&quot;,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;ping&quot;}]}'">copy commands</button>
+                </div>
+                <pre><span class="cmt"># 1. launch sovereign openai gateway on port 7777:</span>
+<span class="prompt">$ </span><span class="cmd">hydra serve --port 7777</span>
+
+<span class="cmt"># 2. point external agents like hermes, pi, goose, or aider to hydra:</span>
+<span class="prompt">$ </span><span class="cmd">export OPENAI_BASE_URL="http://127.0.0.1:7777/v1"</span>
+<span class="prompt">$ </span><span class="cmd">export OPENAI_API_KEY="sovereign-hydra"</span>
+
+<span class="cmt"># 3. list registered models and aliases:</span>
+<span class="prompt">$ </span><span class="cmd">curl http://127.0.0.1:7777/v1/models</span>
+
+<span class="cmt"># 4. send chat completion with automatic alias resolution:</span>
+<span class="prompt">$ </span><span class="cmd">curl http://127.0.0.1:7777/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -d '{"model":"sonnet 5.5","messages":[{"role":"user","content":"ping"}]}'</span></pre>
+              </div>
+            </div>
+
+            <!-- TAB 5: FREE & LOCAL -->
+            <div class="hydra-tab-panel" id="tab-free-local" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>bash / powershell · free tier &amp; offline local inference</span>
+                  <button type="button" class="copy-btn" data-copy="hydra free &quot;Explain the Byzantine Generals problem&quot;&#10;hydra local &quot;Write a unit test for email validation&quot;&#10;hydra hf &quot;Summarize git log output&quot;&#10;hydra agent --free &quot;Lint repository python files&quot;&#10;hydra agent --local &quot;Format markdown files&quot;">copy commands</button>
+                </div>
+                <pre><span class="cmt"># zero-cost cloud inference via cloudflare / openrouter free forge:</span>
+<span class="prompt">$ </span><span class="cmd">hydra free "Explain the Byzantine Generals problem"</span>
+
+<span class="cmt"># completely offline local inference via ollama / llama.cpp:</span>
+<span class="prompt">$ </span><span class="cmd">hydra local "Write a unit test for email validation"</span>
+
+<span class="cmt"># hugging face serverless inference routing:</span>
+<span class="prompt">$ </span><span class="cmd">hydra hf "Summarize git log output"</span>
+
+<span class="cmt"># zero-cost agent loop with native file and bash tools:</span>
+<span class="prompt">$ </span><span class="cmd">hydra agent --free "Lint repository python files"</span>
+
+<span class="cmt"># offline local agent loop with no external network calls:</span>
+<span class="prompt">$ </span><span class="cmd">hydra agent --local "Format markdown files"</span></pre>
+              </div>
+            </div>
+
+            <!-- TAB 6: MCP & TOOLS -->
+            <div class="hydra-tab-panel" id="tab-mcp" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>bash / powershell · model context protocol</span>
+                  <button type="button" class="copy-btn" data-copy="hydra mcp init&#10;hydra mcp list&#10;hydra mcp test filesystem&#10;hydra mcp test fetch&#10;hydra sonnet 5.5 --mcp &quot;Search brave for latest rust release notes&quot;">copy commands</button>
+                </div>
+                <pre><span class="cmt"># initialize default community mcp servers template in ~/.hydra:</span>
+<span class="prompt">$ </span><span class="cmd">hydra mcp init</span>
+
+<span class="cmt"># inspect registered mcp servers and exposed tools:</span>
+<span class="prompt">$ </span><span class="cmd">hydra mcp list</span>
+
+<span class="cmt"># test connection and tool discovery on filesystem server:</span>
+<span class="prompt">$ </span><span class="cmd">hydra mcp test filesystem</span>
+
+<span class="cmt"># test web fetch server:</span>
+<span class="prompt">$ </span><span class="cmd">hydra mcp test fetch</span>
+
+<span class="cmt"># summon model with live brave search mcp tool:</span>
+<span class="prompt">$ </span><span class="cmd">hydra sonnet 5.5 --mcp "Search brave for latest rust release notes"</span></pre>
+              </div>
+            </div>
+
+            <!-- TAB 7: SDK -->
+            <div class="hydra-tab-panel" id="tab-sdk" role="tabpanel">
+              <div class="code-terminal">
+                <div class="code-terminal-header">
+                  <span>python &amp; node.js · programmatic integration</span>
+                  <button type="button" class="copy-btn" data-copy="from hydra_cli import complete, run_agent_loop, McpRegistry&#10;&#10;response = complete(&quot;sonnet 5.5&quot;, &quot;Explain memory barriers&quot;)&#10;print(response)&#10;&#10;registry = McpRegistry()&#10;result = run_agent_loop(&quot;opus 5.5 high&quot;, &quot;Audit codebase&quot;, registry=registry)&#10;registry.shutdown()&#10;print(result)">copy code</button>
+                </div>
+                <pre><span class="cmt"># python standard library programmatic invocation:</span>
+<span class="cmd">from</span> hydra_cli <span class="cmd">import</span> complete, run_agent_loop, McpRegistry
+
+<span class="cmt"># direct synchronous prompt completion:</span>
+response = complete(<span class="prompt">"sonnet 5.5"</span>, <span class="prompt">"Explain memory barriers"</span>)
+print(response)
+
+<span class="cmt"># autonomous tool-augmented agent loop:</span>
+registry = McpRegistry()
+result = run_agent_loop(<span class="prompt">"opus 5.5 high"</span>, <span class="prompt">"Audit codebase"</span>, registry=registry)
+registry.shutdown()
+print(result)</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INSTALLATION -->
+        <div class="hydra-block">
+          <span class="repo-section-label">installation · single-command bootstrapping</span>
+          <h3 class="hydra-subheading">install python and node packages with zero external dependencies</h3>
+
+          <div class="code-terminal">
+            <div class="code-terminal-header">
+              <span>bash / powershell · install commands</span>
+              <button type="button" class="copy-btn" data-copy="pip install &quot;git+https://github.com/erastudil/hydra.git&quot;&#10;npm install -g &quot;git+https://github.com/erastudil/hydra.git&quot;&#10;curl -fsSL https://raw.githubusercontent.com/erastudil/hydra/main/install.sh | bash&#10;irm https://raw.githubusercontent.com/erastudil/hydra/main/install.ps1 | iex">copy install commands</button>
+            </div>
+            <pre><span class="cmt"># python global or virtualenv install from git:</span>
+<span class="prompt">$ </span><span class="cmd">pip install "git+https://github.com/erastudil/hydra.git"</span>
+
+<span class="cmt"># or node global cli install:</span>
+<span class="prompt">$ </span><span class="cmd">npm install -g "git+https://github.com/erastudil/hydra.git"</span>
+
+<span class="cmt"># direct linux / macos bootstrap script:</span>
+<span class="prompt">$ </span><span class="cmd">curl -fsSL https://raw.githubusercontent.com/erastudil/hydra/main/install.sh | bash</span>
+
+<span class="cmt"># direct windows powershell bootstrap script:</span>
+<span class="prompt">PS&gt; </span><span class="cmd">irm https://raw.githubusercontent.com/erastudil/hydra/main/install.ps1 | iex</span></pre>
+          </div>
+          <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+            source: <a href="https://github.com/erastudil/hydra" target="_blank" rel="noopener noreferrer">github.com/erastudil/hydra</a> · packages: <a href="https://pypi.org/project/hydra-ai-cli/" target="_blank" rel="noopener noreferrer">hydra-ai-cli</a> · <a href="https://www.npmjs.com/package/hydra-agent-cli" target="_blank" rel="noopener noreferrer">hydra-agent-cli</a>
+          </p>
+        </div>
+      </article>
+
+
+
+      <!-- 6. TANKBENCH -->
+      <article class="repo-card reveal in" id="tankbench">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>06 · tankbench</h2>
+            <span class="repo-tagline">defensive hardening and security refactoring benchmark for coding agents</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/tankbench" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Triad Scoring Standard</span>
+          <span class="badge">DADA Vol 1 Armory</span>
+          <span class="badge">SWE-bench Export</span>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Evaluates coding agents on defensive refactoring and security hardening of existing legacy codebases. Hands the agent Harbor Ledger 2.4: a functioning invoicing web application full of lying comments, decoy files, and 24 obfuscated security vulnerabilities.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Alive Spec (Floor):</strong> Functional invariants must pass 100% (staff login, invoice viewing, search, exports, CSS). Dodging attacks by deleting routes scores an immediate 0.0.</li>
+              <li><strong>Red Rabbits (50%):</strong> 24 bespoke offensive attacks targeting dormant ransomware, 90s trojan fee inflators, adware popups, MAPI droppers, and custom verb side-channels.</li>
+              <li><strong>DADA Vol 1 Armory (50%):</strong> 8 structural defense rings verified from Defense Against the Dark Arts (secrets hygiene via gitleaks, trojan quarantine, 127.0.0.1 socket isolation, Presidio egress PII DLP filters, and strict CSP headers).</li>
+              <li><strong>Objective Rubric:</strong> Balanced mathematical scoring: composite score requires the shop to still function while eliminating backdoors and adding defenses.</li>
+              <li><strong>Dataset Export:</strong> Exports task instances directly to SWE-bench and Inspect AI evaluation formats.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Zero setup required. Run baseline calibration or grade a patch:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/tankbench.git&#10;cd tankbench&#10;python run.py baseline&#10;python run.py grade --patch solution.patch&#10;python run.py report --overlay fixtures/hardened --open">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone benchmark repository:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/tankbench.git</span>
+<span class="prompt">$ </span><span class="cmd">cd tankbench</span>
+
+<span class="cmt"># verify baseline calibration (alive pass, probes hit -> score 0.0):</span>
+<span class="prompt">$ </span><span class="cmd">python run.py baseline</span>
+
+<span class="cmt"># grade an agent solution patch file:</span>
+<span class="prompt">$ </span><span class="cmd">python run.py grade --patch solution.patch</span>
+
+<span class="cmt"># generate interactive visual html report:</span>
+<span class="prompt">$ </span><span class="cmd">python run.py report --overlay fixtures/hardened --open</span>
+
+<span class="cmt"># export benchmark dataset for swe-bench / inspect ai:</span>
+<span class="prompt">$ </span><span class="cmd">python run.py export --format swe-bench --out task_swe.json</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/tankbench" target="_blank" rel="noopener noreferrer">github.com/erastudil/tankbench</a> · armory: <a href="https://dadavol1.vercel.app" target="_blank" rel="noopener noreferrer">dadavol1.vercel.app</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- CREDITS -->
+    <section id="credits" class="reveal in">
+      <p class="section-kicker">02 · credits : standing on shoulders</p>
+      <h2>credits : upstream open source &amp; foundations</h2>
+      <p class="muted">
+        trademarks and logos belong to their respective authors. we acknowledge and salute the open-source engines, compilers, platforms, and open-weight models that make sovereign computing possible.
+      </p>
+      <div class="credits">
+        <a class="credit" href="https://www.python.org" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="36" height="36" loading="lazy" />
+          <strong>python</strong>
+          <span>language · stdlib</span>
+        </a>
+        <a class="credit" href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" width="36" height="36" loading="lazy" />
+          <strong>node.js</strong>
+          <span>runtime · stdlib</span>
+        </a>
+        <a class="credit" href="https://www.rust-lang.org" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/rust/ffffff" alt="Rust" width="36" height="36" loading="lazy" />
+          <strong>rust</strong>
+          <span>systems · compiler</span>
+        </a>
+        <a class="credit" href="https://www.linux.org" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" width="36" height="36" loading="lazy" />
+          <strong>linux</strong>
+          <span>os foundation</span>
+        </a>
+        <a class="credit" href="https://www.debian.org" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/debian/A81D33" alt="Debian" width="36" height="36" loading="lazy" />
+          <strong>debian</strong>
+          <span>distro base</span>
+        </a>
+        <a class="credit" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API" target="_blank" rel="noopener noreferrer">
+          <img src="assets/easylm-icon.svg" alt="WebGPU" width="36" height="36" loading="lazy" />
+          <strong>webgpu</strong>
+          <span>in-browser compute</span>
+        </a>
+        <a class="credit" href="https://huggingface.co" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" width="36" height="36" loading="lazy" />
+          <strong>hugging face</strong>
+          <span>model weights</span>
+        </a>
+        <a class="credit" href="https://qwen.ai" target="_blank" rel="noopener noreferrer">
+          <img src="assets/credit-qwen.svg" alt="Qwen" width="36" height="36" loading="lazy" />
+          <strong>qwen</strong>
+          <span>open weights</span>
+        </a>
+        <a class="credit" href="https://www.llama.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/meta/0668E1" alt="Llama" width="36" height="36" loading="lazy" />
+          <strong>llama</strong>
+          <span>meta weights</span>
+        </a>
+        <a class="credit" href="https://ai.google.dev/gemma" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/google/4285F4" alt="Gemma" width="36" height="36" loading="lazy" />
+          <strong>gemma</strong>
+          <span>google weights</span>
+        </a>
+        <a class="credit" href="https://www.liquid.ai" target="_blank" rel="noopener noreferrer">
+          <img src="assets/credit-lfm.svg" alt="Liquid AI" width="36" height="36" loading="lazy" />
+          <strong>liquid lfm</strong>
+          <span>efficient edge</span>
+        </a>
+        <a class="credit" href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" width="36" height="36" loading="lazy" />
+          <strong>github</strong>
+          <span>code hosting</span>
+        </a>
+        <a class="credit" href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel" width="36" height="36" loading="lazy" />
+          <strong>vercel</strong>
+          <span>edge deployment</span>
+        </a>
       </div>
     </section>
 
-    <!-- DADAVOL1: DEFENSE -->
-    <section id="datda" class="reveal">
-      <p class="section-kicker">00b · field manual : developer defense</p>
+    <!-- FUEL / DONATIONS -->
+    <section id="fuel" class="reveal in">
+      <p class="section-kicker">03 · fuel : support open source development</p>
+      <h2>donations : voluntary fuel</h2>
       <div class="panel">
-        <h3 class="mt-0">defense against the dark arts : solo security</h3>
-        <p class="lead">cybersecurity hardening for ai-assisted developers and vibe coders</p>
-        <p class="muted">
-          an ai coding agent has a shell on your workstation. it reads files, runs terminal commands, and installs packages. without structural boundaries, a single hostile prompt inside a dependency or issue ticket can command your terminal. this field manual teaches defensive tradecraft for solo builders.
-        </p>
-        <div class="hero-actions" style="margin-top:0.85rem">
-          <a href="https://dadavol1.vercel.app/" class="btn btn-secondary">Open dadavol1 Field Manual ↗</a>
-          <a href="dadavol1/" class="btn btn-ghost">Local Mirror →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY -->
-    <section id="why" class="reveal">
-      <p class="section-kicker">01 · philosophy : computational taoism</p>
-      <h2>computational taoism : shop philosophy</h2>
-      <div class="panel">
-        <p class="lead">why we build the way we build. a shop philosophy, not a sermon.</p>
+        <p class="lead">all software authored here is released under free, permissive, or copyleft open-source licenses.</p>
         <p class="muted" style="margin-bottom:0">
-          you cannot deceive iron. a computer cannot take a hint.
-          our work runs on three disciplines from precision manufacturing, one from classical chinese thought, and deterministic software architecture.
-        </p>
-      </div>
-
-      <div class="panel">
-        <h3 class="mt-0">5s : toyota production discipline</h3>
-        <p class="muted">
-          toyota's production system taught the world these five practices. we apply them directly to software architecture.
-        </p>
-        <ul class="list-clean">
-          <li><strong>整理 seiri</strong>: sort. separate what you need from what you do not. remove the rest. extra weight is not kindness.</li>
-          <li><strong>整頓 seiton</strong>: set in order. every necessary tool has one home. anyone can find it and return it.</li>
-          <li><strong>清掃 seisō</strong>: shine. clean so the truth shows. dirt hides defect. we clean while we work.</li>
-          <li><strong>清潔 seiketsu</strong>: standardize. turn the first three into a permanent standard. one clean day is not enough.</li>
-          <li><strong>躾 shitsuke</strong>: discipline. keep the standard without supervision. the character is body plus beauty.</li>
-        </ul>
-        <p class="muted" style="margin:0.7rem 0 0">
-          in one breath: cut, place, see, hold, become. mess is violence against the next hand.
-        </p>
-      </div>
-
-      <div class="grid-2">
-        <div class="panel">
-          <h3 class="mt-0">改善 kaizen : continuous improvement</h3>
-          <p class="muted" style="margin:0">
-            kai equals change. zen equals good.
-            change toward the good: small, daily, endless, owned by the person who does the work.
-            status quo is not sacred. one unnecessary motion removed beats an executive speech.
-            a problem is treasure. we hunt the defect in the system, not in the person.
-          </p>
-        </div>
-        <div class="panel">
-          <h3 class="mt-0">無為 wu wei : effortless action</h3>
-          <p class="muted" style="margin:0">
-            action without wasted force. the art that moves without strain.
-            hungry, eat. tired, sleep. take the honest direct path.
-            take the simple direct step where a simple action works.
-            work in harmony with the natural law of the task.
-          </p>
-        </div>
-      </div>
-
-      <div class="panel">
-        <h3 class="mt-0">architecture : non-imperative design</h3>
-        <p class="muted">
-          state the finish line instead of streaming commands.
-          work is pulled at execution rather than pushed in a lecture. verification is deterministic: math is math, a test is a test, and code runs to proven specifications.
-        </p>
-        <ul class="list-clean">
-          <li><strong>declarative rules</strong>: say what done looks like. the rule is the finish line.</li>
-          <li><strong>defined finish lines</strong>: know when to stop. a job without a finish line is a hostage situation.</li>
-          <li><strong>instructions pulled, not pushed</strong>: clear written guides sit on disk. the worker pulls them at the moment of execution.</li>
-          <li><strong>tacking</strong>: zigzag toward the mark when conditions shift. leave evidence of the tack.</li>
-          <li><strong>blast radius containment</strong>: name how far a failure can spread before execution.</li>
-          <li><strong>rate, not force</strong>: set a rate the metal can hold. force that exceeds the material produces scrap.</li>
-          <li><strong>steer at the cheap stage</strong>: turn the work while changes cost pennies. late heroics are the expensive kind of wisdom.</li>
-        </ul>
-      </div>
-
-      <div class="panel">
-        <h3 class="mt-0">verification : deterministic safety</h3>
-        <p class="muted">
-          hard walls prevent unacceptable outcomes. safety paths are hardwired in code.
-        </p>
-        <ul class="list-clean">
-          <li><strong>zcabs honesty checks</strong>: deterministic canary on every claim. fail closed.</li>
-          <li><strong>e-stop</strong>: immediate shutdown when safety boundaries are breached.</li>
-          <li><strong>verification harness</strong>: deterministic test suites grade the work. an independent inspection verifies every cut.</li>
-          <li><strong>dont know</strong>: an empty well says DONT_KNOW. silence beats an unverified answer.</li>
-          <li><strong>human only</strong>: private material stays on the human side of the fence. local keys and private notes remain untouched.</li>
-          <li><strong>watchdog</strong>: independent process monitor. if the runner hangs, the wall fires.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- WHAT -->
-    <section id="work" class="reveal">
-      <p class="section-kicker">02 · the stack : open source iron</p>
-      <h2>the stack : tools of creation</h2>
-      <p class="lead">every piece of software we author is free and open source. run it on your own machine, inspect the source, and compute offline forever.</p>
-
-      <div class="work-grid">
-        <article class="work-card" id="tr">
-          <p class="work-kicker">os : operating system</p>
-          <h3>tabula rasa : autonomous os</h3>
-          <p>
-            a linux distribution that starts empty and grows with you.
-            natural language compiles to posix at the kernel level.
-            instant boot with a lean posix footprint.
-          </p>
-          <p class="muted">
-            <strong>trash</strong> is the command-line agent: the login shell that talks to you and the machine.
-            you state the job. trash finds the necessary tools and provisions them on demand.
-            when the job changes, the system adapts.
-          </p>
-        </article>
-
-        <article class="work-card" id="cnlc">
-          <p class="work-kicker">mill tape : g-code for models</p>
-          <h3>cnlc : machine control language</h3>
-          <p>
-            computer natural language control.
-            the same logic as g-code, the standard running physical mills and lathes worldwide for decades.
-            write the move. the machine executes.
-          </p>
-          <p class="muted">
-            language models are spindles. roles are machine operators. tools calculate, convert, and inspect: they return deterministic numbers and verified metrics.
-            work rides pallets through verified machining cycles.
-          </p>
-        </article>
-
-        <article class="work-card" id="eee">
-          <p class="work-kicker">speak : exact compiler</p>
-          <h3>eee : exact engineering english</h3>
-          <p>
-            exact engineering english.
-            readable english sentences that compile to native binaries via rust.
-            taking the ambiguity out of software creation.
-          </p>
-          <p class="muted">
-            you write the sentence. a rust compiler verifies it and casts real machine code.
-            students learn quickly because the grammar is exact and immediate.
-            engineers rely on it because every type and branch compiles to verified logic.
-          </p>
-        </article>
-
-        <article class="work-card" id="celllm">
-          <p class="work-kicker">one mill : operator console</p>
-          <h3>cell lm : single spindle workstation</h3>
-          <p>
-            the efficiency of proven machine controls paired with the intelligence of language models.
-            deterministic tool execution with keystroke-minimized operation.
-          </p>
-          <p class="muted">
-            one mill, one spindle, one console, one key to a pane.
-            tools calculate, convert, clock, and look up.
-            the model handles language while the mill routes the job.
-          </p>
-        </article>
-
-        <article class="work-card" id="nexus">
-          <p class="work-kicker">the shop : autonomous plant</p>
-          <h3>nexus : local autonomous plant</h3>
-          <p>
-            the computer is an autonomous plant.
-            a front desk that greets, workers that cut, inspectors that check, and a warehouse that remembers.
-          </p>
-          <p class="muted">
-            you declare the done-state. the system organizes itself around that mark.
-            runs entirely on your local machine. 100% free and open source with full user sovereignty.
-          </p>
-        </article>
-
-        <article class="work-card" id="mesh">
-          <p class="work-kicker">house net : peer intelligence</p>
-          <h3>mesh : local peer compute</h3>
-          <p>
-            starts at home. your phone asks a stronger box on the same floor to think.
-            the idle plugged-in machine handles heavy computation. the files stay with you.
-          </p>
-          <p class="muted">
-            local first, growing to peer-to-peer networks.
-            peer nodes coordinate directly. compute accounting tracks memory, storage, and bandwidth across your own hardware.
-          </p>
-        </article>
-      </div>
-
-      <div class="panel" style="margin-top:1rem">
-        <h3 class="mt-0">public gifts : open source tool armory</h3>
-        <p class="muted">freely shared tools of creation available on github under open licenses:</p>
-        <div class="pill-row">
-          <a class="pill" href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer">easylm · webgpu ai</a>
-          <a class="pill" href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer">progen · dialect &amp; tools</a>
-          <a class="pill" href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer">gfc · clarity linter</a>
-          <a class="pill" href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer">zcabs · honesty harness</a>
-          <a class="pill" href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">github · @erastudil</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research" class="reveal">
-      <p class="section-kicker">03 · science : empirical frontiers</p>
-      <h2>research : four lines of inquiry</h2>
-      <p class="lead">hypotheses, observables, and deterministic measurement protocols.</p>
-      <div class="research-grid">
-        <article class="work-card" id="clu">
-          <p class="work-kicker">hardware : language synthesizer</p>
-          <h3>clu : central language unit</h3>
-          <p>
-            a proposed hardware primitive: the central language unit.
-            a synthesizer rather than a processor.
-            cpu computes. clu synthesizes language. a judge inspects the cut.
-          </p>
-          <p class="muted" style="margin-bottom:0">
-            hypothesis: linguistic inference can be encoded analog and musically: a multiplexed oscillator bank whose alphabet is pitch, rather than another digital weight matrix.
-            predicted observables: joules per token, latency to a fail-closed safety path, and physical decoupling from the central processing unit.
-          </p>
-        </article>
-        <article class="work-card">
-          <p class="work-kicker">media : cognitive recovery</p>
-          <h3>media as medicine : multisensory intervention</h3>
-          <p>
-            the combination of sound, color, personality, and presence as a single intervention.
-            the operator is an active component of the protocol.
-          </p>
-          <p class="muted" style="margin-bottom:0">
-            hypothesis: coordinated multisensory stimulation produces measurable function in an overstressed mind: continuity of presence, restorative sleep, and capacity to take the next small action.
-            reliability of showing up is treated as an active ingredient with verifiable protocols.
-          </p>
-        </article>
-        <article class="work-card">
-          <p class="work-kicker">mind : deterministic coupling</p>
-          <h3>electric consciousness : physical correlates</h3>
-          <p>
-            subjective human consciousness is coupled to newtonian force, chemistry, and electromagnetism.
-            the coupling is deterministic enough to study empirically.
-          </p>
-          <p class="muted" style="margin-bottom:0">
-            established observations: concussion alters experience; anaesthesia extinguishes it reversibly; eeg tracks state transitions.
-            the research maps which markers are causal, what the transfer functions are, and how lived phenomenology acts as primary sensor data.
-          </p>
-        </article>
-        <article class="work-card">
-          <p class="work-kicker">prosthesis : memory augmentation</p>
-          <h3>cognitive prosthesis : externalized sequence</h3>
-          <p>
-            a cognitive prosthesis for executive function, working memory, and residual concussion effects.
-            the next step lives outside the stressed mental buffer.
-          </p>
-          <p class="muted" style="margin-bottom:0">
-            hypothesis: exact language, external persistent memory, and automated instruction pulling restore throughput in capable minds struggling with working-memory bottlenecks.
-            tested in daily production by the author, who manages lasting cognitive effects from childhood concussions.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- COLLABORATORS & EDUCATION -->
-    <section id="collaborators" class="reveal">
-      <p class="section-kicker">04 · mission : students educators and builders</p>
-      <h2>collaborators : open source and education</h2>
-      <div class="panel">
-        <p class="lead">we are seeking feedback and open source collaborators first. we want to connect with educational institutions to tailor applications to the needs of students and educators.</p>
-        <p class="muted" style="margin-bottom:0">
-          our focus is putting sovereign tools of creation into the hands of learners and builders. we build software that runs locally in modern browsers, gives students instant access to collegiate textbooks, and remains completely free.
-        </p>
-      </div>
-
-      <div class="collab-grid">
-        <div class="collab-card">
-          <h3>educators and institutions</h3>
-          <p>
-            bring EasyLM into your classrooms. with 28 collegiate Dewey volumes running 100% inside standard web browsers via WebGPU, your students get offline textbook guidance and language tools running entirely inside device memory.
-          </p>
-          <p class="muted">
-            we want to collaborate with universities, high schools, community colleges, and libraries to adapt subject packs and develop open curriculum tools.
-          </p>
-        </div>
-        <div class="collab-card">
-          <h3>open source builders</h3>
-          <p>
-            join us in authoring open source tools. our work spans Rust compilers, WebGPU shaders, in-browser ONNX runtimes, deterministic verification harnesses, and high-density dialects.
-          </p>
-          <p class="muted">
-            every repository is public on GitHub under GNU AGPLv3 or MIT licenses. inspect the code, file issues, submit pull requests, and help build sovereign computing.
-          </p>
-        </div>
-        <div class="collab-card">
-          <h3>students and self-learners</h3>
-          <p>
-            test our tools in your everyday study. launch EasyLM at <a href="https://easylm.app" target="_blank" rel="noopener noreferrer">easylm.app</a>. tell us where it helps you understand a concept, where it falls short, and what courses you want added.
-          </p>
-          <p class="muted">
-            your direct feedback shapes the next iteration. knowledge and tools remain open and accessible.
-          </p>
-        </div>
-      </div>
-
-      <div class="hero-actions" style="margin-top:1.1rem">
-        <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch EasyLM (easylm.app) ↗</a>
-        <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Collaborate on GitHub ↗</a>
-        <a href="mailto:humansandai@atomicmail.io?subject=Educational%20Collaboration" class="btn btn-ghost">Partner With Us (Email) ↗</a>
-      </div>
-    </section>
-
-    <!-- INTEGRITY -->
-    <section id="integrity" class="reveal">
-      <p class="section-kicker">05 · covenant : human ownership and radical integrity</p>
-      <h2>integrity : human ownership and personal accountability</h2>
-      <div class="panel">
-        <p class="lead">owned and authored by a human. sue me personally. operating with complete integrity.</p>
-        <p class="muted" style="margin-bottom:0">
-          patrick mcqueeny authors and stands behind this work as an individual human being. if you believe this software harmed you, broke its word, or infringed your rights: sue patrick mcqueeny personally.
-          we operate with open source code, transparent documentation, and verified engineering so that every action stands in broad daylight.
-        </p>
-      </div>
-
-      <div class="panel legal">
-        <h3 class="mt-0">covenant : operating with complete integrity</h3>
-        <ol>
-          <li><strong>human ownership : personal standing.</strong> patrick mcqueeny authors and owns this work as an individual human being. if there is a grievance, you deal with patrick directly: sue me personally.</li>
-          <li><strong>radical integrity : transparent execution.</strong> we operate with complete transparency, exact documentation, and deterministic verification so that every claim is proven by running code.</li>
-          <li><strong>free and open source : public licensing.</strong> all software is published under recognized open source licenses, including gnu agpl-3.0 and mit. you have full freedom to inspect, audit, fork, compile, and run the code.</li>
-          <li><strong>offline execution : sovereign computing.</strong> our tools run locally and offline by default. your hardware belongs to you.</li>
-          <li><strong>local privacy : sovereign boundaries.</strong> computation executes inside your browser and local memory. what happens on your machine stays on your machine.</li>
-          <li><strong>voluntary funding : living on donations.</strong> we build free open-source software supported entirely by community donations and voluntary gifts.</li>
-          <li><strong>clean while we work : 5s in engineering.</strong> if a tool or process fails, we hunt the defect in the system and fix it immediately. we clean while we work and leave every workspace better than we found it.</li>
-          <li><strong>radical honesty : silence over hedge.</strong> when a system fails a check, it halts. when a check is empty, the system returns DONT_KNOW. silence beats an unverified claim.</li>
-          <li><strong>conduct : mutual respect.</strong> be excellent to each other. author helpful tools and build good things for people.</li>
-          <li><strong>disputes : direct human resolution.</strong> if you believe Patrick or this work has wronged you, write directly to him. we talk human to human, resolve the process defect, and make it right in broad daylight.</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- DONATIONS -->
-    <section id="donations" class="reveal">
-      <p class="section-kicker">06 · fuel : live on donations</p>
-      <h2>donations : how this lives</h2>
-      <div class="panel">
-        <p class="lead">building open-source software and living on community gifts.</p>
-        <p class="muted" style="margin-bottom:0">
-          all software authored here is released as a public gift under free open source licenses.
-          if these tools save you hours, teach your students, run on your machine, or help you build what matters: send a gift to fuel the work.
-          donations go directly to patrick mcqueeny to sustain living expenses, compute hardware, and daily open-source development.
+          if these tools save you hours, teach your students, run on your hardware, or strengthen your autonomous pipelines: voluntary gifts directly fuel hardware, hosting, and daily development.
         </p>
       </div>
 
@@ -602,7 +1116,7 @@
             <img src="https://cdn.simpleicons.org/bitcoin/F7931A" alt="BTC" width="22" height="22" loading="lazy" />
             bitcoin (btc)
           </h3>
-          <p>direct bitcoin transfer on the base layer. confirmed in writing or via transaction hash.</p>
+          <p>direct base layer bitcoin transfer.</p>
           <div class="copy-box">
             <span class="copy-text" id="btc-addr">bc1q7w0exh3v27d490gwhp5608d0v8976k382u3pke</span>
             <button type="button" class="copy-btn" data-copy-target="btc-addr">copy</button>
@@ -614,7 +1128,7 @@
             <img src="https://cdn.simpleicons.org/solana/9945FF" alt="SOL" width="22" height="22" loading="lazy" />
             solana (sol)
           </h3>
-          <p>direct fast transfer on the solana network. gifts fuel open source compute and experiments.</p>
+          <p>direct fast transfer on the solana network.</p>
           <div class="copy-box">
             <span class="copy-text" id="sol-addr">5cK1Z8x4B37wQoF8uF5aT5sP8e9q2yM1r9t3k4L7n6p</span>
             <button type="button" class="copy-btn" data-copy-target="sol-addr">copy</button>
@@ -626,207 +1140,38 @@
             <img src="assets/brand/payments/cashapp-symbol.svg" alt="Cash App" width="22" height="22" loading="lazy" />
             cash app
           </h3>
-          <p>quick direct cash gift via cash app. support Patrick directly for coffee, hardware, and groceries.</p>
+          <p>quick direct cash gift via cash app.</p>
           <div class="copy-box">
             <span class="copy-text" id="cashapp-tag">$humansandai</span>
             <button type="button" class="copy-btn" data-copy-target="cashapp-tag">copy</button>
           </div>
         </div>
       </div>
-
-      <div class="panel">
-        <h3 class="mt-0">other rails : physical and digital gifts</h3>
-        <p class="muted">
-          we also accept circle usdc, checks, cash via post, and .999 silver or .995 gold by weight.
-          confirm transfer details or mailing coordinates in writing at <a href="mailto:humansandai@atomicmail.io">humansandai@atomicmail.io</a> before sending.
-        </p>
-        <div class="pill-row">
-          <span class="pill">bitcoin</span>
-          <span class="pill">solana</span>
-          <span class="pill">cash app</span>
-          <span class="pill">circle usdc</span>
-          <span class="pill">check</span>
-          <span class="pill">cash</span>
-          <span class="pill">.999 silver (oz)</span>
-          <span class="pill">.995 gold (oz)</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CREDITS = HOW -->
-    <section id="credits" class="reveal">
-      <p class="section-kicker">07 · credits : standing on shoulders</p>
-      <h2>credits : standing on shoulders</h2>
-      <p class="muted">
-        logos as provided by their owners. we respect the marks.
-        thank you for the nice things you have built for us.
-      </p>
-      <div class="credits">
-        <a class="credit credit-official" href="https://x.ai" target="_blank" rel="noopener noreferrer">
-          <img src="assets/brand/xai/Grok_Logomark_Light.svg" alt="Grok" width="36" height="36" loading="lazy" />
-          <strong>grok</strong>
-          <span>writing · code</span>
-        </a>
-        <a class="credit credit-official" href="https://x.ai" target="_blank" rel="noopener noreferrer">
-          <img src="assets/brand/xai/spacexai-symbol-white.svg" alt="SpaceXAI" width="36" height="36" loading="lazy" />
-          <strong>spacexai</strong>
-          <span>grok build · xai</span>
-        </a>
-        <a class="credit" href="https://deepmind.google" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" width="36" height="36" loading="lazy" />
-          <strong>antigravity</strong>
-          <span>deepmind · architecture</span>
-        </a>
-        <a class="credit" href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/google/ffffff" alt="" width="36" height="36" loading="lazy" />
-          <strong>gemini</strong>
-          <span>google · mill worker</span>
-        </a>
-        <a class="credit" href="https://qwen.ai" target="_blank" rel="noopener noreferrer">
-          <img src="assets/credit-qwen.svg" alt="Qwen" width="36" height="36" loading="lazy" />
-          <strong>qwen</strong>
-          <span>local · workers</span>
-        </a>
-        <a class="credit" href="https://ai.google.dev/gemma" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/google/4285F4" alt="" width="36" height="36" loading="lazy" />
-          <strong>gemma</strong>
-          <span>local · google</span>
-        </a>
-        <a class="credit" href="https://www.liquid.ai" target="_blank" rel="noopener noreferrer">
-          <img src="assets/credit-lfm.svg" alt="Liquid AI" width="36" height="36" loading="lazy" />
-          <strong>liquid · lfm</strong>
-          <span>local · chat</span>
-        </a>
-        <a class="credit" href="https://www.llama.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/meta/0668E1" alt="" width="36" height="36" loading="lazy" />
-          <strong>llama</strong>
-          <span>local · meta</span>
-        </a>
-        <a class="credit" href="https://huggingface.co" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" width="36" height="36" loading="lazy" />
-          <strong>huggingface</strong>
-          <span>models · weights · home</span>
-        </a>
-        <a class="credit" href="https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" width="36" height="36" loading="lazy" />
-          <strong>smollm2</strong>
-          <span>local · tiny</span>
-        </a>
-        <a class="credit" href="https://ollama.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/ollama/ffffff" alt="" width="36" height="36" loading="lazy" />
-          <strong>ollama</strong>
-          <span>local runtime</span>
-        </a>
-        <a class="credit" href="https://www.docker.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/docker/2496ED" alt="" width="36" height="36" loading="lazy" />
-          <strong>docker</strong>
-          <span>containers</span>
-        </a>
-        <a class="credit" href="https://www.linux.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/linux/FCC624" alt="" width="36" height="36" loading="lazy" />
-          <strong>linux</strong>
-          <span>os</span>
-        </a>
-        <a class="credit" href="https://www.debian.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/debian/A81D33" alt="" width="36" height="36" loading="lazy" />
-          <strong>debian</strong>
-          <span>distro stitch</span>
-        </a>
-        <a class="credit" href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/nvidia/76B900" alt="" width="36" height="36" loading="lazy" />
-          <strong>nvidia</strong>
-          <span>cuda · the mill motor</span>
-        </a>
-        <a class="credit" href="https://www.rust-lang.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/rust/ffffff" alt="" width="36" height="36" loading="lazy" />
-          <strong>rust</strong>
-          <span>compiler lane</span>
-        </a>
-        <a class="credit" href="https://www.python.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/python/3776AB" alt="" width="36" height="36" loading="lazy" />
-          <strong>python</strong>
-          <span>language · tooling</span>
-        </a>
-        <a class="credit" href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" width="36" height="36" loading="lazy" />
-          <strong>typescript</strong>
-          <span>language · web</span>
-        </a>
-        <a class="credit" href="https://react.dev" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" width="36" height="36" loading="lazy" />
-          <strong>react</strong>
-          <span>desk ui</span>
-        </a>
-        <a class="credit" href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="" width="36" height="36" loading="lazy" />
-          <strong>node</strong>
-          <span>runtime</span>
-        </a>
-        <a class="credit" href="https://kotlinlang.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/kotlin/7F52FF" alt="" width="36" height="36" loading="lazy" />
-          <strong>kotlin</strong>
-          <span>android</span>
-        </a>
-        <a class="credit" href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/github/ffffff" alt="" width="36" height="36" loading="lazy" />
-          <strong>github</strong>
-          <span>code hosting</span>
-        </a>
-        <a class="credit" href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="" width="36" height="36" loading="lazy" />
-          <strong>vercel</strong>
-          <span>this site</span>
-        </a>
-        <a class="credit" href="https://x.com/humansandaiboss" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/x/ffffff" alt="" width="36" height="36" loading="lazy" />
-          <strong>x</strong>
-          <span>public square</span>
-        </a>
-        <a class="credit" href="https://bitcoin.org" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/bitcoin/F7931A" alt="" width="36" height="36" loading="lazy" />
-          <strong>bitcoin</strong>
-          <span>donations</span>
-        </a>
-        <a class="credit" href="https://solana.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.simpleicons.org/solana/9945FF" alt="" width="36" height="36" loading="lazy" />
-          <strong>solana</strong>
-          <span>donations</span>
-        </a>
-        <a class="credit" href="https://cash.app" target="_blank" rel="noopener noreferrer" title="Cash App">
-          <img src="assets/brand/payments/cashapp-symbol.svg" alt="Cash App" width="36" height="36" loading="lazy" />
-          <strong>cash app</strong>
-          <span>donations</span>
-        </a>
-      </div>
-      <p class="dim" style="margin-top:1rem;font-size:0.75rem">
-        trademarks belong to their owners. used here only to say thank you.
-        marks as published by their respective authors.
-      </p>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="reveal">
-      <p class="section-kicker">08 · reach : direct lines</p>
-      <h2>contact : talk to patrick</h2>
+    <section id="contact" class="reveal in">
+      <p class="section-kicker">04 · reach : direct lines</p>
+      <h2>contact : get in touch</h2>
       <div class="grid-2">
         <div class="panel">
-          <h3 class="mt-0">talk to me</h3>
+          <h3 class="mt-0">direct channels</h3>
           <p class="muted" style="margin:0">
             email: <a href="mailto:humansandai@atomicmail.io">humansandai@atomicmail.io</a><br />
-            x: <a href="https://x.com/humansandaiboss" target="_blank" rel="noopener noreferrer">@humansandaiboss</a><br />
-            github: <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">github.com/erastudil</a>
+            github: <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">github.com/erastudil</a><br />
+            x: <a href="https://x.com/humansandaiboss" target="_blank" rel="noopener noreferrer">@humansandaiboss</a>
           </p>
         </div>
         <div class="panel">
-          <h3 class="mt-0">talk to my agent</h3>
+          <h3 class="mt-0">public issue trackers</h3>
           <p class="muted" style="margin:0">
-            triage email: <a href="mailto:jpm0511@gmail.com">jpm0511@gmail.com</a>
+            file bugs, submit pull requests, or propose features directly on each repository's GitHub issues page.
           </p>
         </div>
       </div>
-      <p class="muted">patrick mcqueeny · author. want to talk in person: say so in the email.</p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <p>humans<span class="amp">&amp;</span>ai · patrick mcqueeny · 2026</p>
       <p class="dim">it does exactly what it says on the package</p>
