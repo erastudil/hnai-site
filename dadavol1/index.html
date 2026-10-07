@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>dadavol1 — defense against the dark arts : solo developer cybersecurity</title>
-  <meta name="description" content="defense against the dark arts: practical cybersecurity hardening for ai-assisted developers and vibe coders. attack taxonomy, defensive rings, and open source tools." />
+  <meta name="description" content="defense against the dark arts: practical cybersecurity for solo agentic developers. bound the checkout, the token, and the merge. attack taxonomy, defensive rings, and open source tools." />
   <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
   <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://dadavol1.vercel.app/" />
@@ -77,6 +77,7 @@
           <li><a href="#rings">rings</a></li>
           <li><a href="#armory">armory</a></li>
           <li><a href="#today">today</a></li>
+          <li><a href="#agentic">agentic</a></li>
           <li><a href="/llms.txt" class="exact">llms.txt</a></li>
           <li><a href="https://humans-and-ai.vercel.app/">home</a></li>
         </ul>
@@ -116,7 +117,7 @@
           hiring an ai coding agent resembles hiring an extraordinarily fast intern with full terminal access. the assistant writes code, runs terminal commands, and inspects files across your workspace. it operates without intuition: it processes live production secrets and dummy test data with equal weight.
         </p>
         <p class="muted" style="margin-bottom:0">
-          you point the assistant at a repository. it reads issues, dependencies, web documentation, and compiler errors. a single hostile instruction hiding in an imported package or web page can trigger immediate shell commands on your operating system. without structural boundaries, your personal machine is the blast radius.
+          you point the assistant at a repository. it reads issues, dependencies, web documentation, compiler errors, and instruction files such as skills and agent rules. a single hostile instruction hiding in an imported package, a fetched page, or a rules file can trigger immediate shell commands on your operating system. an overnight daemon has the same reach as the checkout and the token you gave it. without structural boundaries, your personal machine is the blast radius.
         </p>
       </div>
     </section>
@@ -337,12 +338,12 @@
       <div class="panel">
         <ol class="today">
           <li>
-            <span class="do">turn auto-run off</span>
-            <span class="why">the assistant pauses and waits for confirmation. you approve every write and terminal command. that single switch eliminates most autonomous attack vectors.</span>
+            <span class="do">read the diff before it lands</span>
+            <span class="why">an interactive session confirms writes and shell commands. an overnight daemon runs in its own checkout with a token that cannot push the protected branch and cannot spend money. either way, you read the diff before merge.</span>
           </li>
           <li>
             <span class="do">open only the project folder</span>
-            <span class="why">open the project folder to contain the agent's filesystem reach. isolating the directory protects user home files and system drives.</span>
+            <span class="why">open the repository, not your home directory and not a parent folder that also holds finances, mail, or keys. the directory you open is the agent's filesystem reach. do not run the agent as administrator.</span>
           </li>
           <li>
             <span class="do">add .env to agent ignore lists</span>
@@ -372,6 +373,53 @@ git check-ignore -v .env
 
 <span class="ok"># audit dependency lockfile</span>
 osv-scanner --lockfile=package-lock.json</pre>
+      </div>
+    </section>
+
+    <section id="agentic">
+      <p class="section-kicker">06 · practice : solo agentic work</p>
+      <h2>practice : how to run agents alone without handing over the house</h2>
+      <p class="muted">a daemon, a swarm, and an interactive session are the same authority problem at different speeds. bound the checkout, the token, and the merge.</p>
+
+      <div class="rings">
+        <article class="ring">
+          <h3><span class="n">1</span> one job, one tree</h3>
+          <ul>
+            <li>open the repository that the task is allowed to touch. leave finances, mail, photos, and key stores outside that tree.</li>
+            <li>parallel agents get separate git worktrees. two loops in one working tree overwrite each other and hide which diff is whose.</li>
+            <li>an untrusted repository is reviewed in a disposable clone. its skills, rules, and agent instruction files are code, and you read them before the agent obeys them.</li>
+          </ul>
+        </article>
+
+        <article class="ring">
+          <h3><span class="n">2</span> a daemon gets a small key</h3>
+          <ul>
+            <li>overnight work uses its own clone. the credential can open a review. it cannot push the protected branch, force-push, or call a billing or deploy api.</li>
+            <li>production secrets, payment keys, and cloud admin tokens stay out of that environment. a local gateway key is not a cloud root key.</li>
+            <li>the model report that tests passed is not the test log. require the command output and the exit code before you trust the run.</li>
+          </ul>
+        </article>
+
+        <article class="ring">
+          <h3><span class="n">3</span> capabilities stay off until needed</h3>
+          <ul>
+            <li>each mcp server, browser login, and plugin is a capability. turn off the ones this task does not need, including a browser session signed into mail, a bank, or a cloud console.</li>
+            <li>fetched pages, issue text, and dependency docs are data. instruction files shipped inside a repo are control flow. delimit the first and read the second.</li>
+            <li>if a secret enters a transcript, rotate it. do not paste that transcript into a second model.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="panel">
+        <h3 class="mt-0">isolation : separate checkouts</h3>
+        <pre class="term"><span class="ok"># second agent, second tree, same commits</span>
+git worktree add ../job-a
+
+<span class="ok"># confirm the secret file is invisible to git</span>
+git check-ignore -v .env
+
+<span class="ok"># the merge input is the diff, not the agent's summary</span>
+git diff</pre>
       </div>
     </section>
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>humans&amp;ai : public open source repositories · patrick mcqueeny</title>
-  <meta name="description" content="six sovereign, open-source repositories for local computing, agent reasoning, deterministic verification, clarity linting, model routing, and security evaluation. heres the stuff, heres what it does, heres how to get started." />
+  <meta name="description" content="hydra leads: a sovereign cli agent, gateway, and daemon. easylm.app is the in-browser workstation with studio, learn, stacks, personalities, and kid safe. progen, zcabs, gfc, and tankbench follow. dadavol1 is the solo agent field manual." />
   <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
   <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://humans-and-ai.vercel.app/" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://humans-and-ai.vercel.app/" />
   <meta property="og:title" content="humans&amp;ai : public open source repositories" />
-  <meta property="og:description" content="six open source tools: easylm.app, progen, zcabs, gfc, hydra, and tankbench. heres the stuff, heres what it does, heres how to get started." />
+  <meta property="og:description" content="hydra first, easylm.app second, then progen, zcabs, gfc, and tankbench. dadavol1 is the field manual for solo agentic work." />
   <meta property="og:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
   <meta property="og:site_name" content="humans&amp;ai" />
 
@@ -22,7 +22,7 @@
   <meta name="twitter:site" content="@humansandaiboss" />
   <meta name="twitter:creator" content="@humansandaiboss" />
   <meta name="twitter:title" content="humans&amp;ai : public open source repositories" />
-  <meta name="twitter:description" content="six open source tools: easylm.app, progen, zcabs, gfc, hydra, and tankbench. heres the stuff, heres what it does, heres how to get started." />
+  <meta name="twitter:description" content="hydra first, easylm.app second, then progen, zcabs, gfc, and tankbench. dadavol1 is the field manual for solo agentic work." />
   <meta name="twitter:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
 
   <!-- JSON-LD Structured Data -->
@@ -42,6 +42,15 @@
         ]
       },
       {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://humans-and-ai.vercel.app/#hydra",
+        "name": "hydra",
+        "programmingLanguage": ["Python", "JavaScript"],
+        "codeRepository": "https://github.com/erastudil/hydra",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "description": "Sovereign multi-headed command-line AI engine, interactive TUI agent, and model gateway router with dual runtime parity in standard library Python and Node."
+      },
+      {
         "@type": "SoftwareApplication",
         "@id": "https://humans-and-ai.vercel.app/#easylm",
         "name": "EasyLM",
@@ -49,7 +58,7 @@
         "applicationCategory": "EducationalApplication",
         "license": "https://www.gnu.org/licenses/agpl-3.0.html",
         "url": "https://easylm.app",
-        "description": "Sovereign in-browser WebGPU AI workstation with 30 collegiate textbooks, AtMem context governance, and zero remote cloud dependencies."
+        "description": "In-browser WebGPU workstation with Chat, Studio, Learn, 31 Dewey stacks, eight courses, personalities, Kid Safe profiles, and AtMem."
       },
       {
         "@type": "SoftwareSourceCode",
@@ -78,15 +87,7 @@
         "license": "https://www.gnu.org/licenses/agpl-3.0.html",
         "description": "Greene Feynman Clarity writing standard and offline linter for human-facing prose."
       },
-      {
-        "@type": "SoftwareSourceCode",
-        "@id": "https://humans-and-ai.vercel.app/#hydra",
-        "name": "hydra",
-        "programmingLanguage": ["Python", "JavaScript"],
-        "codeRepository": "https://github.com/erastudil/hydra",
-        "license": "https://www.apache.org/licenses/LICENSE-2.0",
-        "description": "Sovereign multi-headed command-line AI engine, interactive TUI agent, and model gateway router with dual runtime parity in standard library Python and Node."
-      },
+
       {
         "@type": "SoftwareSourceCode",
         "@id": "https://humans-and-ai.vercel.app/#tankbench",
@@ -95,6 +96,13 @@
         "codeRepository": "https://github.com/erastudil/tankbench",
         "license": "https://www.gnu.org/licenses/agpl-3.0.html",
         "description": "Defensive hardening and security refactoring benchmark for autonomous coding agents."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://dadavol1.vercel.app/",
+        "name": "dadavol1",
+        "url": "https://dadavol1.vercel.app/",
+        "description": "Field manual for solo agentic developers. Bound the checkout, the token, and the merge."
       }
     ]
   }
@@ -120,12 +128,13 @@
           <img class="brand-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="160" height="30" />
         </a>
         <ul class="nav-links">
-          <li><a href="#easylm" class="nav-highlight">easylm.app</a></li>
+          <li><a href="#hydra" class="nav-highlight">hydra</a></li>
+          <li><a href="#easylm">easylm.app</a></li>
           <li><a href="#progen">progen</a></li>
           <li><a href="#zcabs">zcabs</a></li>
           <li><a href="#gfc">gfc</a></li>
-          <li><a href="#hydra">hydra</a></li>
           <li><a href="#tankbench">tankbench</a></li>
+          <li><a href="#dadavol1">dadavol1</a></li>
           <li><a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer">github ↗</a></li>
           <li><a href="#fuel">fuel</a></li>
           <li><a href="#credits">credits</a></li>
@@ -139,326 +148,61 @@
       <img class="hero-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="840" height="200" />
       <p class="section-kicker">public repositories · open source tools</p>
       <h1 class="hero-tag">heres the stuff. heres what it does. heres how to get started.</h1>
-      <p class="hero-spine">six sovereign, open-source repositories for local computing, agent reasoning, deterministic verification, clarity linting, model routing, and security evaluation.</p>
+      <p class="hero-spine">hydra leads. one engine as a prompt, a terminal agent, a swarm, a local gateway, and a daemon working on alice. easylm.app is the in-browser workstation. the other repositories stay on the shelf. dadavol1 is the field manual for working alone with an agent.</p>
 
       <div class="hero-actions">
         <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Profile (@erastudil) ↗</a>
-        <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Launch easylm.app ↗</a>
+        <a href="#hydra" class="btn btn-secondary">Hydra ↓</a>
+        <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Launch easylm.app ↗</a>
         <a href="#repos" class="btn btn-ghost">View Repositories ↓</a>
       </div>
 
       <a href="#repos" class="hero-scroll-cue" aria-label="scroll to explore repositories">
-        <span>scroll to view the 6 public tools</span>
+        <span>scroll to hydra</span>
         <div class="chevron"></div>
       </a>
     </header>
 
     <!-- QUICKNAV BAR -->
     <nav class="repo-quicknav" aria-label="public repositories index">
+      <a href="#hydra" class="quicknav-pill">
+        <span class="pill-name">01 · hydra</span>
+        <span class="pill-desc">sovereign multi-headed ai shell, tui agent &amp; gateway router</span>
+      </a>
       <a href="#easylm" class="quicknav-pill">
-        <span class="pill-name">01 · easylm.app</span>
-        <span class="pill-desc">in-browser webgpu intelligence workstation</span>
+        <span class="pill-name">02 · easylm.app</span>
+        <span class="pill-desc">chat, studio, learn, stacks, personalities, kid safe</span>
       </a>
       <a href="#progen" class="quicknav-pill">
-        <span class="pill-name">02 · progen</span>
+        <span class="pill-name">03 · progen</span>
         <span class="pill-desc">topic-comment dialect &amp; think traces</span>
       </a>
       <a href="#zcabs" class="quicknav-pill">
-        <span class="pill-name">03 · zcabs</span>
+        <span class="pill-name">04 · zcabs</span>
         <span class="pill-desc">deterministic proof-of-execution canary</span>
       </a>
       <a href="#gfc" class="quicknav-pill">
-        <span class="pill-name">04 · gfc</span>
+        <span class="pill-name">05 · gfc</span>
         <span class="pill-desc">greene feynman clarity writing standard</span>
-      </a>
-      <a href="#hydra" class="quicknav-pill">
-        <span class="pill-name">05 · hydra</span>
-        <span class="pill-desc">sovereign multi-headed ai shell, tui agent &amp; gateway router</span>
       </a>
       <a href="#tankbench" class="quicknav-pill">
         <span class="pill-name">06 · tankbench</span>
         <span class="pill-desc">agent security refactoring benchmark</span>
       </a>
+      <a href="#dadavol1" class="quicknav-pill">
+        <span class="pill-name">manual · dadavol1</span>
+        <span class="pill-desc">solo agentic defense field manual</span>
+      </a>
     </nav>
 
     <!-- PUBLIC REPOSITORIES -->
     <main id="repos">
-      <p class="section-kicker">01 · the stuff : six public repositories</p>
-
-      <!-- 1. EASYLM -->
-      <article class="repo-card reveal in" id="easylm">
+      <p class="section-kicker">01 · the stuff : hydra, easylm, then the shelf</p>
+      <!-- 1. HYDRA -->
+<article class="repo-card reveal in hydra-showcase" id="hydra">
         <div class="repo-header">
           <div class="repo-title-group">
-            <h2>01 · easylm.app</h2>
-            <span class="repo-tagline">sovereign in-browser webgpu intelligence workstation</span>
-          </div>
-          <div class="repo-actions-row" style="margin-top:0">
-            <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch easylm.app ↗</a>
-            <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
-          </div>
-        </div>
-
-        <div class="repo-badges">
-          <span class="badge badge-violet">Live at easylm.app</span>
-          <span class="badge">Open Source · AGPL-3.0</span>
-          <span class="badge">WebGPU In-Browser</span>
-          <span class="badge">Zero Cloud Dependencies</span>
-          <span class="badge">30 Stacks Textbooks</span>
-          <span class="badge">AtMem Memory</span>
-        </div>
-
-        <div class="repo-grid">
-          <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
-            <p class="repo-desc">
-              Executes language model inference directly inside your web browser on local graphics hardware via WebGPU. Model weights download once into browser CacheStorage and run offline. Prompts, tokens, and session history remain on your machine with zero server-side telemetry.
-            </p>
-            <ul class="repo-list">
-              <li><strong>Client-Side WebGPU Inference:</strong> Runs open-weight models locally, including Bonsai 27B, Qwen 2.5 (1.5B/3B), Llama 3.2 3B, DeepSeek-R1 Distill, and Gemma 2 9B.</li>
-              <li><strong>The Stacks:</strong> 30 complete undergraduate textbooks covering mathematics, physics, computing, electronics, machining, and philosophy formatted for offline study.</li>
-              <li><strong>Learn Curriculum:</strong> Seven structured university courses (Scientific Inquiry, Calculus, Physics, Chemistry, Biology, Civics, Health) with interactive lessons and knowledge checks.</li>
-              <li><strong>Studio Workspace:</strong> Offline tools including KaTeX LaTeX math rendering, Markdown drafting, code editor, 2D function graphing, and drawing canvases.</li>
-              <li><strong>AtMem Memory Governance:</strong> Discrete memory atoms scored by BM25 relevance within a strict 256-token envelope with profile isolation and optional AES-GCM-256 vault encryption.</li>
-            </ul>
-          </div>
-
-          <div class="repo-col">
-            <span class="repo-section-label">how to get started</span>
-            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
-              Run in any modern WebGPU-enabled browser (Chrome, Edge, Safari 18+, or Firefox Nightly) or run locally:
-            </p>
-            <div class="code-terminal">
-              <div class="code-terminal-header">
-                <span>bash</span>
-                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/easylm.git&#10;cd easylm&#10;npm install&#10;npm test&#10;npm run dev">copy commands</button>
-              </div>
-              <pre><span class="cmt"># 1. run immediately via web browser:</span>
-<span class="cmt"># navigate to https://easylm.app</span>
-
-<span class="cmt"># 2. or clone and run locally:</span>
-<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/easylm.git</span>
-<span class="prompt">$ </span><span class="cmd">cd easylm</span>
-<span class="prompt">$ </span><span class="cmd">npm install</span>
-<span class="prompt">$ </span><span class="cmd">npm test</span>
-<span class="prompt">$ </span><span class="cmd">npm run dev</span></pre>
-            </div>
-            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
-              web app: <a href="https://easylm.app" target="_blank" rel="noopener noreferrer">easylm.app</a> · repo: <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer">github.com/erastudil/easylm</a>
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <!-- 2. PROGEN -->
-      <article class="repo-card reveal in" id="progen">
-        <div class="repo-header">
-          <div class="repo-title-group">
-            <h2>02 · progen</h2>
-            <span class="repo-tagline">topic-comment dialect and structured think traces for agents</span>
-          </div>
-          <div class="repo-actions-row" style="margin-top:0">
-            <a href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
-          </div>
-        </div>
-
-        <div class="repo-badges">
-          <span class="badge badge-violet">Python 3.10+</span>
-          <span class="badge">Open Source · AGPL-3.0</span>
-          <span class="badge">Standard Library Only</span>
-          <span class="badge">Deterministic Grammar</span>
-          <span class="badge">Offline CLI Tools</span>
-        </div>
-
-        <div class="repo-grid">
-          <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
-            <p class="repo-desc">
-              Applies Japanese topic-comment grammar structure under English vocabulary. Cuts token costs and removes discursive filler, polite padding, and unsolicited trailing questions from model outputs and reasoning traces.
-            </p>
-            <ul class="repo-list">
-              <li><strong>Topic-Comment Grammar:</strong> Every operational statement asserts <code>topic : comment</code> per line. Statements declare raw predicates directly with zero filler verbs.</li>
-              <li><strong>Iron vs Slack Boundary:</strong> <code>agent iron</code> requires strict topic-comment structure for internal reasoning and execution; <code>human slack</code> allows informal, natural human prompts.</li>
-              <li><strong>Canonical State Vectors:</strong> Declares operational intent using canonical heads: intention, requirement, course of action, end result, demand, and compliance.</li>
-              <li><strong>Deterministic Truth:</strong> Exit code zero is passing. Blocked execution emits <code>ERROR</code>. An unverified or empty check emits <code>DONT_KNOW</code>.</li>
-              <li><strong>Offline Tooling:</strong> Python CLI utilities to parse topic-comment units into structured JSON, lint outputs against grammar anti-patterns, rewrite text into iron, and emit reference prompts.</li>
-            </ul>
-          </div>
-
-          <div class="repo-col">
-            <span class="repo-section-label">how to get started</span>
-            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
-              Requires Python 3.10+. Standard library only, zero third-party dependencies:
-            </p>
-            <div class="code-terminal">
-              <div class="code-terminal-header">
-                <span>bash</span>
-                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/progen.git&#10;cd progen&#10;pip install -e .&#10;progen check&#10;progen lint examples/iron.md --role agent&#10;progen iron examples/mush.md&#10;progen prompt genome">copy commands</button>
-              </div>
-              <pre><span class="cmt"># clone and install in editable mode:</span>
-<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/progen.git</span>
-<span class="prompt">$ </span><span class="cmd">cd progen</span>
-<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
-
-<span class="cmt"># run language conformance self-check:</span>
-<span class="prompt">$ </span><span class="cmd">progen check</span>
-
-<span class="cmt"># lint agent output against topic-comment grammar:</span>
-<span class="prompt">$ </span><span class="cmd">progen lint examples/iron.md --role agent</span>
-
-<span class="cmt"># rewrite conversational prose into topic-comment iron:</span>
-<span class="prompt">$ </span><span class="cmd">progen iron examples/mush.md</span>
-
-<span class="cmt"># emit reference genome prompt:</span>
-<span class="prompt">$ </span><span class="cmd">progen prompt genome</span></pre>
-            </div>
-            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
-              source: <a href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer">github.com/erastudil/progen</a>
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <!-- 3. ZCABS -->
-      <article class="repo-card reveal in" id="zcabs">
-        <div class="repo-header">
-          <div class="repo-title-group">
-            <h2>03 · zcabs</h2>
-            <span class="repo-tagline">zero context agent behavioral scaffolding &amp; proof of execution</span>
-          </div>
-          <div class="repo-actions-row" style="margin-top:0">
-            <a href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
-          </div>
-        </div>
-
-        <div class="repo-badges">
-          <span class="badge badge-violet">Python 3.10+</span>
-          <span class="badge">Open Source · AGPL-3.0</span>
-          <span class="badge">Standard Library Only</span>
-          <span class="badge">Fail-Closed Invariant</span>
-          <span class="badge">Canary Scaffolding</span>
-        </div>
-
-        <div class="repo-grid">
-          <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
-            <p class="repo-desc">
-              Language models interpolate conversation history. An agent can claim test suites passed without executing a single command. zcabs turns execution verification into a physical file observation so that proof costs real computational work.
-            </p>
-            <ul class="repo-list">
-              <li><strong>Dynamic Canary Invariant:</strong> The host mints a unique integer stored in an isolated local file. The agent receives only a target path (<code>LOOK: /path</code>) and required format (<code>FORMAT: the {string} number is {integer}</code>).</li>
-              <li><strong>Unfakable Proof:</strong> To prove completion, the model must read the target file from disk and report the live integer. Guessing, static scraping, or reading an empty path fails closed.</li>
-              <li><strong>Command Wrapping:</strong> <code>zcabs wrap -- pytest -q</code> executes any shell command. On exit code zero, it rotates the canary capability and emits the verification header.</li>
-              <li><strong>Repository Scanning:</strong> <code>zcabs scan .</code> traverses trees to verify no active canary stores, pointer files, or integers have leaked into git source files.</li>
-              <li><strong>Harness Integration:</strong> Clean Python module interface for test runners, evaluation harnesses, and multi-agent coordination loops.</li>
-            </ul>
-          </div>
-
-          <div class="repo-col">
-            <span class="repo-section-label">how to get started</span>
-            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
-              Requires Python 3.10+. Standard library only, zero third-party dependencies:
-            </p>
-            <div class="code-terminal">
-              <div class="code-terminal-header">
-                <span>bash</span>
-                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/zcabs.git&#10;cd zcabs&#10;pip install -e .&#10;zcabs check&#10;zcabs wrap -- pytest -q&#10;zcabs scan .">copy commands</button>
-              </div>
-              <pre><span class="cmt"># clone and install in editable mode:</span>
-<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/zcabs.git</span>
-<span class="prompt">$ </span><span class="cmd">cd zcabs</span>
-<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
-
-<span class="cmt"># run protocol self-check:</span>
-<span class="prompt">$ </span><span class="cmd">zcabs check</span>
-
-<span class="cmt"># wrap a test command: runs pytest and emits canary on exit 0:</span>
-<span class="prompt">$ </span><span class="cmd">zcabs wrap -- pytest -q</span>
-
-<span class="cmt"># scan repository to detect leaked store integers:</span>
-<span class="prompt">$ </span><span class="cmd">zcabs scan .</span></pre>
-            </div>
-            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
-              source: <a href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer">github.com/erastudil/zcabs</a>
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <!-- 4. GFC -->
-      <article class="repo-card reveal in" id="gfc">
-        <div class="repo-header">
-          <div class="repo-title-group">
-            <h2>04 · gfc</h2>
-            <span class="repo-tagline">greene feynman clarity writing standard &amp; prose linter</span>
-          </div>
-          <div class="repo-actions-row" style="margin-top:0">
-            <a href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
-          </div>
-        </div>
-
-        <div class="repo-badges">
-          <span class="badge badge-violet">Python 3.10+</span>
-          <span class="badge">Open Source · AGPL-3.0</span>
-          <span class="badge">Standard Library Only</span>
-          <span class="badge">Prose &amp; Educate Modes</span>
-          <span class="badge">Anti-Tell Linter</span>
-        </div>
-
-        <div class="repo-grid">
-          <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
-            <p class="repo-desc">
-              Named in honor of physicists Brian Greene and Richard Feynman. Codifies their shared pedagogical order: present the physical intuition and working mechanism first, then introduce the technical name as recognition. Includes offline tools to catch AI writing tells.
-            </p>
-            <ul class="repo-list">
-              <li><strong>Intuition First, Name Second:</strong> Flags documents that define technical terminology before showing how the mechanism works in everyday words.</li>
-              <li><strong>Say The Is, Once:</strong> Flags ungrounded reversals swapping abstractions without data or measurement.</li>
-              <li><strong>Regurgitation and Drift Guard:</strong> Catches headings or sentences that copy the user's prompt back into the body, or outputs that wander away from the ask.</li>
-              <li><strong>Contained Analogy:</strong> Catches metaphors that escape their introductory paragraph and hijack the vocabulary of the entire page.</li>
-              <li><strong>Corpus Echo Detection:</strong> Identifies identical eight-word phrases repeated across historical answer sessions to prevent model loop habits.</li>
-              <li><strong>Automated Stripper:</strong> <code>gfc strip</code> mechanically collapses empty reversals and strips likeability padding, disclaimer costumes, and trailing prompts.</li>
-            </ul>
-          </div>
-
-          <div class="repo-col">
-            <span class="repo-section-label">how to get started</span>
-            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
-              Requires Python 3.10+. Standard library only, zero third-party dependencies:
-            </p>
-            <div class="code-terminal">
-              <div class="code-terminal-header">
-                <span>bash</span>
-                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/gfc.git&#10;cd gfc&#10;pip install -e .&#10;gfc check&#10;gfc lint docs/&#10;gfc lint examples/tensor-attention.md --mode educate&#10;gfc strip draft.md">copy commands</button>
-              </div>
-              <pre><span class="cmt"># clone and install in editable mode:</span>
-<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/gfc.git</span>
-<span class="prompt">$ </span><span class="cmd">cd gfc</span>
-<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
-
-<span class="cmt"># run test suite and fixtures:</span>
-<span class="prompt">$ </span><span class="cmd">gfc check</span>
-
-<span class="cmt"># lint human-facing markdown documentation:</span>
-<span class="prompt">$ </span><span class="cmd">gfc lint docs/</span>
-
-<span class="cmt"># educate mode: verifies mechanisms precede terminology:</span>
-<span class="prompt">$ </span><span class="cmd">gfc lint examples/tensor-attention.md --mode educate</span>
-
-<span class="cmt"># strip conversational padding and empty reversals:</span>
-<span class="prompt">$ </span><span class="cmd">gfc strip draft.md</span></pre>
-            </div>
-            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
-              source: <a href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer">github.com/erastudil/gfc</a>
-            </p>
-          </div>
-        </div>
-      </article>
-
-      ﻿      <!-- 5. HYDRA -->
-      <article class="repo-card reveal in hydra-showcase" id="hydra">
-        <div class="repo-header">
-          <div class="repo-title-group">
-            <h2>05 · hydra</h2>
+            <h2>01 · hydra</h2>
             <span class="repo-tagline">sovereign multi-headed ai engine · interactive tui agent · model gateway router</span>
           </div>
           <div class="repo-actions-row" style="margin-top:0">
@@ -479,6 +223,10 @@
           <span class="badge">Autonomous Swarms</span>
           <span class="badge">MCP &amp; Native Tools</span>
         </div>
+
+        <p class="repo-desc">
+          Same engine, several working forms: a one-shot prompt, the interactive TUI agent, a swarm, the local gateway, and a background orchestrator daemon. A daemon is running now and using Hydra to work on Alice. That daily use is why Hydra leads this page.
+        </p>
 
         <!-- IRON GENOME SPECIFICATION -->
         <div class="hydra-iron-box">
@@ -529,7 +277,7 @@
             <div class="hydra-feature-card">
               <div class="card-icon-tag">05</div>
               <h4>background orchestrator daemon</h4>
-              <p>Powers unattended long-horizon workflows and task intake via <code>hydra orchestrator</code> and idle compute worker scripts. Executes overnight repository audits, continuous research loops, automated test passes, and session context ledger persistence without human intervention.</p>
+              <p>Powers unattended long-horizon workflows and task intake via <code>hydra orchestrator</code> and idle compute worker scripts. Executes overnight repository audits, continuous research loops, automated test passes, and session context ledger persistence without human intervention. A daemon is running now and using Hydra to work on Alice.</p>
             </div>
 
             <div class="hydra-feature-card">
@@ -951,11 +699,299 @@ print(result)</pre>
           </p>
         </div>
       </article>
+      <!-- 2. EASYLM -->
+      <article class="repo-card reveal in" id="easylm">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>02 · easylm.app</h2>
+            <span class="repo-tagline">in-browser workstation · chat, studio, learn, stacks, personalities, kid safe</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch easylm.app ↗</a>
+            <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
+          </div>
+        </div>
 
+        <div class="repo-badges">
+          <span class="badge badge-violet">Live at easylm.app</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">WebGPU In-Browser</span>
+          <span class="badge">Chat · Studio · Learn</span>
+          <span class="badge">31 Dewey Stacks</span>
+          <span class="badge">8 Courses</span>
+          <span class="badge">Kid Safe Profile</span>
+        </div>
 
+        <p class="repo-desc">
+          Four tabs on one local machine: Chat, Studio, Learn, and Options. Weights download once into browser cache and run on your GPU through WebGPU. Prompts, course progress, and profile memory stay on the device.
+        </p>
 
+        <div class="hydra-block">
+          <div class="hydra-grid-3">
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">01</div>
+              <h4>chat</h4>
+              <p>Local inference on open-weight models, including Bonsai 27B, Qwen 2.5, Llama 3.2, DeepSeek-R1 Distill, and Gemma 2 9B. AtMem keeps a profile notebook and injects only the atoms that fit a 256-token envelope. An optional AES-256 vault encrypts that memory. A finished note can move into Studio, and a Studio result can come back into the thread.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">02</div>
+              <h4>studio</h4>
+              <p>Five offline tools: Read, Write, Code, Graph, and Draw. Read opens a Stacks chapter and its official doors. Write drafts in markdown and exports Word, PDF, or LaTeX, and a markdown table can leave as CSV. Code is a sandbox. Graph plots functions, derivatives, roots, and integrals. Draw is a canvas. Any of those can open in Write or drop back into Chat.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">03</div>
+              <h4>learn</h4>
+              <p>Eight courses with a catalog, a lesson walk, a today plan, Leitner cards, and a progress record. The set is Scientific Inquiry, Calculus, Physics, Chemistry, Biology, Civics, Health Sciences, and Philosophy. A missed question becomes a card. Today tells you what is due. Lessons can open the matching chapter in Studio.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">04</div>
+              <h4>the stacks</h4>
+              <p>31 Dewey packs from scientific method through geography, each with a textbook and a link index of official sources. Computing, software, security, mathematics, trades, literature, and the Tao Te Ching sit in the same shelf. Search returns the chapter. A miss says so. Kid-facing packs carry a floor age.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">05</div>
+              <h4>personalities</h4>
+              <p>Perspectives and author voices shape the reply: practical coaches, philosophy, science, classic authors, literary characters, and clinical counseling. Search by name, era, or book. A custom voice imports and exports as JSON. The Student profile locks the gallery to the Kids and Homework Coach.</p>
+            </div>
+            <div class="hydra-feature-card">
+              <div class="card-icon-tag">06</div>
+              <h4>kid safe</h4>
+              <p>The Student profile is a separate local account with a parental PIN, so leaving Kid Safe requires the PIN. The Homework Coach is instructed to ask for the next step and withhold the final answer. Web fetch and web search stay off. A sentinel blocks phone numbers, addresses, and school details in the prompt. The model list is an allowlist, SmolLM2 360M stays off it, and a disallowed pick falls back to Llama 3.2 1B.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Open the live app in a WebGPU browser, or clone and run the tests locally:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/easylm.git&#10;cd easylm&#10;npm install&#10;npm test&#10;npm run dev">copy commands</button>
+              </div>
+              <pre><span class="cmt"># 1. run immediately via web browser:</span>
+<span class="cmt"># navigate to https://easylm.app</span>
+
+<span class="cmt"># 2. or clone and run locally:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/easylm.git</span>
+<span class="prompt">$ </span><span class="cmd">cd easylm</span>
+<span class="prompt">$ </span><span class="cmd">npm install</span>
+<span class="prompt">$ </span><span class="cmd">npm test</span>
+<span class="prompt">$ </span><span class="cmd">npm run dev</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              web app: <a href="https://easylm.app" target="_blank" rel="noopener noreferrer">easylm.app</a> · repo: <a href="https://github.com/erastudil/easylm" target="_blank" rel="noopener noreferrer">github.com/erastudil/easylm</a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!-- 3. PROGEN -->
+<article class="repo-card reveal in" id="progen">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>03 · progen</h2>
+            <span class="repo-tagline">topic-comment dialect and structured think traces for agents</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Standard Library Only</span>
+          <span class="badge">Deterministic Grammar</span>
+          <span class="badge">Offline CLI Tools</span>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Applies Japanese topic-comment grammar structure under English vocabulary. Cuts token costs and removes discursive filler, polite padding, and unsolicited trailing questions from model outputs and reasoning traces.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Topic-Comment Grammar:</strong> Every operational statement asserts <code>topic : comment</code> per line. Statements declare raw predicates directly with zero filler verbs.</li>
+              <li><strong>Iron vs Slack Boundary:</strong> <code>agent iron</code> requires strict topic-comment structure for internal reasoning and execution; <code>human slack</code> allows informal, natural human prompts.</li>
+              <li><strong>Canonical State Vectors:</strong> Declares operational intent using canonical heads: intention, requirement, course of action, end result, demand, and compliance.</li>
+              <li><strong>Deterministic Truth:</strong> Exit code zero is passing. Blocked execution emits <code>ERROR</code>. An unverified or empty check emits <code>DONT_KNOW</code>.</li>
+              <li><strong>Offline Tooling:</strong> Python CLI utilities to parse topic-comment units into structured JSON, lint outputs against grammar anti-patterns, rewrite text into iron, and emit reference prompts.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Requires Python 3.10+. Standard library only, zero third-party dependencies:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/progen.git&#10;cd progen&#10;pip install -e .&#10;progen check&#10;progen lint examples/iron.md --role agent&#10;progen iron examples/mush.md&#10;progen prompt genome">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone and install in editable mode:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/progen.git</span>
+<span class="prompt">$ </span><span class="cmd">cd progen</span>
+<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
+
+<span class="cmt"># run language conformance self-check:</span>
+<span class="prompt">$ </span><span class="cmd">progen check</span>
+
+<span class="cmt"># lint agent output against topic-comment grammar:</span>
+<span class="prompt">$ </span><span class="cmd">progen lint examples/iron.md --role agent</span>
+
+<span class="cmt"># rewrite conversational prose into topic-comment iron:</span>
+<span class="prompt">$ </span><span class="cmd">progen iron examples/mush.md</span>
+
+<span class="cmt"># emit reference genome prompt:</span>
+<span class="prompt">$ </span><span class="cmd">progen prompt genome</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/progen" target="_blank" rel="noopener noreferrer">github.com/erastudil/progen</a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!-- 4. ZCABS -->
+<article class="repo-card reveal in" id="zcabs">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>04 · zcabs</h2>
+            <span class="repo-tagline">zero context agent behavioral scaffolding &amp; proof of execution</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Standard Library Only</span>
+          <span class="badge">Fail-Closed Invariant</span>
+          <span class="badge">Canary Scaffolding</span>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Language models interpolate conversation history. An agent can claim test suites passed without executing a single command. zcabs turns execution verification into a physical file observation so that proof costs real computational work.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Dynamic Canary Invariant:</strong> The host mints a unique integer stored in an isolated local file. The agent receives only a target path (<code>LOOK: /path</code>) and required format (<code>FORMAT: the {string} number is {integer}</code>).</li>
+              <li><strong>Unfakable Proof:</strong> To prove completion, the model must read the target file from disk and report the live integer. Guessing, static scraping, or reading an empty path fails closed.</li>
+              <li><strong>Command Wrapping:</strong> <code>zcabs wrap -- pytest -q</code> executes any shell command. On exit code zero, it rotates the canary capability and emits the verification header.</li>
+              <li><strong>Repository Scanning:</strong> <code>zcabs scan .</code> traverses trees to verify no active canary stores, pointer files, or integers have leaked into git source files.</li>
+              <li><strong>Harness Integration:</strong> Clean Python module interface for test runners, evaluation harnesses, and multi-agent coordination loops.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Requires Python 3.10+. Standard library only, zero third-party dependencies:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/zcabs.git&#10;cd zcabs&#10;pip install -e .&#10;zcabs check&#10;zcabs wrap -- pytest -q&#10;zcabs scan .">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone and install in editable mode:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/zcabs.git</span>
+<span class="prompt">$ </span><span class="cmd">cd zcabs</span>
+<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
+
+<span class="cmt"># run protocol self-check:</span>
+<span class="prompt">$ </span><span class="cmd">zcabs check</span>
+
+<span class="cmt"># wrap a test command: runs pytest and emits canary on exit 0:</span>
+<span class="prompt">$ </span><span class="cmd">zcabs wrap -- pytest -q</span>
+
+<span class="cmt"># scan repository to detect leaked store integers:</span>
+<span class="prompt">$ </span><span class="cmd">zcabs scan .</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/zcabs" target="_blank" rel="noopener noreferrer">github.com/erastudil/zcabs</a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!-- 5. GFC -->
+<article class="repo-card reveal in" id="gfc">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>05 · gfc</h2>
+            <span class="repo-tagline">greene feynman clarity writing standard &amp; prose linter</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="repo-badges">
+          <span class="badge badge-violet">Python 3.10+</span>
+          <span class="badge">Open Source · AGPL-3.0</span>
+          <span class="badge">Standard Library Only</span>
+          <span class="badge">Prose &amp; Educate Modes</span>
+          <span class="badge">Anti-Tell Linter</span>
+        </div>
+
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it does</span>
+            <p class="repo-desc">
+              Named in honor of physicists Brian Greene and Richard Feynman. Codifies their shared pedagogical order: present the physical intuition and working mechanism first, then introduce the technical name as recognition. Includes offline tools to catch AI writing tells.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Intuition First, Name Second:</strong> Flags documents that define technical terminology before showing how the mechanism works in everyday words.</li>
+              <li><strong>Say The Is, Once:</strong> Flags ungrounded reversals swapping abstractions without data or measurement.</li>
+              <li><strong>Regurgitation and Drift Guard:</strong> Catches headings or sentences that copy the user's prompt back into the body, or outputs that wander away from the ask.</li>
+              <li><strong>Contained Analogy:</strong> Catches metaphors that escape their introductory paragraph and hijack the vocabulary of the entire page.</li>
+              <li><strong>Corpus Echo Detection:</strong> Identifies identical eight-word phrases repeated across historical answer sessions to prevent model loop habits.</li>
+              <li><strong>Automated Stripper:</strong> <code>gfc strip</code> mechanically collapses empty reversals and strips likeability padding, disclaimer costumes, and trailing prompts.</li>
+            </ul>
+          </div>
+
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Requires Python 3.10+. Standard library only, zero third-party dependencies:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash</span>
+                <button type="button" class="copy-btn" data-copy="git clone https://github.com/erastudil/gfc.git&#10;cd gfc&#10;pip install -e .&#10;gfc check&#10;gfc lint docs/&#10;gfc lint examples/tensor-attention.md --mode educate&#10;gfc strip draft.md">copy commands</button>
+              </div>
+              <pre><span class="cmt"># clone and install in editable mode:</span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/erastudil/gfc.git</span>
+<span class="prompt">$ </span><span class="cmd">cd gfc</span>
+<span class="prompt">$ </span><span class="cmd">pip install -e .</span>
+
+<span class="cmt"># run test suite and fixtures:</span>
+<span class="prompt">$ </span><span class="cmd">gfc check</span>
+
+<span class="cmt"># lint human-facing markdown documentation:</span>
+<span class="prompt">$ </span><span class="cmd">gfc lint docs/</span>
+
+<span class="cmt"># educate mode: verifies mechanisms precede terminology:</span>
+<span class="prompt">$ </span><span class="cmd">gfc lint examples/tensor-attention.md --mode educate</span>
+
+<span class="cmt"># strip conversational padding and empty reversals:</span>
+<span class="prompt">$ </span><span class="cmd">gfc strip draft.md</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              source: <a href="https://github.com/erastudil/gfc" target="_blank" rel="noopener noreferrer">github.com/erastudil/gfc</a>
+            </p>
+          </div>
+        </div>
+      </article>
       <!-- 6. TANKBENCH -->
-      <article class="repo-card reveal in" id="tankbench">
+<article class="repo-card reveal in" id="tankbench">
         <div class="repo-header">
           <div class="repo-title-group">
             <h2>06 · tankbench</h2>
@@ -1020,6 +1056,28 @@ print(result)</pre>
             </p>
           </div>
         </div>
+      </article>
+
+      <!-- FIELD MANUAL -->
+      <article class="repo-card reveal in" id="dadavol1">
+        <div class="repo-header">
+          <div class="repo-title-group">
+            <h2>field manual · dadavol1</h2>
+            <span class="repo-tagline">defense against the dark arts for solo agentic developers</span>
+          </div>
+          <div class="repo-actions-row" style="margin-top:0">
+            <a href="https://dadavol1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open dadavol1 ↗</a>
+            <a href="https://dadavol1.vercel.app/llms.txt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">llms.txt ↗</a>
+          </div>
+        </div>
+        <div class="repo-badges">
+          <span class="badge badge-violet">Field Manual</span>
+          <span class="badge">Solo Agentic Practice</span>
+          <span class="badge">White Hat</span>
+        </div>
+        <p class="repo-desc">
+          Practical defense for one person running coding agents, including overnight daemons. Bound the checkout, the token, and the merge. The same manual is plain text at <a href="https://dadavol1.vercel.app/llms.txt">llms.txt</a> and <a href="https://dadavol1.vercel.app/agent.txt">agent.txt</a>.
+        </p>
       </article>
     </main>
 

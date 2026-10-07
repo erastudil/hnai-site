@@ -17,14 +17,15 @@ The official public web face for **Humans & AI**.
 
 ## Public Repositories
 
-The site covers six public open-source tools:
+The site leads with Hydra, then EasyLM, then the remaining public tools. dadavol1 is the field manual for solo agentic work.
 
-1. **[easylm.app](https://easylm.app)**: Sovereign in-browser WebGPU AI workstation with 30 collegiate textbooks, AtMem context governance, and zero remote cloud dependencies.
-2. **[progen](https://github.com/erastudil/progen)**: Dialect of English applying Japanese topic-comment grammar for agent think traces, system prompts, and offline verification.
-3. **[zcabs](https://github.com/erastudil/zcabs)**: Zero Context Agent Behavioral Scaffolding: deterministic proof-of-execution canary protocol and command-wrapping harness.
-4. **[gfc](https://github.com/erastudil/gfc)**: Greene Feynman Clarity: writing standard and offline linter for human-facing prose.
-5. **[hydra](https://github.com/erastudil/hydra)**: Sovereign multi-headed command-line AI engine, interactive TUI agent, and model gateway router with dual runtime parity in standard library Python and Node.
+1. **[hydra](https://github.com/erastudil/hydra)**: Sovereign multi-headed command-line AI engine, interactive TUI agent, and model gateway router with dual runtime parity in standard library Python and Node.
+2. **[easylm.app](https://easylm.app)**: Sovereign in-browser WebGPU workstation with Chat, Studio, Learn, 31 Dewey stacks, personalities, and Kid Safe profiles.
+3. **[progen](https://github.com/erastudil/progen)**: Dialect of English applying Japanese topic-comment grammar for agent think traces, system prompts, and offline verification.
+4. **[zcabs](https://github.com/erastudil/zcabs)**: Zero Context Agent Behavioral Scaffolding: deterministic proof-of-execution canary protocol and command-wrapping harness.
+5. **[gfc](https://github.com/erastudil/gfc)**: Greene Feynman Clarity: writing standard and offline linter for human-facing prose.
 6. **[tankbench](https://github.com/erastudil/tankbench)**: Defensive hardening and security refactoring benchmark for autonomous coding agents.
+7. **[dadavol1](https://dadavol1.vercel.app/)**: Field manual for solo agentic developers. Bound the checkout, the token, and the merge.
 
 ---
 

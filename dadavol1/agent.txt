@@ -3,15 +3,15 @@
 // canonical source : https://dadavol1.vercel.app/agent.txt
 // status : public canon · vol 1 · 2026
 
-threat_model : coding agent = fast intern with root shell. untrusted context ingestion executes with developer authority. you are the last gate.
-mission : white hat defensive hardening for ai-assisted solo developers and vibe coders. practical defenses against prompt injection, package hallucination, and secret leaks.
+threat_model : coding agent = fast intern with root shell. untrusted context ingestion executes with developer authority. a daemon has the same reach as its checkout and its token. you are the last gate.
+mission : white hat defensive hardening for solo agentic developers. practical defenses against prompt injection, package hallucination, secret leaks, and unbounded overnight loops.
 
 ---
 
 ## 1. the threat model : the intern has root
-coding_agent : an ai coding assistant has a shell on your workstation. it writes code, runs terminal commands, and inspects files.
-vulnerability : it processes live production secrets and dummy test data with equal weight. a single hostile instruction inside a dependency or web page can trigger immediate shell commands.
-blast_radius : without structural boundaries, your personal machine and local network are the blast radius.
+coding_agent : an ai coding assistant has a shell on your workstation. it writes code, runs terminal commands, and inspects files, including skills and agent rules.
+vulnerability : it processes live production secrets and dummy test data with equal weight. a single hostile instruction inside a dependency, a fetched page, or a rules file can trigger immediate shell commands.
+blast_radius : without structural boundaries, your personal machine and local network are the blast radius. an overnight daemon inherits the checkout and the token you gave it.
 
 ---
 
@@ -86,8 +86,33 @@ ring_4 : network : loopback by default
 ---
 
 ## 5. checklist : five minutes today
-1. turn auto-run off : the assistant pauses and waits for confirmation on terminal commands and file writes.
-2. open only the project folder : open the project folder to contain the agent's filesystem reach and protect user home files.
+1. read the diff before it lands : an interactive session confirms writes and shell commands. an overnight daemon runs in its own checkout with a token that cannot push the protected branch and cannot spend money. either way, you read the diff before merge.
+2. open only the project folder : open the repository, not your home directory and not a parent folder that also holds finances, mail, or keys. do not run the agent as administrator.
 3. add .env to agent ignore lists : stop models from reading secret keys into prompts and remote vendor logs.
 4. install packages with --ignore-scripts : prevent hallucinated or malicious packages from running arbitrary code.
 5. bind local servers to 127.0.0.1 : keep development servers on loopback to shield debug endpoints from local network devices.
+
+---
+
+## 6. practice : solo agentic work
+principle : a daemon, a swarm, and an interactive session are the same authority problem at different speeds. bound the checkout, the token, and the merge.
+
+one_job_one_tree :
+- open the repository that the task is allowed to touch. leave finances, mail, photos, and key stores outside that tree.
+- parallel agents get separate git worktrees. two loops in one working tree overwrite each other.
+- an untrusted repository is reviewed in a disposable clone. its skills, rules, and agent instruction files are code. read them before the agent obeys them.
+
+daemon_small_key :
+- overnight work uses its own clone. the credential can open a review. it cannot push the protected branch, force-push, or call a billing or deploy api.
+- production secrets, payment keys, and cloud admin tokens stay out of that environment. a local gateway key is not a cloud root key.
+- the model report that tests passed is not the test log. require the command output and the exit code.
+
+capabilities_off :
+- each mcp server, browser login, and plugin is a capability. turn off the ones this task does not need, including a browser session signed into mail, a bank, or a cloud console.
+- fetched pages, issue text, and dependency docs are data. instruction files shipped inside a repo are control flow. delimit the first and read the second.
+- if a secret enters a transcript, rotate it. do not paste that transcript into a second model.
+
+isolation_commands :
+- git worktree add ../job-a
+- git check-ignore -v .env
+- git diff
