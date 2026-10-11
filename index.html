@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>humans&amp;ai : public open source repositories · patrick mcqueeny</title>
-  <meta name="description" content="hydra leads: a sovereign cli agent, gateway, and daemon. easylm.app is the in-browser workstation with studio, learn, stacks, personalities, and kid safe. progen, zcabs, gfc, and tankbench follow. dadavol1 is the solo agent field manual." />
+  <meta name="description" content="Sovereign open-source tools for autonomous agents, local inference, and deterministic engineering: Hydra multi-model CLI engine, EasyLM WebGPU browser workstation, Progen dialect, zcabs canary verification, GFC prose linter, Tankbench security benchmark, and dadavol1 field manual." />
   <meta name="author" content="Patrick McQueeny, humans&amp;ai" />
   <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://humans-and-ai.vercel.app/" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://humans-and-ai.vercel.app/" />
   <meta property="og:title" content="humans&amp;ai : public open source repositories" />
-  <meta property="og:description" content="hydra first, easylm.app second, then progen, zcabs, gfc, and tankbench. dadavol1 is the field manual for solo agentic work." />
+  <meta property="og:description" content="Sovereign open-source tools for autonomous agents, local inference, and deterministic engineering: Hydra, EasyLM, Progen, zcabs, GFC, Tankbench, and dadavol1." />
   <meta property="og:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
   <meta property="og:site_name" content="humans&amp;ai" />
 
@@ -22,7 +22,7 @@
   <meta name="twitter:site" content="@humansandaiboss" />
   <meta name="twitter:creator" content="@humansandaiboss" />
   <meta name="twitter:title" content="humans&amp;ai : public open source repositories" />
-  <meta name="twitter:description" content="hydra first, easylm.app second, then progen, zcabs, gfc, and tankbench. dadavol1 is the field manual for solo agentic work." />
+  <meta name="twitter:description" content="Sovereign open-source tools for autonomous agents, local inference, and deterministic engineering: Hydra, EasyLM, Progen, zcabs, GFC, Tankbench, and dadavol1." />
   <meta name="twitter:image" content="https://humans-and-ai.vercel.app/assets/humans-and-ai-logo.png" />
 
   <!-- JSON-LD Structured Data -->
@@ -146,19 +146,19 @@
     <!-- HERO -->
     <header class="hero" id="top">
       <img class="hero-logo" src="assets/humans-and-ai-logo.png" alt="humans&amp;ai" width="840" height="200" />
-      <p class="section-kicker">public repositories · open source tools</p>
-      <h1 class="hero-tag">heres the stuff. heres what it does. heres how to get started.</h1>
-      <p class="hero-spine">hydra leads. one engine as a prompt, a terminal agent, a swarm, a local gateway, and a daemon working on alice. easylm.app is the in-browser workstation. the other repositories stay on the shelf. dadavol1 is the field manual for working alone with an agent.</p>
+      <p class="section-kicker">open source engineering · sovereign computing</p>
+      <h1 class="hero-tag">tools for autonomous agents, local inference, and verifiable code</h1>
+      <p class="hero-spine">Most AI software runs behind remote subscription gates, meters every prompt, and reports pass marks on code without executing it. We author open-source tools that give developers and students full ownership of their work: Hydra routes models through a local terminal engine with in-flight steering, EasyLM runs neural networks in your browser through WebGPU, and our verification harnesses prove code execution against real hardware. Browse the tools below to learn what they do, why we built them, and how to get started.</p>
 
       <div class="hero-actions">
         <a href="https://github.com/erastudil" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Profile (@erastudil) ↗</a>
         <a href="#hydra" class="btn btn-secondary">Hydra ↓</a>
         <a href="https://easylm.app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Launch easylm.app ↗</a>
-        <a href="#repos" class="btn btn-ghost">View Repositories ↓</a>
+        <a href="#repos" class="btn btn-ghost">Explore Repositories ↓</a>
       </div>
 
       <a href="#repos" class="hero-scroll-cue" aria-label="scroll to explore repositories">
-        <span>scroll to hydra</span>
+        <span>explore repositories</span>
         <div class="chevron"></div>
       </a>
     </header>
@@ -197,7 +197,7 @@
 
     <!-- PUBLIC REPOSITORIES -->
     <main id="repos">
-      <p class="section-kicker">01 · the stuff : hydra, easylm, then the shelf</p>
+      <p class="section-kicker">01 · sovereign stack · autonomous agents, local workstations &amp; verification harnesses</p>
       <!-- 1. HYDRA -->
 <article class="repo-card reveal in hydra-showcase" id="hydra">
         <div class="repo-header">
@@ -243,6 +243,14 @@
             <div class="syntax-line"><span class="syntax-topic">cognitive engine</span> <span class="syntax-sep">:</span> <span class="syntax-comment">Snowgate Alice proposition evaluation prior to remote model generation.</span></div>
             <div class="syntax-line"><span class="syntax-topic">truth</span> <span class="syntax-sep">:</span> <span class="syntax-comment">exit code zero passing; unverified assertion carries zero truth value.</span></div>
           </div>
+        </div>
+        <!-- PURPOSE -->
+        <div class="hydra-block">
+          <span class="repo-section-label">purpose · why we made hydra</span>
+          <h3 class="hydra-subheading">escaping vendor lock-in and unifying fragmented model backends</h3>
+          <p class="muted" style="margin:0 0 1rem;font-size:0.9rem;line-height:1.6">
+            Connecting to modern AI models requires juggling incompatible client libraries, disparate cloud dashboards, rate limits, and fragile secrets. When a remote API outage strikes during an agent run, entire engineering workflows collapse. Proprietary coding assistants inject closed telemetry, hide underlying prompts, and force dependence on a single provider. We built Hydra to give developers a unified, sovereign interface that routes prompts across frontier models, free edge providers, and offline inference backends with zero third-party dependencies, automatic failover, and local privacy.
+          </p>
         </div>
         <!-- FUNCTIONS -->
         <div class="hydra-block">
@@ -702,6 +710,14 @@ print(result)</pre>
         </div>
 
         <div class="hydra-block">
+          <span class="repo-section-label">purpose · why we made easylm</span>
+          <h3 class="hydra-subheading">replacing metered cloud study halls with sovereign browser compute</h3>
+          <p class="muted" style="margin:0 0 1rem;font-size:0.9rem;line-height:1.6">
+            Commercial educational AI platforms charge recurring subscription fees, harvest personal student queries, and lock basic study utilities behind cloud paywalls. When network access drops, learning halts. We created EasyLM to run entirely inside your browser on local hardware through WebGPU: open-weight models download once into browser cache, conversational memory stays on your device, and textbook reading, STEM curriculum exercises, mathematical graphing, and code execution operate seamlessly without remote servers or data tracking.
+          </p>
+        </div>
+
+        <div class="hydra-block">
           <span class="repo-section-label">functions · the four tabs</span>
           <h3 class="hydra-subheading">six parts of one local session</h3>
           <div class="hydra-grid-2">
@@ -936,16 +952,16 @@ print(result)</pre>
 
         <div class="repo-grid">
           <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
+            <span class="repo-section-label">what it is &amp; why we made it</span>
             <p class="repo-desc">
-              Applies Japanese topic-comment grammar structure under English vocabulary. Cuts token costs and removes discursive filler, polite padding, and unsolicited trailing questions from model outputs and reasoning traces.
+              An operational dialect and offline linter applying Japanese topic-comment grammar structure to English vocabulary. Standard conversational models burn tokens on polite filler, discursive preamble, and unsolicited questions. This chatter clutters agent traces and degrades reasoning stamina during multi-step coding. We created Progen to compress operational statements into dense, machine-parseable data streams (<code>.prg</code>), enforcing clean separation between operational logic and human interaction.
             </p>
             <ul class="repo-list">
-              <li><strong>Topic-Comment Grammar:</strong> Every operational statement asserts <code>topic : comment</code> per line. Statements declare raw predicates directly with zero filler verbs.</li>
-              <li><strong>Syntax and Slack Boundary:</strong> <code>agent syntax</code> requires strict topic-comment structure for internal reasoning and execution; <code>human slack</code> allows informal, natural human prompts.</li>
-              <li><strong>Canonical State Vectors:</strong> Declares operational intent using canonical heads: intention, requirement, course of action, end result, demand, and compliance.</li>
+              <li><strong>Topic-Comment Grammar:</strong> Every operational statement asserts <code>topic : comment</code> per line, separated by a single blank line, declaring raw predicates directly with zero filler verbs.</li>
+              <li><strong>Syntax and Slack Boundary:</strong> <code>agent syntax</code> enforces strict topic-comment structure for internal reasoning and execution; <code>human slack</code> allows informal, natural human prompts.</li>
+              <li><strong>Canonical State Vectors:</strong> Declares operational intent using canonical heads: intention, requirement, course of action, end result, reason, demand, and compliance.</li>
               <li><strong>Deterministic Truth:</strong> Exit code zero is passing. Blocked execution emits <code>ERROR</code>. An unverified or empty check emits <code>DONT_KNOW</code>.</li>
-              <li><strong>Offline Tooling:</strong> Python CLI utilities to parse topic-comment units into structured JSON, lint outputs against grammar anti-patterns, rewrite text into syntax, and emit reference prompts.</li>
+              <li><strong>Offline CLI Tooling:</strong> Python CLI utilities to parse topic-comment units into structured JSON, lint outputs against grammar anti-patterns, rewrite text into syntax, and emit reference prompts.</li>
             </ul>
           </div>
 
@@ -1004,13 +1020,13 @@ print(result)</pre>
 
         <div class="repo-grid">
           <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
+            <span class="repo-section-label">what it is &amp; why we made it</span>
             <p class="repo-desc">
-              Language models interpolate conversation history. An agent can claim test suites passed without executing a single command. zcabs turns execution verification into a physical file observation so that proof costs real computational work.
+              Zero Context Agent Behavioral Scaffolding is a deterministic proof-of-execution canary protocol and test runner wrapper. Language models predict text by matching statistical patterns in prior tokens. In autonomous agent loops, models frequently hallucinate success or fabricate passing test logs without running any shell commands. We built zcabs so proof of execution requires genuine physical work: the host mints a dynamic integer stored in an isolated canary file. The agent cannot guess or scrape the token; it can only obtain it when <code>zcabs wrap</code> executes the test command, verifies exit code zero on real hardware, and rotates the canary store.
             </p>
             <ul class="repo-list">
               <li><strong>Dynamic Canary Invariant:</strong> The host mints a unique integer stored in an isolated local file. The agent receives only a target path (<code>LOOK: /path</code>) and required format (<code>FORMAT: the {string} number is {integer}</code>).</li>
-              <li><strong>Unfakable Proof:</strong> To prove completion, the model must read the target file from disk and report the live integer. Guessing, static scraping, or reading an empty path fails closed.</li>
+              <li><strong>Unfakable Hardware Proof:</strong> To prove completion, the model must read the target file from disk and report the live integer. Guessing, static scraping, or reading an empty path fails closed.</li>
               <li><strong>Command Wrapping:</strong> <code>zcabs wrap -- pytest -q</code> executes any shell command. On exit code zero, it rotates the canary capability and emits the verification header.</li>
               <li><strong>Repository Scanning:</strong> <code>zcabs scan .</code> traverses trees to verify no active canary stores, pointer files, or integers have leaked into git source files.</li>
               <li><strong>Harness Integration:</strong> Clean Python module interface for test runners, evaluation harnesses, and multi-agent coordination loops.</li>
@@ -1069,9 +1085,9 @@ print(result)</pre>
 
         <div class="repo-grid">
           <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
+            <span class="repo-section-label">what it is &amp; why we made it</span>
             <p class="repo-desc">
-              Named in honor of physicists Brian Greene and Richard Feynman. Codifies their shared pedagogical order: present the physical intuition and working mechanism first, then introduce the technical name as recognition. Includes offline tools to catch AI writing tells.
+              Greene Feynman Clarity is a prose writing standard and offline linter for human-facing documentation, essays, and educational materials. AI text generators default to tired habits: introducing technical jargon before explaining physical mechanics, copying user prompts into headings, latching onto a single metaphor for an entire page, reciting disclaimers as substitutes for truth, and chaining em dashes. We created GFC to formalize the pedagogical principles of physicists Brian Greene and Richard Feynman: intuitive physical mechanism first, technical label second, state the surviving claim once, contain analogies to single paragraphs, and maintain silence over hedging.
             </p>
             <ul class="repo-list">
               <li><strong>Intuition First, Name Second:</strong> Flags documents that define technical terminology before showing how the mechanism works in everyday words.</li>
@@ -1138,12 +1154,12 @@ print(result)</pre>
 
         <div class="repo-grid">
           <div class="repo-col">
-            <span class="repo-section-label">what it does</span>
+            <span class="repo-section-label">what it is &amp; why we made it</span>
             <p class="repo-desc">
-              Evaluates coding agents on defensive refactoring and security hardening of existing legacy codebases. Hands the agent Harbor Ledger 2.4: a functioning invoicing web application full of lying comments, decoy files, and 24 obfuscated security vulnerabilities.
+              A defensive hardening and security refactoring benchmark for autonomous coding agents. Existing benchmarks only test whether an agent can write a greenfield function or solve a textbook puzzle. In production, developers inherit messy legacy systems riddled with backdoors, misleading developer comments, and brittle business logic. We created Tankbench to test agents on real-world defensive engineering: agents receive Harbor Ledger 2.4, an invoicing web application full of 24 obfuscated security vulnerabilities. To score, the agent must eliminate all vulnerabilities while keeping 100% of staff login, invoice search, and financial reporting functions alive.
             </p>
             <ul class="repo-list">
-              <li><strong>Alive Spec (Floor):</strong> Functional invariants must pass 100% (staff login, invoice viewing, search, exports, CSS). Dodging attacks by deleting routes scores an immediate 0.0.</li>
+              <li><strong>Alive Spec Floor:</strong> Functional invariants must pass 100% (staff login, invoice viewing, search, exports, CSS). Dodging attacks by deleting routes scores an immediate 0.0.</li>
               <li><strong>Red Rabbits (50%):</strong> 24 bespoke offensive attacks targeting dormant ransomware, 90s trojan fee inflators, adware popups, MAPI droppers, and custom verb side-channels.</li>
               <li><strong>DADA Vol 1 Armory (50%):</strong> 8 structural defense rings verified from Defense Against the Dark Arts (secrets hygiene via gitleaks, trojan quarantine, 127.0.0.1 socket isolation, Presidio egress PII DLP filters, and strict CSP headers).</li>
               <li><strong>Objective Rubric:</strong> Balanced mathematical scoring: composite score requires the shop to still function while eliminating backdoors and adding defenses.</li>
@@ -1194,16 +1210,52 @@ print(result)</pre>
           <div class="repo-actions-row" style="margin-top:0">
             <a href="https://dadavol1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open dadavol1 ↗</a>
             <a href="https://dadavol1.vercel.app/llms.txt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">llms.txt ↗</a>
+            <a href="https://dadavol1.vercel.app/agent.txt" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">agent.txt ↗</a>
           </div>
         </div>
         <div class="repo-badges">
           <span class="badge badge-violet">Field Manual</span>
           <span class="badge">Solo Agentic Practice</span>
           <span class="badge">White Hat</span>
+          <span class="badge">Zero Fluff</span>
         </div>
-        <p class="repo-desc">
-          Practical defense for one person running coding agents, including overnight daemons. Bound the checkout, the token, and the merge. The same manual is plain text at <a href="https://dadavol1.vercel.app/llms.txt">llms.txt</a> and <a href="https://dadavol1.vercel.app/agent.txt">agent.txt</a>.
-        </p>
+        <div class="repo-grid">
+          <div class="repo-col">
+            <span class="repo-section-label">what it is &amp; why we made it</span>
+            <p class="repo-desc">
+              Defense Against the Dark Arts Volume 1 is the tactical field manual for solo software engineers building with autonomous coding agents and overnight background daemons. Running autonomous agents unattended presents physical hazards to codebases and developer machines: dirty checkouts, unverified third-party dependencies, leaking credentials, runaway token costs, and unmerged side branches. We wrote dadavol1 to document concrete operational fences: bounding checkouts with git worktrees, isolating network sockets to 127.0.0.1, setting hard token and runtime ceilings, and establishing deterministic merge gates.
+            </p>
+            <ul class="repo-list">
+              <li><strong>Bound the Checkout:</strong> Isolate worker checkouts into ephemeral worktrees to prevent dirty git writes and race conditions during concurrent runs.</li>
+              <li><strong>Bound the Token:</strong> Enforce strict per-turn and per-session token limits to prevent runaway model spend.</li>
+              <li><strong>Bound the Merge:</strong> Require deterministic verification gates and clean branch integration before code reaches production trunk.</li>
+              <li><strong>Machine-Readable Formats:</strong> Published in plain text at <code>llms.txt</code> and <code>agent.txt</code> for instant agent consumption.</li>
+            </ul>
+          </div>
+          <div class="repo-col">
+            <span class="repo-section-label">how to get started</span>
+            <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">
+              Read online in browser or feed directly into an agent:
+            </p>
+            <div class="code-terminal">
+              <div class="code-terminal-header">
+                <span>bash / web</span>
+                <button type="button" class="copy-btn" data-copy="curl -s https://dadavol1.vercel.app/llms.txt | head -n 30&#10;curl -s https://dadavol1.vercel.app/agent.txt">copy commands</button>
+              </div>
+              <pre><span class="cmt"># 1. read interactive manual in browser:</span>
+<span class="cmt"># visit https://dadavol1.vercel.app/</span>
+
+<span class="cmt"># 2. inspect machine-readable llms.txt:</span>
+<span class="prompt">$ </span><span class="cmd">curl -s https://dadavol1.vercel.app/llms.txt | head -n 30</span>
+
+<span class="cmt"># 3. load raw agent instructions:</span>
+<span class="prompt">$ </span><span class="cmd">curl -s https://dadavol1.vercel.app/agent.txt</span></pre>
+            </div>
+            <p class="dim" style="margin:0.5rem 0 0;font-size:0.75rem">
+              manual: <a href="https://dadavol1.vercel.app/" target="_blank" rel="noopener noreferrer">dadavol1.vercel.app</a> · text: <a href="https://dadavol1.vercel.app/llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a> · agent: <a href="https://dadavol1.vercel.app/agent.txt" target="_blank" rel="noopener noreferrer">agent.txt</a>
+            </p>
+          </div>
+        </div>
       </article>
     </main>
 
