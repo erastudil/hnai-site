@@ -203,7 +203,7 @@
         <div class="repo-header">
           <div class="repo-title-group">
             <h2>01 · hydra</h2>
-            <span class="repo-tagline">sovereign multi-headed ai engine · interactive tui agent · model gateway router</span>
+            <span class="repo-tagline">multi-model CLI engine · interactive terminal agent · model gateway router</span>
           </div>
           <div class="repo-actions-row" style="margin-top:0">
             <a href="https://github.com/erastudil/hydra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub Repository ↗</a>
@@ -225,7 +225,7 @@
         </div>
 
         <p class="repo-desc">
-          Same engine, several working forms: a one-shot prompt, the interactive TUI agent, a swarm, the local gateway, and a background orchestrator daemon. A daemon is running now and using Hydra to work on Alice. That daily use is why Hydra leads this page.
+          One engine that runs in five practical forms: a single command-line prompt, an interactive terminal agent, a multi-model swarm, a local OpenAI-compatible gateway, and a background daemon. A background daemon runs on local hardware right now, using Hydra to build and verify Alice. That daily production work is why Hydra leads this page.
         </p>
 
         <!-- IRON GENOME SPECIFICATION -->
@@ -235,7 +235,7 @@
             <span class="dim">system execution genome · progen syntax</span>
           </div>
           <div class="hydra-syntax-body">
-            <div class="syntax-line"><span class="syntax-topic">scope</span> <span class="syntax-sep">:</span> <span class="syntax-comment">sovereign multi-headed command-line AI engine and model router.</span></div>
+            <div class="syntax-line"><span class="syntax-topic">scope</span> <span class="syntax-sep">:</span> <span class="syntax-comment">multi-model command-line AI engine and routing gateway.</span></div>
             <div class="syntax-line"><span class="syntax-topic">runtime zero</span> <span class="syntax-sep">:</span> <span class="syntax-comment">identical standard library Python and Node runtimes with zero external dependencies.</span></div>
             <div class="syntax-line"><span class="syntax-topic">gateway socket</span> <span class="syntax-sep">:</span> <span class="syntax-comment">OpenAI-compatible HTTP gateway on 127.0.0.1 port 7777.</span></div>
             <div class="syntax-line"><span class="syntax-topic">terminal interface</span> <span class="syntax-sep">:</span> <span class="syntax-comment">inline prompt_toolkit TUI composer pinned beneath terminal scrollback with in-flight steering.</span></div>
@@ -247,43 +247,43 @@
         <!-- FUNCTIONS -->
         <div class="hydra-block">
           <span class="repo-section-label">functions · operational capabilities</span>
-          <h3 class="hydra-subheading">six core functions for sovereign model summoning and terminal automation</h3>
+          <h3 class="hydra-subheading">six core functions for model routing and terminal automation</h3>
           
           <div class="hydra-grid-2">
             <div class="hydra-feature-card">
               <div class="card-icon-tag">01</div>
               <h4>multi-model routing</h4>
-              <p>Dispatches queries across frontier models, free cloud endpoints, and offline local daemons using single clean aliases like <code>hydra sonnet 5.5</code>, <code>hydra opus 5.5 high</code>, or <code>hydra sol 6.1 pro</code>. An automated cascade queries OpenRouter first, falls back to Vercel AI Gateway, and descends to Cloudflare Workers AI, redacting credentials and paths from error records.</p>
+              <p>Type one short command to send your prompt to any local or cloud model. Hydra uses clean aliases like <code>hydra sonnet 5.5</code>, <code>hydra opus 5.5 high</code>, or <code>hydra sol 6.1 pro</code>. If your primary connection drops or runs out of credits, Hydra steps down the ladder automatically: OpenRouter first, then Vercel AI Gateway, and then Cloudflare Workers AI, while stripping secret keys and file paths from error logs.</p>
             </div>
 
             <div class="hydra-feature-card">
               <div class="card-icon-tag">02</div>
               <h4>prompt execution</h4>
-              <p>Executes single queries with real-time SSE token streaming, test-time compute controls like <code>--effort high</code> or <code>--reasoning-mode pro</code>, and structured <code>--json</code> output. Deep Unix pipe support enables <code>cat file.py | hydra &lt;alias&gt;</code> to treat stdin as the prompt, or pair stdin with instructions via <code>cat log.txt | hydra sol 6.1 - "audit errors"</code>.</p>
+              <p>Streams incoming words directly to your terminal screen as the model generates them. You can adjust reasoning effort with flags like <code>--effort high</code> or <code>--reasoning-mode pro</code>, or request machine-readable output with <code>--json</code>. You can also pipe file content directly into Hydra from standard input: <code>cat file.py | hydra &lt;alias&gt;</code> passes source code into the model, and <code>cat log.txt | hydra sol 6.1 - "audit errors"</code> attaches review instructions to the streamed input.</p>
             </div>
 
             <div class="hydra-feature-card">
               <div class="card-icon-tag">03</div>
               <h4>interactive tui terminal mode</h4>
-              <p>Launches a persistent coding agent REPL via <code>hydra agent</code> or <code>-i</code>. The composer stays pinned beneath native terminal scrollback and shows the active model, working directory, detected rules, and session id. <code>Ctrl+Space</code> dictates. Enter sends. A second Enter steers a running turn. <code>Ctrl+C</code> interrupts. Slash opens commands, and a context gauge tracks the window.</p>
+              <p>Type <code>hydra agent</code> or <code>hydra -i</code> to launch an interactive coding loop in your terminal. The input box stays pinned at the bottom of the screen beneath normal scrollback, showing the active model, current folder, repository rules, and session ID. Press <code>Ctrl+Space</code> for voice dictation. Press Enter to send. Press Enter a second time while the model generates to redirect it mid-flight. Press <code>Ctrl+C</code> to cancel. Slash opens commands, and a status gauge tracks remaining context.</p>
             </div>
 
             <div class="hydra-feature-card">
               <div class="card-icon-tag">04</div>
               <h4>continuous swarms</h4>
-              <p>Orchestrates multi-agent specialist teams via <code>hydra swarm</code>. Runs Architect and Coder heads in parallel, triggers an ordered Auditor head post-generation to inspect code patches, and finishes with a Synthesizer head delivering a unified consensus roadmap. Swarms support autonomous tool execution through the <code>--agentic</code> flag.</p>
+              <p>Divides a single engineering task across multiple parallel model roles with <code>hydra swarm</code>. An Architect plans the system layout, a Coder writes the code, an Auditor checks the diff for bugs and missed edge cases, and a Synthesizer pulls the verified work into one cohesive pull request. Adding the <code>--agentic</code> flag lets swarm heads run command-line tools and edit files directly.</p>
             </div>
 
             <div class="hydra-feature-card">
               <div class="card-icon-tag">05</div>
               <h4>background orchestrator daemon</h4>
-              <p>Powers unattended long-horizon workflows and task intake via <code>hydra orchestrator</code> and idle compute worker scripts. Executes overnight repository audits, continuous research loops, automated test passes, and session context ledger persistence without human intervention. A daemon is running now and using Hydra to work on Alice.</p>
+              <p>A scheduled process that runs continuous engineering loops without keeping a browser open. Run <code>hydra orchestrator</code> to let Hydra take in tasks, run automated test suites, review new commits, and write structured progress logs to disk unattended. A background daemon runs on local hardware right now, using Hydra to build and verify Alice.</p>
             </div>
 
             <div class="hydra-feature-card">
               <div class="card-icon-tag">06</div>
               <h4>openai api server on port 7777</h4>
-              <p>Hosts a zero-dependency OpenAI-compatible gateway on <code>127.0.0.1:7777</code> via <code>hydra serve</code>. Provides standard <code>/v1/models</code> and <code>/v1/chat/completions</code> endpoints with transparent alias resolution, provider failover, streaming token chunks, and tool calling passthrough for external runners like Hermes and Pi.</p>
+              <p>Run <code>hydra serve --port 7777</code> to start a lightweight local HTTP server that looks and behaves like the OpenAI API. External programming tools, shell runners, and agent scripts such as Hermes and Pi connect directly to <code>127.0.0.1:7777</code>. Hydra handles alias translation, upstream model failover, token streaming, and local tool execution without external packages.</p>
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@
                 <span class="integ-title">Claude Opus 5.5 &amp; Sonnet 5.5</span>
                 <span class="badge badge-sm">Anthropic</span>
               </div>
-              <p>Frontier reasoning and surgical code crafting. Direct alias summoning with configurable reasoning effort tiers from low to max.</p>
+              <p>Anthropic models for high-level architectural planning, complex reasoning, and code refactoring. Call them with clean aliases and adjust reasoning effort from low to max.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -306,7 +306,7 @@
                 <span class="integ-title">GPT-6.1 Sol</span>
                 <span class="badge badge-sm">OpenAI</span>
               </div>
-              <p>Flagship OpenAI reasoning with pro mode and high reasoning effort for formal invariant verification, security audits, and adversarial code reviews.</p>
+              <p>OpenAI reasoning model. Choose pro mode and high reasoning effort when verifying mathematical invariants, auditing security rules, or running adversarial reviews.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -314,7 +314,7 @@
                 <span class="integ-title">Cloudflare Workers AI</span>
                 <span class="badge badge-sm">Zero-Cost Tier</span>
               </div>
-              <p>Powers <code>hydra free</code> at zero marginal cost using Meta Llama 3.3 70B Instruct fast running on global Cloudflare edge hardware.</p>
+              <p>Powers <code>hydra free</code> at zero cost by sending queries to Meta Llama 3.3 70B Instruct running on Cloudflare global edge hardware.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -322,7 +322,7 @@
                 <span class="integ-title">OpenRouter Free Forge &amp; Frontier</span>
                 <span class="badge badge-sm">Aggregator</span>
               </div>
-              <p>Primary frontier router and secondary zero-cost fallback querying open-access Gemma 4 and Nemotron models when cloud quotas exhaust.</p>
+              <p>Unified connection to hundreds of models, serving as our primary router for commercial models and as an automatic zero-cost fallback querying open-access Gemma 4 and Nemotron models when cloud quotas run out.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -330,7 +330,7 @@
                 <span class="integ-title">Vercel AI Gateway</span>
                 <span class="badge badge-sm">Edge Gateway</span>
               </div>
-              <p>High-throughput, low-latency edge routing layer providing automated failover routing for production agent pipelines.</p>
+              <p>Low-latency edge routing layer that switches automatically to alternative providers if an upstream API fails, keeping agent pipelines online.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -338,7 +338,7 @@
                 <span class="integ-title">Hugging Face Serverless</span>
                 <span class="badge badge-sm">Inference API</span>
               </div>
-              <p>Direct serverless inference routing via <code>hydra hf</code> targeting open-weight model endpoints without dedicated infrastructure.</p>
+              <p>Routes prompts through <code>hydra hf</code> to run open-weight model endpoints on Hugging Face without managing dedicated servers.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -346,7 +346,7 @@
                 <span class="integ-title">CheaperInference</span>
                 <span class="badge badge-sm">Discount Tier</span>
               </div>
-              <p>Discounted frontier inference access and specialized GLM-5.3 models delivering budget efficiency on high-volume batch jobs.</p>
+              <p>Low-cost inference access and specialized GLM-5.3 models that keep token costs low during high-volume batch runs and continuous test suites.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -354,7 +354,7 @@
                 <span class="integ-title">Local Ollama &amp; llama.cpp</span>
                 <span class="badge badge-sm">Offline Local</span>
               </div>
-              <p>Offline execution through <code>hydra local</code> connecting to Ollama, llama.cpp, or EasyLM HTTP sockets with zero internet data transfer.</p>
+              <p>Runs models completely offline with <code>hydra local</code>, connecting directly to local Ollama, llama.cpp, or EasyLM sockets with zero internet data transfer.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -362,7 +362,7 @@
                 <span class="integ-title">Snowgate Alice Cognitive Engine</span>
                 <span class="badge badge-sm">Cognitive Core</span>
               </div>
-              <p>Evaluates input queries through native Alice proposition parsing and deterministic tool pipelines before remote model generation begins.</p>
+              <p>Breaks input queries into discrete factual statements and evaluates them against deterministic tool pipelines before remote model generation begins.</p>
             </div>
 
             <div class="hydra-integ-card">
@@ -370,44 +370,44 @@
                 <span class="integ-title">MCP Ecosystem &amp; Native Tools</span>
                 <span class="badge badge-sm">Tool Protocol</span>
               </div>
-              <p>Built-in stdio JSON-RPC 2.0 client connecting Filesystem, Fetch, SQLite, Git, GitHub, Brave Search, Memory, and Playwright, paired with nine zero-dependency native coding tools.</p>
+              <p>Built-in standard input and output client connecting Model Context Protocol tools for Filesystem, Fetch, SQLite, Git, GitHub, Brave Search, Memory, and Playwright, paired with nine zero-dependency native coding tools.</p>
             </div>
           </div>
         </div>
         <!-- BENEFITS -->
         <div class="hydra-block">
           <span class="repo-section-label">benefits · architectural edge</span>
-          <h3 class="hydra-subheading">five structural advantages of sovereign multi-headed routing</h3>
+          <h3 class="hydra-subheading">five structural advantages of multi-headed model routing</h3>
 
           <div class="hydra-grid-2">
             <div class="hydra-benefit-card">
               <span class="benefit-number">01</span>
               <h4>sovereign local data privacy</h4>
-              <p>Zero third-party telemetry, tracking daemons, or background data collection. Prompts and tokens stay strictly on local hardware during offline inference. Child MCP processes run with stripped environments to prevent API token leakage.</p>
+              <p>Zero third-party telemetry, tracking scripts, or background data collection. Prompts and tokens stay strictly on your local hardware during offline inference. Child tool processes run with clean environments so secret API tokens cannot leak.</p>
             </div>
 
             <div class="hydra-benefit-card">
               <span class="benefit-number">02</span>
               <h4>compute tiering economics</h4>
-              <p>Minimizes token spend by routing mechanical transforms, syntax linting, and directory navigation to free cloud tiers or local hardware. High-cost frontier tokens activate strictly when formal reasoning and architectural auditing demand them.</p>
+              <p>Cuts token costs by routing mechanical transforms, syntax checks, and file searches to free cloud tiers or local models. Expensive frontier models turn on only when deep reasoning or architectural auditing requires them.</p>
             </div>
 
             <div class="hydra-benefit-card">
               <span class="benefit-number">03</span>
               <h4>cross-model consensus verification</h4>
-              <p>Eliminates single-model blind spots. Multi-agent swarms pit independent model families against each other, verifying code patches and system designs through adversarial auditing and automated synthesis.</p>
+              <p>Eliminates single-model blind spots. Multi-agent swarms compare outputs from different model families, verifying code patches and software architecture through independent auditing and automated consensus.</p>
             </div>
 
             <div class="hydra-benefit-card">
               <span class="benefit-number">04</span>
               <h4>zero vendor lock-in</h4>
-              <p>Pure Python standard library and Node standard library implementations with zero external dependencies. Swapping upstream providers or switching models requires zero code refactoring.</p>
+              <p>Built with the standard libraries of Python and Node with zero external dependencies. Switching model providers, changing endpoints, or upgrading models requires no application code changes.</p>
             </div>
 
             <div class="hydra-benefit-card">
               <span class="benefit-number">05</span>
               <h4>offline fallback</h4>
-              <p>Unbroken productivity during network outages or air-gapped field operations. When internet connectivity drops, commands route immediately to local model backends without crashing active workflows.</p>
+              <p>Maintains uninterrupted work during network outages or field work on air-gapped computers. When internet access drops, commands route immediately to local model backends so active workflows keep running.</p>
             </div>
           </div>
         </div>
@@ -421,31 +421,31 @@
             <div class="hydra-usecase-card">
               <div class="usecase-badge">SWARMS</div>
               <h4>autonomous coding swarms</h4>
-              <p>Multi-headed parallel refactoring where Opus models system architecture, Sonnet writes production code and tests, GPT-6.1 Sol audits security vulnerabilities, and Gemini synthesizes the verified release.</p>
+              <p>Parallel refactoring with specialized model roles: Opus models system architecture, Sonnet writes production code and tests, GPT-6.1 Sol audits security vulnerabilities, and Gemini synthesizes the verified release.</p>
             </div>
 
             <div class="hydra-usecase-card">
               <div class="usecase-badge">DAEMONS</div>
               <h4>continuous overnight research daemons</h4>
-              <p>Background orchestrator loops that poll technical feeds, ingest academic papers, parse propositions through Snowgate Alice, and generate structured markdown digests while you sleep.</p>
+              <p>Background orchestrator loops that poll technical feeds, download academic papers, extract factual propositions through Alice, and write structured markdown summaries while you sleep.</p>
             </div>
 
             <div class="hydra-usecase-card">
               <div class="usecase-badge">PIPELINES</div>
               <h4>terminal workflow automation</h4>
-              <p>Seamless command-line pipes where compiler errors, test failure traces, git diffs, and server logs stream directly into reasoning models for immediate root-cause diagnostics.</p>
+              <p>Direct command-line pipes where compiler errors, test failure traces, git diffs, and server logs stream directly into reasoning models for immediate root-cause diagnostics.</p>
             </div>
 
             <div class="hydra-usecase-card">
               <div class="usecase-badge">AUDITING</div>
               <h4>multi-model code review and refactoring</h4>
-              <p>Pairing disparate model architectures to evaluate pull requests, ensuring that architectural invariants and boundary conditions face independent verification before merging.</p>
+              <p>Comparing independent model families on pull requests, ensuring that architecture rules and edge cases pass multi-model code review before merging.</p>
             </div>
 
             <div class="hydra-usecase-card">
               <div class="usecase-badge">GRAPHS</div>
               <h4>deterministic knowledge graph ingestion</h4>
-              <p>Extracting propositions from raw documentation through Alice cognitive grammar and recording structured entities directly into MCP Memory graphs or local SQLite stores.</p>
+              <p>Extracting propositions from raw documentation through Alice cognitive grammar and recording structured entities directly into MCP Memory graphs or local SQLite stores for deterministic knowledge graph ingestion.</p>
             </div>
           </div>
         </div>
@@ -1411,7 +1411,7 @@ print(result)</pre>
             <span class="model-tag">Ternary Bonsai 2</span>
           </div>
           <p class="provider-desc">
-            Pioneered extreme ternary quantization 1.72-bit weights and Hadamard-basis low-bit compression, enabling 27B parameter reasoning models to run within 6–8GB consumer VRAM.
+            Pioneered extreme ternary quantization 1.72-bit weights and Hadamard-basis low-bit compression, enabling 27B parameter reasoning models to run within 6-8GB consumer VRAM.
           </p>
         </div>
       </div>
