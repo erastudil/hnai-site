@@ -1,4 +1,4 @@
-﻿"""
+"""
 Verification suite for HNAI website.
 Validates HTML tag structure, JSON-LD schemas, anchor targets, Progen invariants,
 visual aesthetics, feature coverage, and JavaScript syntax.
@@ -178,6 +178,68 @@ def verify_js_syntax():
     print("[OK] JavaScript syntax verified with node --check main.js.")
 
 
+
+
+def verify_local_assets(html_content: str, base_dir: str, label: str = "index.html"):
+    refs = re.findall(r'(?:src|href)="([^"#?]+)"', html_content)
+    checked = 0
+    for ref in refs:
+        if ref.startswith(("http://", "https://", "mailto:", "tel:", "data:", "javascript:")):
+            continue
+        rel = ref.lstrip("/")
+        full_path = os.path.join(base_dir, rel)
+        parent_dir = os.path.dirname(full_path)
+        if not os.path.isdir(parent_dir):
+            continue
+        assert os.path.isfile(full_path), f"Missing referenced local asset in {label}: {ref} ({full_path})"
+        assert os.path.getsize(full_path) > 0, f"Empty local asset referenced in {label}: {ref}"
+        checked += 1
+    print(f"[OK] Verified {checked} local asset references in {label}.")
+
+
+def verify_vercel_configs(root_dir: str):
+    for rel_cfg in ("vercel.json", os.path.join("dadavol1", "vercel.json")):
+        cfg_path = os.path.join(root_dir, rel_cfg)
+        assert os.path.isfile(cfg_path), f"Missing {rel_cfg}"
+        with open(cfg_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        assert data.get("cleanUrls") is True, f"{rel_cfg} must enable cleanUrls"
+        headers_list = data.get("headers", [])
+        assert headers_list, f"{rel_cfg} must define security headers"
+        header_keys = {
+            h.get("key")
+            for block in headers_list
+            for h in block.get("headers", [])
+        }
+        for req_header in ("X-Content-Type-Options", "X-Frame-Options", "Referrer-Policy"):
+            assert req_header in header_keys, f"{rel_cfg} missing required security header {req_header}"
+    print("[OK] Both root and dadavol1 vercel.json security configurations validated.")
+
+
+def verify_dadavol1_subsite(root_dir: str):
+    dada_dir = os.path.join(root_dir, "dadavol1")
+    dada_html_path = os.path.join(dada_dir, "index.html")
+    dada_css_path = os.path.join(dada_dir, "styles.css")
+    llms_path = os.path.join(dada_dir, "llms.txt")
+    agent_path = os.path.join(dada_dir, "agent.txt")
+
+    for p in (dada_html_path, dada_css_path, llms_path, agent_path):
+        assert os.path.isfile(p) and os.path.getsize(p) > 100, f"Missing or empty dadavol1 artifact: {p}"
+
+    with open(dada_html_path, "r", encoding="utf-8") as f:
+        dada_html = f.read()
+
+    verify_html_and_anchors(dada_html)
+    verify_local_assets(dada_html, dada_dir, label="dadavol1/index.html")
+
+    with open(llms_path, "r", encoding="utf-8") as f:
+        llms_txt = f.read().strip()
+    with open(agent_path, "r", encoding="utf-8") as f:
+        agent_txt = f.read().strip()
+    assert llms_txt.startswith("# dadavol1") and agent_txt.startswith("# dadavol1"), "dadavol1/llms.txt and dadavol1/agent.txt must start with # dadavol1 header"
+    print("[OK] dadavol1 subsite HTML, assets, and llms.txt/agent.txt parity verified.")
+
+
 def main():
     root = os.path.dirname(os.path.abspath(__file__))
     html_path = os.path.join(root, "index.html")
@@ -190,9 +252,12 @@ def main():
         css_content = f.read()
 
     verify_html_and_anchors(html_content)
+    verify_local_assets(html_content, root, label="index.html")
     verify_json_ld(html_content)
     verify_visual_aesthetics(css_content)
     verify_js_syntax()
+    verify_vercel_configs(root)
+    verify_dadavol1_subsite(root)
 
     # Extract hydra article
     hydra_match = re.search(r'(<article[^>]+id="hydra".*?</article>)', html_content, re.DOTALL)

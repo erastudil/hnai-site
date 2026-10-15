@@ -105,18 +105,42 @@
     });
   });
 
-  /* hydra interactive tab switcher */
-  const tabBtns = document.querySelectorAll('.hydra-tab-btn');
-  const tabPanels = document.querySelectorAll('.hydra-tab-panel');
+  /* hydra interactive tab switcher with ARIA state sync & keyboard navigation */
+  const tabBtns = Array.from(document.querySelectorAll('.hydra-tab-btn'));
+  const tabPanels = Array.from(document.querySelectorAll('.hydra-tab-panel'));
   if (tabBtns.length > 0 && tabPanels.length > 0) {
-    tabBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const targetTab = btn.getAttribute('data-tab');
-        tabBtns.forEach((b) => b.classList.remove('active'));
-        tabPanels.forEach((p) => p.classList.remove('active'));
-        btn.classList.add('active');
-        const panel = document.getElementById(targetTab);
-        if (panel) panel.classList.add('active');
+    function activateTab(btn, focusBtn) {
+      const targetTab = btn.getAttribute('data-tab');
+      tabBtns.forEach((b) => {
+        const isCurrent = b === btn;
+        b.classList.toggle('active', isCurrent);
+        b.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
+        b.setAttribute('tabindex', isCurrent ? '0' : '-1');
+      });
+      tabPanels.forEach((p) => {
+        const isTarget = p.id === targetTab;
+        p.classList.toggle('active', isTarget);
+        p.hidden = !isTarget;
+      });
+      if (focusBtn) btn.focus();
+    }
+
+    tabBtns.forEach((btn, idx) => {
+      const isInitial = btn.classList.contains('active') || idx === 0;
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', isInitial ? 'true' : 'false');
+      btn.setAttribute('tabindex', isInitial ? '0' : '-1');
+      btn.addEventListener('click', () => activateTab(btn, false));
+      btn.addEventListener('keydown', (e) => {
+        let nextIdx = null;
+        if (e.key === 'ArrowRight') nextIdx = (idx + 1) % tabBtns.length;
+        else if (e.key === 'ArrowLeft') nextIdx = (idx - 1 + tabBtns.length) % tabBtns.length;
+        else if (e.key === 'Home') nextIdx = 0;
+        else if (e.key === 'End') nextIdx = tabBtns.length - 1;
+        if (nextIdx !== null) {
+          e.preventDefault();
+          activateTab(tabBtns[nextIdx], true);
+        }
       });
     });
   }
