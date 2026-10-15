@@ -1,0 +1,2 @@
+# static deploy : ship site files only; rust link gate stays in git
+tools/

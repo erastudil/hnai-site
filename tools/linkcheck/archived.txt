@@ -1,0 +1,12 @@
+# archived deny list : one erastudil repo name per line; links to these names fail the check.
+# source : issue #4 roster plus `gh repo list erastudil --archived --json name` on 2026-10-15.
+mesh
+grok-file-bridge
+strategem
+void-runner
+shitcoin
+valor
+fitnessTrackingApp
+devbox
+devbox-workspace
+hnai-dev

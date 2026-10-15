@@ -26,3 +26,6 @@ id_ed25519*
 *wallet*
 *.seed
 .npmrc
+
+# rust link gate build output
+tools/linkcheck/target/

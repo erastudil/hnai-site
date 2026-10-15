@@ -1,0 +1,8 @@
+[package]
+name = "linkcheck"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "fail when site html links a github.com/erastudil repo named in the archived deny list or gone dark on github"
+
+[dependencies]
