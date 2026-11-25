@@ -1,28 +1,14 @@
 ---
 title: "dadavol1 — public field manual"
 summary: "defense against the dark arts. public cut of house DATDA for ai-assisted solo developers."
+last_updated: "2026-11-24"
 status: public · door 1
 ---
 
-# dadavol1
+# dadavol1 (`backburner\hnai-site\dadavol1`)
 
-public static page. vercel project **dadavol1** · `https://dadavol1.vercel.app`.
+Governed by `C:\Users\jpm05\Documents\AGENTS.md` and `..\AGENTS.md`. Public static manual deployed at `https://dadavol1.vercel.app` and `/dadavol1` on `hnai.dev`.
 
-**ideas live in** `kb/DEFENSE_AGAINST_THE_DARK_ARTS.md` (house + field).  
-**this folder** is the public cut. no house paths. no exploits. no payloads. white hat only.
-**plain text:** `llms.txt` · `agent.txt`. same manual. no chrome.
-
-## law
-
-- hnai colors. black / white / ina violet / cascadia.
-- lowercase chrome. `code` stays exact case.
-- never horizontal scroll. wrap rows.
-- no button parentheticals. no disclaimers. no coming-soon stubs.
-- standard CS terms. no mill shop language.
-- agent-first notice at top of DOM and via autodetection rewrites in `vercel.json`.
-
-## deploy
-
-root of the vercel project is this folder. parent `hnai-site` still ships `/dadavol1` as a path.
-
-*vol. 1 · 2026-09-14*
+- **Source & boundary:** Public white-hat cut of `C:\Users\jpm05\Documents\kb\house\standards\DEFENSE_AGAINST_THE_DARK_ARTS.md` (`llms.txt` and `agent.txt` plain-text mirrors). Zero house paths, exploits, or payloads.
+- **UI & prose law:** HNAI palette (black / white / Ina violet / Cascadia), lowercase chrome (`code` exact case), zero horizontal scrollbars, zero button parentheticals, zero disclaimers, zero stubs, and standard CS terminology.
+- **Verification:** Verify end to end via parent native Rust linkcheck (`..\AGENTS.md`) and live route check (`Documents\AGENTS.md` §12).
